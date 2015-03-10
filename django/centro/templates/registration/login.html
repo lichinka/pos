@@ -1,0 +1,96 @@
+{% extends 'registration/login_users.html' %}
+
+{% load i18n %}
+{% load url from future %}
+
+{% block login_panel %}
+
+<!-- A WELCOME MESSAGE -->
+<div id='welcome_panel'>
+    <img src='/images/login/welcome_logo.png'/>
+    <p>
+        {% if form.errors %}
+            {% trans "Wrong login!" %}
+        {% else %}
+            {% now "l, j. F Y" %}
+        {% endif %}
+    </p>
+</div>    
+
+<!-- THE PASS PANEL -->
+<div id='passwd_panel'>
+    <!-- OPEN THE FORM -->
+    <form method="post" action="{% url 'accounts.views.log_user_in' %}">
+        {% csrf_token %}
+
+        <div id='passwd_element'>
+            <input type='password' id='geslo' name='geslo' value='       '/>
+        </div>
+                   
+        <div id='number_pad'>
+            <div id='number'>
+                <img id='1'
+                     src='/images/login/style_green_number_1_small.png'
+                     onclick="return keypad_pressed (event, document.getElementById ('geslo'));"/>
+            </div>
+            <div id='number'>
+                <img id='2'
+                     src='/images/login/style_green_number_2_small.png'
+                     onclick="return keypad_pressed (event, document.getElementById ('geslo'));"/>
+            </div>
+            <div id='number'>
+                <img id='3' 
+                     src='/images/login/style_green_number_3_small.png'
+                     onclick="return keypad_pressed (event, document.getElementById ('geslo'));"/>
+            </div>
+            <div id='number'>
+                <img id='4' 
+                     src='/images/login/style_green_number_4_small.png'
+                     onclick="return keypad_pressed (event, document.getElementById ('geslo'));"/>
+            </div>
+            <div id='number'>
+                <img id='5' 
+                     src='/images/login/style_green_number_5_small.png'
+                     onclick="return keypad_pressed (event, document.getElementById ('geslo'));"/>
+            </div>
+            <div id='number'>
+                <img id='6' 
+                     src='/images/login/style_green_number_6_small.png'
+                     onclick="return keypad_pressed (event, document.getElementById ('geslo'));"/>
+            </div>
+            <div id='number'>
+                <img id='7' 
+                     src='/images/login/style_green_number_7_small.png'
+                     onclick="return keypad_pressed (event, document.getElementById ('geslo'));"/>
+            </div>
+            <div id='number'>
+                <img id='8' 
+                     src='/images/login/style_green_number_8_small.png'
+                     onclick="return keypad_pressed (event, document.getElementById ('geslo'));"/>
+            </div>
+            <div id='number'>
+                <img id='9' 
+                     src='/images/login/style_green_number_9_small.png'
+                     onclick="return keypad_pressed (event, document.getElementById ('geslo'));"/>
+            </div>
+            <div id='number'>
+                <img id='clear'
+                     src='/images/login/style_green_x_small.png'
+                     onclick="return keypad_pressed (event, document.getElementById ('geslo'));"/>
+            </div>
+            <div id='number'>
+                <img id='0'
+                     src='/images/login/style_green_number_0_small.png'
+                     onclick="return keypad_pressed (event, document.getElementById ('geslo'));"/>
+            </div>
+            <div id='number'>
+                <img id='login'
+                     src='/images/login/style_green_save_small.png'
+                     onclick='return document.forms[0].submit ( );'/>
+            </div>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
+

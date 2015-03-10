@@ -1,0 +1,71 @@
+div#title_bar {
+	position:relative;
+	margin-top:10px;
+	margin-bottom:10px;
+	width:100%;
+	height:50px;
+}
+div#page_title {
+	margin-top:8px;
+	font-size:30px;
+	font-weight:bold;
+	color:#000000;
+	text-align:center;
+}
+div#fields_wrapper {
+	text-align:center;
+}
+div#fields_wrapper fieldset {
+	width:  80%;
+	margin: 0 auto;
+	padding:10px;
+	margin-bottom:30px;
+	margin-top:10px;
+}
+div#fields_wrapper div.field_row {
+	margin: 0 0 10px 0;
+}
+div#fields_wrapper div.field_row label {
+	float: left;
+	width: 200px;
+	text-align: left;
+	line-height: 2.3;
+}
+.form_field
+{
+ 	float:left;
+ 	padding: 3px;
+ 	background-color: #f2f2f2;
+}
+.form_field input {
+ 	border: 1px solid #ccc;
+ 	padding: 5px;
+ 	width: 250px;
+}
+.form_field input[readonly] {
+	color: #555;
+	background-color: #eee;
+}
+.form_field textarea 
+{
+    border: 1px solid #ccc;
+    margin: 10px;
+    width: 95%;
+}
+label.required
+{
+	color:red;
+}
+
+/**
+ * FIXME: I'm not sure about how this 'clearfix' element works.
+ */
+.clearfix:after 
+{
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}

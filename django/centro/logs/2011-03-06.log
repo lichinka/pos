@@ -1,0 +1,793 @@
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:multilingual_model:Regular expression match, resulting code: en-kk
+DEBUG:multilingual_model:Matched with field title for language en-kk. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'en'
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: en-us
+DEBUG:multilingual_model:Matched with field title for language en-us. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dumbo's.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: pl
+DEBUG:multilingual_model:Matched with field title for language pl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django dla Idiotow.
+DEBUG:multilingual_model:Regular expression match, resulting code: dk
+DEBUG:multilingual_model:Matched with field title for language dk. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'dk'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Matched with field title for language sl_SI. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: pl
+DEBUG:multilingual_model:Matched with field description for language pl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django opisane w prostych slowach.
+DEBUG:multilingual_model:Regular expression match, resulting code: nl
+DEBUG:multilingual_model:Matched with field title for language nl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django voor dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for absolute nitwits..
+DEBUG:multilingual_model:Regular expression match, resulting code: nl
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django voor complete idioten..
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:multilingual_model:Regular expression match, resulting code: en-kk
+DEBUG:multilingual_model:Matched with field title for language en-kk. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'en'
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: en-us
+DEBUG:multilingual_model:Matched with field title for language en-us. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dumbo's.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: pl
+DEBUG:multilingual_model:Matched with field title for language pl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django dla Idiotow.
+DEBUG:multilingual_model:Regular expression match, resulting code: dk
+DEBUG:multilingual_model:Matched with field title for language dk. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'dk'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Matched with field title for language sl_SI. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: pl
+DEBUG:multilingual_model:Matched with field description for language pl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django opisane w prostych slowach.
+DEBUG:multilingual_model:Regular expression match, resulting code: nl
+DEBUG:multilingual_model:Matched with field title for language nl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django voor dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for absolute nitwits..
+DEBUG:multilingual_model:Regular expression match, resulting code: nl
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django voor complete idioten..
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:multilingual_model:Regular expression match, resulting code: en-kk
+DEBUG:multilingual_model:Matched with field title for language en-kk. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'en'
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: en-us
+DEBUG:multilingual_model:Matched with field title for language en-us. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dumbo's.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: pl
+DEBUG:multilingual_model:Matched with field title for language pl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django dla Idiotow.
+DEBUG:multilingual_model:Regular expression match, resulting code: dk
+DEBUG:multilingual_model:Matched with field title for language dk. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'dk'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Matched with field title for language sl_SI. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: pl
+DEBUG:multilingual_model:Matched with field description for language pl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django opisane w prostych slowach.
+DEBUG:multilingual_model:Regular expression match, resulting code: nl
+DEBUG:multilingual_model:Matched with field title for language nl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django voor dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for absolute nitwits..
+DEBUG:multilingual_model:Regular expression match, resulting code: nl
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django voor complete idioten..
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:multilingual_model:Regular expression match, resulting code: en-kk
+DEBUG:multilingual_model:Matched with field title for language en-kk. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'en'
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: en-us
+DEBUG:multilingual_model:Matched with field title for language en-us. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dumbo's.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: pl
+DEBUG:multilingual_model:Matched with field title for language pl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django dla Idiotow.
+DEBUG:multilingual_model:Regular expression match, resulting code: dk
+DEBUG:multilingual_model:Matched with field title for language dk. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'dk'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Matched with field title for language sl_SI. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: pl
+DEBUG:multilingual_model:Matched with field description for language pl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django opisane w prostych slowach.
+DEBUG:multilingual_model:Regular expression match, resulting code: nl
+DEBUG:multilingual_model:Matched with field title for language nl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django voor dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for absolute nitwits..
+DEBUG:multilingual_model:Regular expression match, resulting code: nl
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django voor complete idioten..
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:multilingual_model:Regular expression match, resulting code: en-kk
+DEBUG:multilingual_model:Matched with field title for language en-kk. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'en'
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: en-us
+DEBUG:multilingual_model:Matched with field title for language en-us. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dumbo's.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: pl
+DEBUG:multilingual_model:Matched with field title for language pl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django dla Idiotow.
+DEBUG:multilingual_model:Regular expression match, resulting code: dk
+DEBUG:multilingual_model:Matched with field title for language dk. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'dk'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Matched with field title for language sl_SI. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: pl
+DEBUG:multilingual_model:Matched with field description for language pl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django opisane w prostych slowach.
+DEBUG:multilingual_model:Regular expression match, resulting code: nl
+DEBUG:multilingual_model:Matched with field title for language nl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django voor dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for absolute nitwits..
+DEBUG:multilingual_model:Regular expression match, resulting code: nl
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django voor complete idioten..
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:multilingual_model:Regular expression match, resulting code: en-kk
+DEBUG:multilingual_model:Matched with field title for language en-kk. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'en'
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: en-us
+DEBUG:multilingual_model:Matched with field title for language en-us. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dumbo's.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: pl
+DEBUG:multilingual_model:Matched with field title for language pl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django dla Idiotow.
+DEBUG:multilingual_model:Regular expression match, resulting code: dk
+DEBUG:multilingual_model:Matched with field title for language dk. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'dk'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Matched with field title for language sl_SI. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: pl
+DEBUG:multilingual_model:Matched with field description for language pl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django opisane w prostych slowach.
+DEBUG:multilingual_model:Regular expression match, resulting code: nl
+DEBUG:multilingual_model:Matched with field title for language nl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django voor dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for absolute nitwits..
+DEBUG:multilingual_model:Regular expression match, resulting code: nl
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django voor complete idioten..
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:multilingual_model:Regular expression match, resulting code: en-kk
+DEBUG:multilingual_model:Matched with field title for language en-kk. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'en'
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: en-us
+DEBUG:multilingual_model:Matched with field title for language en-us. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dumbo's.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: pl
+DEBUG:multilingual_model:Matched with field title for language pl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django dla Idiotow.
+DEBUG:multilingual_model:Regular expression match, resulting code: dk
+DEBUG:multilingual_model:Matched with field title for language dk. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'dk'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Matched with field title for language sl_SI. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: pl
+DEBUG:multilingual_model:Matched with field description for language pl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django opisane w prostych slowach.
+DEBUG:multilingual_model:Regular expression match, resulting code: nl
+DEBUG:multilingual_model:Matched with field title for language nl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django voor dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for absolute nitwits..
+DEBUG:multilingual_model:Regular expression match, resulting code: nl
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django voor complete idioten..
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Matched with field title for language en-us. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'en'
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value English title.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'en'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value English title.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'en'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value English title.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'en'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value English title.
+DEBUG:multilingual_model:Regular expression match, resulting code: is
+DEBUG:multilingual_model:Matched with field title for language is. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'is'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Matched with field title for language sl_SI. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Regular expression match, resulting code: is
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'is'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression match, resulting code: si
+DEBUG:multilingual_model:Matched with field title for language si. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Slovenski naslov.
+DEBUG:multilingual_model:Regular expression match, resulting code: si
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Slovenski naslov.
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Matched with field name for language sl-si. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Matched with field name for language sl_SI. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Matched with field name for language sl-si. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Matched with field name for language sl_SI. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Matched with field name for language sl-si. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Matched with field name for language sl_SI. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Matched with field name for language sl-si. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Matched with field name for language sl_SI. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Matched with field name for language sl-si. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Matched with field name for language sl_SI. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.

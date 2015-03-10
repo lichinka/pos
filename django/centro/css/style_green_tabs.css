@@ -1,0 +1,49 @@
+@CHARSET "UTF-8";
+
+/**
+ * This style defines tabs behaviour and look.
+ * Based on the code available at:
+ *
+ *     http://unraveled.com/publications/assets/css_tabs/index.html
+ *
+ */
+
+/* general settings */
+div#tab-navigation ul {
+	text-align: left; /* set to left, right or center */
+	margin: 0.7em 0 1em 0; /* set margins as desired */
+	font: bold 1.3em verdana, arial, sans-serif; /* set font as desired */
+	border-bottom: 1px solid #6c6;
+	list-style-type: none;
+	padding: 3px 10px 3px 10px;
+}
+
+/* do not change */
+div#tab-navigation li {
+    display: inline;
+}
+
+/* settings for all tab links */
+div#tab-navigation li a {
+	padding: 3px 4px 6px; /* set padding (tab size) as desired; FIRST number must change with respect to padding-top (X) above */
+	/*background-color: #cfc; /* set unselected tab background color as desired */
+	color: #777; /* set unselected tab link color as desired */
+	margin-right: 25px; /* set additional spacing between tabs as desired */
+	text-decoration: none;
+	border: 1px solid #6c6;
+	border-bottom: none;
+}
+
+/* settings for selected tab link */
+div#tab-navigation .selected li, div#tab-navigation .selected a {
+	background-color: #fff;
+	color: #000; 
+	position: relative;
+	top: 1px;
+	padding: 0.2em 0.5em 4px 0.5em;
+}
+
+/* settings for hover effect */
+div#tab-navigation a:hover {
+    background: #fff;
+}

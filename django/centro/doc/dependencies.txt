@@ -1,0 +1,4 @@
+- django-modeltranslation-v0.2 is needed for translation at model level.
+  Available at http://code.google.com/p/django-modeltranslation/downloads/list
+
+

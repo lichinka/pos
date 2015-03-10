@@ -1,0 +1,14 @@
+- Ponavljati strukturo in način delovanja Config modula v vseh ostalih modulih aplikacije.
+- Pri modulu 'Artikli' dodamo še Categories in Sizes oz. Size groups.
+- Pri modulu 'Poročila' uporabljamo 'table' view.
+	- Prvo poročilo bo 'Create Daily Sale Balance'.
+	- Drugo poročilo bo 'Create Monthly Sale Balance'.
+	- Prikazovanje na zaslonu obeh poročil.
+	- Format poročil kot na papirju.
+- Čiščenje nerabljenih datotek (slik, .JS, views itd.).
+- Funkcija "_validate_save ( )" je dober kandidat za prenos v kontroler "Secured_area".
+- Preveriti modul 'export/import', ker se je struktura tabel spremenila:
+	- sales
+	- items_taxes
+	- sales_details
+	- sales_details_taxes

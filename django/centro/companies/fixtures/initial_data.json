@@ -1,0 +1,20 @@
+[{"pk": 1, "model": "companies.company", "fields": {"email": "info@centro.si", "identification": "SI123456", "name": "Centro, inc.", "address": "Cesta na hrib 123"}
+},
+ {"pk": 2, "model": "companies.company", "fields": {"email": "webmaster@the-company.com", "identification": "12 3456789 2", "name": "Another company", "address": "Titov trg 214"}
+},
+ {"pk": 1, "model": "companies.store", "fields": {"telephone": "05 123 442", "company": 1, "name": "Koper 1", "address": "Koprska 21"}
+},
+ {"pk": 2, "model": "companies.store", "fields": {"telephone": "01 213 883", "company": 1, "name": "Ljubljana 1", "address": "\u0160martinska 65"}
+},
+ {"pk": 1, "model": "companies.terminal", "fields": {"name": "3428323", "store": 1}
+},
+ {"pk": 2, "model": "companies.terminal", "fields": {"name": "3428223", "store": 1}
+},
+ {"pk": 3, "model": "companies.terminal", "fields": {"name": "3428853", "store": 1}
+},
+ {"pk": 4, "model": "companies.terminal", "fields": {"name": "112113", "store": 2}
+},
+ {"pk": 5, "model": "companies.terminal", "fields": {"name": "112114", "store": 2}
+},
+ {"pk": 6, "model": "companies.terminal", "fields": {"name": "112115", "store": 2}
+}]

@@ -1,0 +1,24 @@
+- Funkcija "_validate_save ( )" je dober kandidat za prenos v kontroler "Secured_area".-
+- Zbrisanje @deprecated metod.
+- Export passwords: MD5 is one-way function, how to solve this?
+- Import employees: how to explicitly define to which terminals/models the employee has access to?
+- delete_all ( ): Should not empty all tables. The behaviour should be to delete individual rows with the given IDs (parameter). The method for emptying all tables should be named purge ( ).-
+- Change the attribute Person::zip to Person::zip_code, because 'zip' does not seem to work.-
+- Pri računu:
+	- Pravilno formatiranje URE in DATUMA (s funkcijo 'strftime') glede na locale settings.
+	- Pravilno formatiranje vsot in cen glede na locale settings (s funkcijo 'money_format').
+- Pri sales:
+	- Ustvariti stolpca za subtotal in taxes, ki se shranijo sproti (tj. med ustvarjanjem računa).
+	- Ustvariti stolpec za ID terminala (tj. kje je bil račun narejen).
+	- Popraviti bug pri prikazovanju plačila odprtih računov.
+- Model Category._insert ( ): 
+	- Huge error when creating empty bucket in lang table (IDs in both tables must match!).
+	- This error is surely somewhere else: check all _insert ( ) methods and make them work like in 'sale_detail' Model.
+- Issue #15.
+- Adding a new user failed to display the login screen.
+- If the payment type is not defined, printing the PDF invoice fails.
+- Changing the data about the company, fails to refresh the drop-downs in the bussiness units form.
+- Export/import employees: data about modul and terminal access???
+- Export/import articles is not working???
+- Copy implementation on all Models like in module 'Nastavitve sistema'.
+- Add the terminal serial number to the page footer of all pages.-

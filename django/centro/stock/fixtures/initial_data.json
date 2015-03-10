@@ -1,0 +1,58 @@
+[
+{"pk": 1, "model": "stock.stock", "fields": 
+{"item": 1, "reorder_level": "3", "store": 1, "quantity": "0"}},
+ 
+{"pk": 2, "model": "stock.stock", "fields": 
+{"item": 2, "reorder_level": "3", "store": 1, "quantity": "10"}},
+ 
+{"pk": 1, "model": "stock.stockevent", "fields": 
+{"users": [1], "groups": [1]}},
+ 
+{"pk": 2, "model": "stock.stockevent", "fields": 
+{"users": [1], "groups": [1]}},
+ 
+{"pk": 3, "model": "stock.stockevent", "fields": 
+{"users": [1], "groups": [1]}},
+ 
+{"pk": 4, "model": "stock.stockevent", "fields": 
+{"users": [1], "groups": [1]}},
+ 
+{"pk": 5, "model": "stock.stockevent", "fields": 
+{"users": [1], "groups": [1]}},
+ 
+{"pk": 11, "model": "stock.stockeventtranslation", "fields": 
+{"description": "Nabava artiklov pri dobaviteljih", "name": "Nabava", "parent": 1, "language_code": "sl"}},
+ 
+{"pk": 12, "model": "stock.stockeventtranslation", "fields": 
+{"description": "Items purchased at suppliers", "name": "Purchase", "parent": 1, "language_code": "en"}},
+ 
+{"pk": 21, "model": "stock.stockeventtranslation", "fields": 
+{"description": "Artikel za lastno rabo", "name": "Lastna raba", "parent": 2, "language_code": "sl"}},
+ 
+{"pk": 22, "model": "stock.stockeventtranslation", "fields": 
+{"description": "Item for own use", "name": "Own use", "parent": 2, "language_code": "en"}},
+ 
+{"pk": 31, "model": "stock.stockeventtranslation", "fields": 
+{"description": "Prodaja artiklov strankam", "name": "Prodaja", "parent": 3, "language_code": "sl"}},
+ 
+{"pk": 32, "model": "stock.stockeventtranslation", "fields": 
+{"description": "Items sold to customers", "name": "Sale", "parent": 3, "language_code": "en"}},
+ 
+{"pk": 41, "model": "stock.stockeventtranslation", "fields": 
+{"description": "Po\u0161iljanje artiklov v drugo poslovno enoto", "name": "Po\u0161iljanje", "parent": 4, "language_code": "sl"}},
+ 
+{"pk": 42, "model": "stock.stockeventtranslation", "fields": 
+{"description": "Item shipment to another bussiness unit", "name": "Shipment", "parent": 4, "language_code": "en"}},
+ 
+{"pk": 51, "model": "stock.stockeventtranslation", "fields": 
+{"description": "Sprejem artiklov iz druge poslovne enote", "name": "Sprejem", "parent": 5, "language_code": "sl"}},
+ 
+{"pk": 52, "model": "stock.stockeventtranslation", "fields": 
+{"description": "Item admission from another bussiness unit", "name": "Admission", "parent": 5, "language_code": "en"}},
+ 
+{"pk": 1, "model": "stock.stocklog", "fields": 
+{"date_time": "2011-04-30 11:12:00", "receipt": "13", "terminal": 1, "item": 2, "user": 7, "event": 1, "quantity": "120"}},
+ 
+{"pk": 2, "model": "stock.stocklog", "fields": 
+{"date_time": "2011-04-29 10:23:00", "receipt": "12", "terminal": 1, "item": 2, "user": 7, "event": 1, "quantity": "20"}}
+]

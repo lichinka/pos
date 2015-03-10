@@ -1,0 +1,60 @@
+Client development tools
+------------------------
+1. Download Eclipse PDT from here
+	http://www.zend.com/community/pdt?ecl=EclipseZend
+
+2. Install your favourite MySQL client.
+   If you decide to use the SQL Explorer plugin for Eclipse, follow the next steps
+
+2.0. Install via update the SQL Explorer plugin from here
+	http://www.sqlexplorer.org/
+
+2.1. Download the MySQL Connector/J driver from here
+	http://www.mysql.com/downloads/connector/j/
+
+2.2. Unpack the downloaded driver in the '.metadata/drivers' directory of yout workspace. For example
+	luka@tita:~$ cd workspace/php/
+	luka@tita:~/workspace/php$ cd .metadata/
+	luka@tita:~/workspace/php/.metadata$ ll
+		total 4.5K
+		drwxr-xr-x  4 luka luka 152 2010-03-01 10:37 .
+		drwxr-xr-x  3 luka luka  80 2010-03-01 10:37 ..
+		-rw-r--r--  1 luka luka   0 2010-03-01 10:37 .lock
+		drwxr-xr-x  3 luka luka 112 2010-03-01 10:39 .mylyn
+		drwxr-xr-x 17 luka luka 712 2010-03-01 10:38 .plugins
+		-rw-r--r--  1 luka luka  26 2010-03-01 10:37 version.ini
+	luka@tita:~/workspace/php/.metadata$ mkdir drivers
+	luka@tita:~/workspace/php/.metadata$ ll
+		total 4.5K
+		drwxr-xr-x  5 luka luka 176 2010-03-01 10:48 .
+		drwxr-xr-x  3 luka luka  80 2010-03-01 10:37 ..
+		drwxr-xr-x  2 luka luka  48 2010-03-01 10:48 drivers
+		-rw-r--r--  1 luka luka   0 2010-03-01 10:37 .lock
+		drwxr-xr-x  3 luka luka 112 2010-03-01 10:39 .mylyn
+		drwxr-xr-x 17 luka luka 712 2010-03-01 10:38 .plugins
+		-rw-r--r--  1 luka luka  26 2010-03-01 10:37 version.ini
+	luka@tita:~/workspace/php/.metadata$ cd drivers
+	luka@tita:~/workspace/php/.metadatai/drivers$ unzip /tmp/down/mysql-connector-java-5.1.12.zip
+
+2.3. Go back to Eclipse and tell the SQL Explorer plugin about the new driver installed. Instructions about doing so may be found here
+	http://www.sqlexplorer.org/drivers.php
+
+
+Server
+------
+1. Download the Zend server from here
+	http://www.zend.com/community/pdt?ecl=EclipseZend
+
+2. Install a MySQL Server
+
+3. Create a database for the web application with the command
+	CREATE DATABASE IF NOT EXISTS centro CHARACTER SET = utf8 COLLATE = utf8_bin;
+
+4. Add a database user for the database just created. From the command line, run
+	luka@tita:~$ mysql_setpermission --user root --host localhost
+
+   ... and choose option 4 (four). Then enter the needed information as asked.
+
+5. As root, run the database/database.sql script file in the MySQL server.
+
+6. Configure the web application as in application/config/config.php

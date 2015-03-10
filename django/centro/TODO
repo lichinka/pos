@@ -1,0 +1,16 @@
+- A csv2json script has been written. Incorporate it into the page, so that we will 
+  start implementing the 'import' functionality.
+- Continue the touch-screen implementation at the articles list. (item.get_unique_tuple ( ))
+- In the admin, display 'size' dropdown containing only the members of the selected 'size_group'.
+- Move all JS code to /media/js and update the templates accordingly.
+- In the admin, remove the '------' option from the 'Language' field in 'Translations'.
+- Move 'Tax' model as a foreign key of the 'Category' model???
+- In the admin, the 'cost_price' and 'sale_price' should show money related to the language,
+    (i.e. English is USD, Slovenščina is EUR). Number formatting is ok.
+- In the StockLog model, the 'receipt' field should be a foreign key to the 'documents' table, when it will be implemented.
+- Add the 'Supplier' model to the stock app.
+- Implement the 'Documents' app.
+- Implement the 'Sales' app. Add the 'Customer' model to it.
+- Implement a 'StockManager' through which the stock changes are made from other apps. Check Django documentation about 'UserManager' to get an idea.
+- Connect the 'Modules' model with the 'Group' of users, to define which POS modules should be displayed per group.
+- In the admin, correct the tax widget that displays percent to use the locale settings.

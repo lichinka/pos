@@ -1,0 +1,74 @@
+{% extends "skeleton.html" %}
+
+{% load i18n %}
+
+{% block content %}
+    {% if selected_submodule %}
+        {% load submodule_tabs %}
+        {% submodule_tabs selected_submodule %}
+    {% endif %}
+
+    <div id="fields_wrapper">
+        <fieldset id="basic_info">
+            <legend>{% trans "General data" %}</legend>
+        
+            {data}
+            <div class="field_row clearfix">
+                {label}
+                <div class='form_field'>{input}</div>
+            </div>
+            {/data}
+        </fieldset>
+        
+        <!-- ARTICLE SIZE DATA -->
+        <fieldset id="basic_info">
+            <legend>{size_tab_title}</legend>
+            <div class="field_row clearfix">
+                {size_group_label}
+                <div class='form_field'>{size_group_input}</div>
+            </div>
+            <div class="field_row clearfix">
+                {size_label}
+                <div class='form_field'>{size_input}</div>
+            </div>    
+        </fieldset>
+    </div>
+
+    <!--
+
+    <div id="table_holder">
+        <table>
+            {% if column_data %}
+                <thead>
+                    <tr>
+                        {% for column in columns %}
+                            <th>{{ column|capfirst }}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    {% for row in column_data %}
+                        {% if row.detail_url %}
+                            <tr class='clickable' onclick="document.location.href='{{ row.detail_url }}';">
+                        {% else %}
+                            <tr>
+                        {% endif %}
+                            {% for column in row.fields %}
+                                <td>{{ column }}</td>
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            {% else %}
+                 <thead>
+                    <tr>
+                        <th> {% trans "No data to display." %} </th>
+                    </tr>
+                </thead>
+            {% endif %}
+        </table>
+    </div>
+    -->
+{% endblock %}
+

@@ -1,0 +1,21 @@
+Export / Import CSV
+-------------------
+- Implementacija test case za export / import na podlagi primerjave CSV datotek.
+
+- Modul 'Artikli':
+	1) tri datoteke, 1. za artikle, 2. za kategorije, 3. za sizes oz. size-groups;
+	2) vse "flatted" v eni CSV datoteki;
+	3) prva vrstica vsebuje imena stolpcev iz LANG datoteke s pripono države '_SI', '_EN', ...;
+	4) izbiro države oz. jezika za davke, opise in imena ter cene oz. valute;
+	5) možnosti izbire vseh držav.
+
+- Import mora podpirati:
+	1) Add to existing data: a) overwrite existing matches b) don't overwrite existing matches.
+	2) Overwrite existing data.
+
+- Import mora VEDNO preveriti konsistentnost podatkov, npr. z dodatnim exportom plus diff datotek.
+	* V primeru kakšrnekoli napake, rollback transaction.
+
+Računi v PDF
+------------
+- Preoblikovanje računa na 80 mm širok trak.

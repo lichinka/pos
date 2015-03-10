@@ -1,0 +1,37 @@
+Automatic logout
+----------------
+This functionality is handled via the application configuration file (application/config/config.php):
+
+//
+// The name of the cookie saved at the user end.
+//
+$config['sess_cookie_name']		= 'centro_session';
+
+//
+// Number of seconds for an inactive session to last.
+// This means that 2 minutes of inactivity close the opened session.
+//
+$config['sess_expiration']		= 120;
+
+//
+// Cookie encryption for enhanced security.
+//
+$config['sess_encrypt_cookie']	= TRUE;
+
+//
+// The session information is saved into the database, in the specified table.
+//
+$config['sess_use_database']	= TRUE;
+$config['sess_table_name']		= 'sessions';
+
+//
+// The session is not IP restricted, meaning that a user could have the same session
+// opened from different computers.
+//
+$config['sess_match_ip']		= FALSE;
+$config['sess_match_useragent']	= TRUE;
+
+//
+// The system will automatically update user's session information once every minute.
+//
+$config['sess_time_to_update'] 	= 60;

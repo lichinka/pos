@@ -1,0 +1,280 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-02-26 11:15+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: settings.py:58
+msgid "Slovenščina"
+msgstr "Slovenščina"
+
+#: settings.py:59
+msgid "English"
+msgstr "Angleščina"
+
+#: companies/models.py:9 companies/models.py:28 companies/models.py:48
+#: items/models.py:11 items/models.py:36 items/models.py:52 items/models.py:70
+#: items/models.py:89 items/views.py:37 items/views.py:58 items/views.py:78
+#: modules/models.py:11
+msgid "name"
+msgstr "ime"
+
+#: companies/models.py:11 companies/models.py:30
+msgid "address"
+msgstr "naslov"
+
+#: companies/models.py:13
+msgid "e-mail"
+msgstr "elektronski naslov"
+
+#: companies/models.py:14
+msgid "tax identification number"
+msgstr "davčna številka"
+
+#: companies/models.py:18 companies/models.py:35
+msgid "company"
+msgstr "podjetje"
+
+#: companies/models.py:19
+msgid "companies"
+msgstr "podjetja"
+
+#: companies/models.py:32
+msgid "telephone number"
+msgstr "telefonska številka"
+
+#: companies/models.py:38 companies/models.py:51
+msgid "store"
+msgstr "poslovna enota"
+
+#: companies/models.py:39
+msgid "stores"
+msgstr "poslovne enote"
+
+#: companies/models.py:54 companies/models.py:69
+msgid "terminal"
+msgstr "terminal"
+
+#: companies/models.py:55
+msgid "terminals"
+msgstr "terminali"
+
+#: companies/models.py:64
+msgid "key"
+msgstr "ključ"
+
+#: companies/models.py:66
+msgid "value"
+msgstr "vrednost"
+
+#: companies/models.py:72
+msgid "terminal configuration"
+msgstr "nastavitve terminala"
+
+#: companies/models.py:73
+msgid "terminal configuration values"
+msgstr "nastavitve terminala"
+
+#: items/models.py:13 items/models.py:91 items/views.py:58
+#: modules/models.py:13
+msgid "description"
+msgstr "opis"
+
+#: items/models.py:20 modules/models.py:23
+msgid "parent category"
+msgstr "matična kategorija"
+
+#: items/models.py:23 items/models.py:104 items/views.py:37
+msgid "category"
+msgstr "kategorija"
+
+#: items/models.py:24
+msgid "categories"
+msgstr "kategorije"
+
+#: items/models.py:40 items/models.py:56 items/models.py:106 items/views.py:38
+msgid "size group"
+msgstr "skupina velikosti"
+
+#: items/models.py:41
+msgid "size groups"
+msgstr "skupine velikosti"
+
+#: items/models.py:54
+msgid "order"
+msgstr "vrstni red"
+
+#: items/models.py:59 items/models.py:108
+msgid "size"
+msgstr "velikost"
+
+#: items/models.py:60
+msgid "sizes"
+msgstr "velikosti"
+
+#: items/models.py:72
+msgid "percent"
+msgstr "delež"
+
+#: items/models.py:76 items/models.py:110
+msgid "tax"
+msgstr "davek"
+
+#: items/models.py:77
+msgid "taxes"
+msgstr "davki"
+
+#: items/models.py:94
+msgid "cost price"
+msgstr "nabavna cena"
+
+#: items/models.py:97 items/views.py:38
+msgid "sale price"
+msgstr "prodajna cena"
+
+#: items/models.py:100
+msgid "barcode"
+msgstr "črtna koda"
+
+#: items/models.py:113
+msgid "item"
+msgstr "artikel"
+
+#: items/models.py:114
+msgid "items"
+msgstr "artikli"
+
+#: modules/models.py:16
+msgid "module relative path"
+msgstr "pot modula"
+
+#: modules/models.py:18
+msgid "module sort order"
+msgstr "vrstni red modula"
+
+#: modules/models.py:26
+msgid "module"
+msgstr "modul"
+
+#: modules/models.py:27
+msgid "modules"
+msgstr "moduli"
+
+#: templates/object_list.html:31
+msgid "No data to display."
+msgstr "Ni podatkov za prikazovanje."
+
+#: templates/skeleton.html:12
+msgid "CenTRO ::: Powered by Python"
+msgstr "CenTRO ::: by kača"
+
+#: templates/skeleton.html:57
+msgid "Anonymous"
+msgstr "Gost"
+
+#: templates/admin/base.html:28
+msgid "Welcome,"
+msgstr "Dobrodošli,"
+
+#: templates/admin/base.html:33
+msgid "Documentation"
+msgstr "Dokumentacija"
+
+#: templates/admin/base.html:41
+msgid "Change password"
+msgstr "Spremeni geslo"
+
+#: templates/admin/base.html:48
+msgid "Log out"
+msgstr "Odjava"
+
+#: templates/admin/base.html:55 templates/admin/items/app_index.html:8
+msgid "Home"
+msgstr "Domov"
+
+#: templates/admin/base_site.html:4
+msgid "Django site admin"
+msgstr "Administracija sistema CenTRO"
+
+#: templates/admin/base_site.html:7
+msgid "Django administration"
+msgstr "Administracija sistema CenTRO"
+
+#: templates/admin/index.html:18 templates/admin/index.html.py:55
+#: templates/companies/admin/index.html:18
+#, python-format
+msgid "Models available in the %(name)s application."
+msgstr ""
+
+#: templates/admin/index.html:19 templates/admin/index.html.py:56
+#: templates/admin/items/app_index.html:10
+#: templates/companies/admin/index.html:19
+#, python-format
+msgid "%(name)s"
+msgstr ""
+
+#: templates/admin/index.html:29 templates/companies/admin/index.html:29
+msgid "Add"
+msgstr "Dodaj"
+
+#: templates/admin/index.html:35 templates/companies/admin/index.html:35
+msgid "Change"
+msgstr "Spremeni"
+
+#: templates/admin/index.html:45 templates/admin/index.html.py:61
+#: templates/companies/admin/index.html:45
+msgid "You don't have permission to edit anything."
+msgstr "Nimate pravice za spremembo podatkov."
+
+#: templates/admin/index.html:65
+msgid "Recent Actions"
+msgstr "Zadnja dejanja"
+
+#: templates/admin/index.html:66 templates/companies/admin/index.html:54
+msgid "My Actions"
+msgstr "Moja dejanja"
+
+#: templates/admin/index.html:70 templates/companies/admin/index.html:58
+msgid "None available"
+msgstr "Ni na voljo"
+
+#: templates/admin/index.html:84 templates/companies/admin/index.html:72
+msgid "Unknown content"
+msgstr "Neznana vsebina"
+
+#: templates/admin/login.html:19
+msgid "Username:"
+msgstr "Uporabniško ime:"
+
+#: templates/admin/login.html:22
+msgid "Password:"
+msgstr "Geslo:"
+
+#: templates/admin/login.html:26
+msgid "Log in"
+msgstr "Prijava"
+
+#: templates/companies/admin/base_site.html:4
+msgid "CenTRO admin"
+msgstr "Administracija CenTRO"
+
+#: templates/companies/admin/base_site.html:7
+msgid "..:: CenTRO system administration ::.."
+msgstr "..:: Administracija CenTRO ::.."
+
+#: templates/companies/admin/index.html:53
+msgid "Recent actions"
+msgstr "Zadnja dejanja"

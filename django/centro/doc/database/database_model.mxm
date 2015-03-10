@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?><Model version="3.0">
+<Configuration>
+<Property name="dialect" value="MySQLDialect"/>
+<Property name="ALIAS" value="centro@localhost"/>
+<Property name="DRIVER" value="com.mysql.jdbc.Driver"/>
+<Property name="PASSWORD" value="clave"/>
+<Property name="PROMPTFORPASSWORD" value="false"/>
+<Property name="URL" value="jdbc:mysql://localhost/centro"/>
+<Property name="USER" value="garufa"/>
+</Configuration>
+<Domains/>
+<Tables>
+<Table id="79d0a776-2d44-4008-93dd-e3d64cc526a9" name="centro_terminal_configuration" schema="">
+<Property name="LOCATION" value="81:580"/>
+<Comment/>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="d213dbd0-8619-42a5-a29a-047d8d75930c" name="terminal_configuration_id" nullable="false" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="233edfc8-8358-4a63-b4bb-278820030f52" name="name" nullable="false" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="37b32cfd-6da8-4707-9044-4ce029e950a2" name="value" nullable="true" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="b252b28e-102d-4d01-bfe5-b0254f8e454e" name="terminal_id" nullable="false" scale="10" size="">
+<Comment/>
+</Attribute>
+<Index id="5e72c6a9-9d4d-4b5f-9cd6-5dee2c2fb494" indextype="PRIMARYKEY" name="PK_centro_terminal_configuration">
+<Indexattribute attributerefid="d213dbd0-8619-42a5-a29a-047d8d75930c" id="1477502f-1e03-48a0-acff-c2543250f2eb"/>
+</Index>
+</Table>
+<Table id="06aa2611-85d4-4cc1-9241-095172eeb7ff" name="centro_categories" schema="">
+<Property name="LOCATION" value="1072:306"/>
+<Comment/>
+<Attribute datatype="INT" defaultvalue="" extra="AUTO_INCREMENT PRIMARY KEY" fraction="0" id="01e80f9f-1f22-4c98-8bc0-51110755eb84" name="category_id" nullable="false" scale="10" size="10">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="f3c874ae-447f-4a5b-9bb8-83efe005fca8" name="parent_category_id" nullable="true" scale="10" size="10">
+<Comment/>
+</Attribute>
+<Index id="4e54d881-2e4d-401e-9847-0b1c12916b89" indextype="PRIMARYKEY" name="PK_centro_categories">
+<Indexattribute attributerefid="01e80f9f-1f22-4c98-8bc0-51110755eb84" id="bc60c21a-8c0d-4506-8e96-122520fc2ff2"/>
+</Index>
+<Index id="ac4a1470-ead2-465d-9271-5e7aad0e5655" indextype="NONUNIQUE" name="parent_category_id">
+<Indexattribute attributerefid="f3c874ae-447f-4a5b-9bb8-83efe005fca8" id="fcf76af9-f022-4903-9cbe-2f6c01faf3be"/>
+</Index>
+</Table>
+<Table id="493c6ca9-1a74-49d3-a3ec-52d27c02e53d" name="centro_categories_lang" schema="">
+<Property name="LOCATION" value="1076:108"/>
+<Comment/>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="f1288095-17d8-4c7b-804d-237489fe0c01" name="category_id" nullable="false" scale="10" size="10">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="7e8061d5-5782-452c-b0ce-b00eb3014469" name="language_id" nullable="false" scale="10" size="10">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="dbb354b0-9887-4284-a77e-3e8b9f34dcb7" name="name" nullable="false" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="f9c64443-0875-4c50-90ca-95a1d91f6b6b" name="description" nullable="true" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="81d9cec7-0055-40b7-992c-9c4ee260bbc3" name="category_lang_id" nullable="false" scale="10" size="">
+<Comment/>
+</Attribute>
+<Index id="0c99f394-fa21-43f5-a175-fa93843f0405" indextype="PRIMARYKEY" name="PK_centro_categories_lang">
+<Indexattribute attributerefid="81d9cec7-0055-40b7-992c-9c4ee260bbc3" id="b982bd77-8410-451a-ad5e-64e4dafd8140"/>
+</Index>
+<Index id="ceb8af09-dda4-431b-8cb1-4fa347c8e632" indextype="NONUNIQUE" name="name">
+<Indexattribute attributerefid="dbb354b0-9887-4284-a77e-3e8b9f34dcb7" id="518e28da-f081-49b7-adc3-96948ff963cf"/>
+</Index>
+<Index id="48f7e265-7604-4da0-ac07-b28ff94cfebb" indextype="UNIQUE" name="UNQ_category_language">
+<Indexattribute attributerefid="f1288095-17d8-4c7b-804d-237489fe0c01" id="e06d0db2-3bf9-4356-8556-af542a85063e"/>
+<Indexattribute attributerefid="7e8061d5-5782-452c-b0ce-b00eb3014469" id="91d0834c-5165-476e-8290-ecf9c0628dac"/>
+</Index>
+</Table>
+<Table id="ac7fd7d1-4788-441e-821c-76360bde5dd7" name="centro_employees" schema="">
+<Property name="LOCATION" value="645:808"/>
+<Comment/>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="be9a13e6-ba64-40c6-9d41-9edf1f59385b" name="username" nullable="false" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="caf05ef4-f8ea-4923-9c56-58725da2efaa" name="password" nullable="false" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="b17558f8-9c86-47f0-bb23-21ee53c200fe" name="employee_id" nullable="false" scale="10" size="10">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="82b6e210-3366-4c88-8847-ed9b5844bf40" name="zip" nullable="true" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="4574a1d2-8ab4-46e0-b86f-3595846ed679" name="country" nullable="true" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="fd74b7ae-bee1-4ab1-94f4-a5c8f2286d58" name="state" nullable="true" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="546d9aa4-de8c-4e15-b39e-601ac3703868" name="last_name" nullable="false" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="562dc1c0-0d0f-472f-9f77-ebdc1a98d82f" name="address" nullable="true" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="e7b67bb4-1d8a-4548-933c-c38f959effdd" name="phone_number" nullable="true" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="a96c7972-8d3f-49ea-a7dd-fb7da03ca54a" name="email" nullable="true" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="035f032d-ab7c-4cf0-a306-977cf26dad8b" name="first_name" nullable="false" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="b9b7c990-5e3f-4f0d-b4de-d20cab84983e" name="city" nullable="true" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="TEXT" defaultvalue="" extra="" fraction="0" id="06ef2873-1d9f-40a0-ab11-11abdccc6ba8" name="comments" nullable="true" scale="10" size="">
+<Comment/>
+</Attribute>
+<Index id="e4a246cb-e2e8-44c3-8417-10e960e98aa9" indextype="PRIMARYKEY" name="PK_centro_employees">
+<Indexattribute attributerefid="b17558f8-9c86-47f0-bb23-21ee53c200fe" id="70266fe8-b1e2-42a7-8a45-a64d3a4152e4"/>
+</Index>
+<Index id="a3efa55a-4dbc-4a10-b2d1-25ab14d24ed1" indextype="UNIQUE" name="username">
+<Indexattribute attributerefid="be9a13e6-ba64-40c6-9d41-9edf1f59385b" id="b973e58d-3ad4-4d53-aeda-96232c0d9b9d"/>
+</Index>
+<Index id="3cb97419-f0dc-4139-b706-cae56dafd12e" indextype="NONUNIQUE" name="name">
+<Indexattribute attributerefid="035f032d-ab7c-4cf0-a306-977cf26dad8b" id="d1abf5dc-ea1c-4c99-b2b3-422ef649ec43"/>
+<Indexattribute attributerefid="546d9aa4-de8c-4e15-b39e-601ac3703868" id="bfb0e221-1d28-4554-aa2c-4db62b808fd6"/>
+</Index>
+</Table>
+<Table id="fe42aa71-75d9-4ef2-bced-5bcd1ada7bd3" name="centro_items" schema="">
+<Property name="LOCATION" value="1508:628"/>
+<Comment/>
+<Attribute datatype="INT" defaultvalue="" extra="AUTO_INCREMENT PRIMARY KEY" fraction="0" id="975ebebc-016e-4c60-bd6f-8e50de8fa7ea" name="item_id" nullable="false" scale="10" size="10">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="caefd2c3-c580-42ba-971f-08795c6700c5" name="category_id" nullable="false" scale="10" size="10">
+<Comment/>
+</Attribute>
+<Index id="4787737b-5839-49b5-85ae-4d741585002f" indextype="PRIMARYKEY" name="PK_centro_items">
+<Indexattribute attributerefid="975ebebc-016e-4c60-bd6f-8e50de8fa7ea" id="eec2242e-dcbf-40e7-9cbf-c60ba342307f"/>
+</Index>
+<Index id="4b187bca-7f46-4a7f-b6bd-677dad345186" indextype="NONUNIQUE" name="category_id">
+<Indexattribute attributerefid="caefd2c3-c580-42ba-971f-08795c6700c5" id="1ee731af-fc35-41eb-b1c7-269c11e80f8c"/>
+</Index>
+</Table>
+<Table id="24f95a00-cc91-47a8-a4b7-9a33639a654a" name="centro_languages" schema="">
+<Property name="LOCATION" value="2114:32"/>
+<Comment/>
+<Attribute datatype="INT" defaultvalue="" extra="AUTO_INCREMENT PRIMARY KEY" fraction="0" id="b885ca45-1b25-4221-b187-9e041727903c" name="language_id" nullable="false" scale="10" size="10">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="eb21d2df-efa0-41b1-b219-90f6c3d6d44c" name="name" nullable="false" scale="10" size="20">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="a406e444-d3b9-45a3-a22f-d29e25b1e3a7" name="short_name" nullable="false" scale="10" size="10">
+<Comment/>
+</Attribute>
+<Index id="66a360ce-4f85-497e-a060-d7a5c033f244" indextype="PRIMARYKEY" name="PK_centro_languages">
+<Indexattribute attributerefid="b885ca45-1b25-4221-b187-9e041727903c" id="433de372-76b5-4049-8095-a95555a7ca9c"/>
+</Index>
+<Index id="9fac7a8c-5f68-42c6-998a-2bb5f92a1be8" indextype="NONUNIQUE" name="name">
+<Indexattribute attributerefid="eb21d2df-efa0-41b1-b219-90f6c3d6d44c" id="ef766253-9ac5-4add-b255-ea39fae07a3c"/>
+</Index>
+<Index id="9ce2e492-6763-42e5-a92e-3f8bffcbbb69" indextype="UNIQUE" name="short_name">
+<Indexattribute attributerefid="a406e444-d3b9-45a3-a22f-d29e25b1e3a7" id="b48dbb28-a659-4508-ad6d-457bcdbb89a2"/>
+</Index>
+</Table>
+<Table id="b1ceaaab-811c-4db2-9df1-8bc94c89d327" name="centro_modules" schema="">
+<Property name="LOCATION" value="685:220"/>
+<Comment/>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="e811430f-1375-462e-9a1d-87c046e16ed4" name="sort" nullable="false" scale="10" size="10">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="AUTO_INCREMENT PRIMARY KEY" fraction="0" id="7024c690-6e0a-4736-bccd-b322f505e30e" name="module_id" nullable="false" scale="10" size="10">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="c6ecc237-a713-484b-b94f-bffe7ec1c03c" name="path" nullable="false" scale="10" size="50">
+<Comment/>
+</Attribute>
+<Index id="8bbf3d31-8bc2-4e6c-a9aa-cb1796424713" indextype="PRIMARYKEY" name="PK_centro_modules">
+<Indexattribute attributerefid="7024c690-6e0a-4736-bccd-b322f505e30e" id="2ff8a9e7-6e81-4e68-a48e-ddbbb50adf1b"/>
+</Index>
+</Table>
+<Table id="f1099e74-d04d-4314-833e-3d630a990cb7" name="centro_sales" schema="">
+<Property name="LOCATION" value="1049:1136"/>
+<Comment/>
+<Attribute datatype="TIMESTAMP" defaultvalue="CURRENT_TIMESTAMP" extra="" fraction="0" id="9adb4750-6872-47bf-b5ee-7c06a18cbc8d" name="sale_time" nullable="false" scale="10" size="19">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="3244ce04-f91b-48ec-8eca-df4d6349224d" name="customer_id" nullable="true" scale="10" size="10">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="41846129-f2df-4dad-90d3-db5a9429aad3" name="employee_id" nullable="false" scale="10" size="10">
+<Comment/>
+</Attribute>
+<Attribute datatype="TEXT" defaultvalue="" extra="" fraction="0" id="756d4489-7816-4e03-996e-418f3b006103" name="comment" nullable="false" scale="10" size="65535">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="AUTO_INCREMENT PRIMARY KEY" fraction="0" id="914b887f-e1d5-4f77-bbea-28152bf5c066" name="sale_id" nullable="false" scale="10" size="10">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="NULL" extra="" fraction="0" id="6db390eb-d7fc-4c6e-9f3f-61bc62a613a8" name="invoice_number" nullable="true" scale="10" size="">
+<Comment>The invoice number also indicates whether this 
+sale is currently open.-
+</Comment>
+</Attribute>
+<Index id="a05aa4cb-6d74-4d7f-8edc-beff3f249d89" indextype="PRIMARYKEY" name="PK_centro_sales">
+<Indexattribute attributerefid="914b887f-e1d5-4f77-bbea-28152bf5c066" id="6d4a8cf8-fff4-48ba-aded-3e205027fa20"/>
+</Index>
+<Index id="27e87a3a-8856-4e59-b91b-cc860dcf2b3f" indextype="NONUNIQUE" name="customer_id">
+<Indexattribute attributerefid="3244ce04-f91b-48ec-8eca-df4d6349224d" id="084b8de1-127e-4fd3-b5b9-f0912bbf4a6f"/>
+</Index>
+<Index id="832f3d4f-8665-4dd2-a4c5-b017e3217a3e" indextype="NONUNIQUE" name="employee_id">
+<Indexattribute attributerefid="41846129-f2df-4dad-90d3-db5a9429aad3" id="121e51fe-5d78-4072-9c8b-820eac029f9d"/>
+</Index>
+<Index id="d658c6cc-af86-4d9a-8c19-be7abd67c8c9" indextype="NONUNIQUE" name="invoice_number">
+<Indexattribute attributerefid="6db390eb-d7fc-4c6e-9f3f-61bc62a613a8" id="3e49f7ff-16fb-4ff9-9e2c-96967d4f2797"/>
+</Index>
+</Table>
+<Table id="1eaaebc6-6500-40b7-82fc-e852e0d1e597" name="centro_sales_details" schema="">
+<Property name="LOCATION" value="1153:845"/>
+<Comment/>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="ba2758fc-4982-4d2e-96df-30ba3a95d5ee" name="sale_id" nullable="false" scale="10" size="10">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="0148e835-5a1a-4fc5-a262-401e3dcd347f" name="item_id" nullable="false" scale="10" size="10">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="7032504f-f10d-4210-8a04-204add39b5d5" name="quantity_purchased" nullable="false" scale="10" size="12">
+<Comment>The value is expressed in 1/100 units.</Comment>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="7aed5038-fdfb-4d8a-a5d8-2cbfe78c63b8" name="item_cost_price" nullable="false" scale="10" size="12">
+<Comment>The value is expressed in 1/100 units.</Comment>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="95f9a9a0-8e3c-411c-83bc-65f2594a27b4" name="item_unit_price" nullable="false" scale="10" size="12">
+<Comment>The value is expressed in 1/100 units.</Comment>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="7e800ab4-dd16-4b9c-bcc5-94986e2d3f4d" name="sale_detail_id" nullable="false" scale="10" size="">
+<Comment/>
+</Attribute>
+<Index id="8d85821f-c880-42b3-9677-9a0f2f1c0931" indextype="PRIMARYKEY" name="PK_centro_sales_details">
+<Indexattribute attributerefid="7e800ab4-dd16-4b9c-bcc5-94986e2d3f4d" id="b5ad0d98-9dff-4e82-b645-6f6cafe7c698"/>
+</Index>
+<Index id="4921757f-719d-4dba-85b1-91e8e017aa97" indextype="NONUNIQUE" name="item_id">
+<Indexattribute attributerefid="0148e835-5a1a-4fc5-a262-401e3dcd347f" id="43049448-1d7d-472f-a714-845eb015e869"/>
+</Index>
+<Index id="eb387300-8dea-404a-831a-cdf79997970a" indextype="NONUNIQUE" name="sale_id_item_id">
+<Indexattribute attributerefid="ba2758fc-4982-4d2e-96df-30ba3a95d5ee" id="7ff2d3cd-df3c-450a-8ce7-9e958c0a002f"/>
+<Indexattribute attributerefid="0148e835-5a1a-4fc5-a262-401e3dcd347f" id="b9916dca-fa18-4254-894d-b762549eecac"/>
+</Index>
+<Index id="def41958-a2f5-431c-998e-820ac64fcbdc" indextype="NONUNIQUE" name="sale_id">
+<Indexattribute attributerefid="ba2758fc-4982-4d2e-96df-30ba3a95d5ee" id="b096b4d7-2eac-43b4-97f1-7daf0f686801"/>
+</Index>
+</Table>
+<Table id="894522c5-397f-4aef-ba9a-3027b5822795" name="centro_sales_details_taxes" schema="">
+<Property name="LOCATION" value="1652:1010"/>
+<Comment/>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="67b7811c-c2cd-4b6e-a5df-00ae4c9db721" name="sale_detail_id" nullable="false" scale="10" size="10">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="e15cf4a1-e31f-4ac9-8802-ac9c916406ae" name="name" nullable="false" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="8ac626ef-baae-4fdc-b87e-feeac56661fb" name="percent" nullable="false" scale="10" size="12">
+<Comment>The value is expressed in 1/100 units.</Comment>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="6d6109e0-ccec-40f8-8605-0c7394b9e0b0" name="sale_detail_tax_id" nullable="false" scale="10" size="">
+<Comment/>
+</Attribute>
+<Index id="e5706831-4e58-4873-b37d-5ec78ea2fd21" indextype="PRIMARYKEY" name="PK_centro_sales_details_taxes">
+<Indexattribute attributerefid="6d6109e0-ccec-40f8-8605-0c7394b9e0b0" id="63e6581e-8b7f-4d3e-b8a0-5529780c9ee6"/>
+</Index>
+<Index id="cf2af553-244b-4f74-9ca8-4d3acddd6a1e" indextype="NONUNIQUE" name="name">
+<Indexattribute attributerefid="e15cf4a1-e31f-4ac9-8802-ac9c916406ae" id="b594ae68-d1d1-4330-b08d-59fb62f7b3ca"/>
+</Index>
+<Index id="ae60b0ce-0b01-44cf-8551-93c00b89115f" indextype="NONUNIQUE" name="sale_detail_id">
+<Indexattribute attributerefid="67b7811c-c2cd-4b6e-a5df-00ae4c9db721" id="16ed0d46-dae6-4b4f-ac37-75ca5b1991f1"/>
+</Index>
+</Table>
+<Table id="0fc0417c-f950-4925-9606-3e9e8eda082e" name="centro_sessions" schema="">
+<Property name="LOCATION" value="86:692"/>
+<Comment/>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="94bfa5d3-acce-4042-83f8-caa5aec19f7a" name="session_id" nullable="false" scale="10" size="40">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="d734e32d-c7d6-460c-a3d1-0b23f2eaf3f0" name="ip_address" nullable="false" scale="10" size="16">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="3adb41e0-14d0-427f-9f53-0e2648ea9d73" name="user_agent" nullable="false" scale="10" size="50">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT UNSIGNED" defaultvalue="" extra="" fraction="0" id="e755256b-ba33-484a-8e38-55b09bf2b2e5" name="last_activity" nullable="false" scale="10" size="10">
+<Comment/>
+</Attribute>
+<Attribute datatype="TEXT" defaultvalue="" extra="" fraction="0" id="178b2512-2f33-4146-8e0c-ab166942a88b" name="user_data" nullable="false" scale="10" size="65535">
+<Comment/>
+</Attribute>
+<Index id="40d05ca2-034c-49e1-a459-5ff3cb89b680" indextype="PRIMARYKEY" name="PK_centro_sessions">
+<Indexattribute attributerefid="94bfa5d3-acce-4042-83f8-caa5aec19f7a" id="20eb2390-82c5-4eee-a03a-ae8b34fe5aaa"/>
+</Index>
+</Table>
+<Table id="2c379d52-fb61-4107-9084-97008ce68991" name="centro_item_fields" schema="">
+<Property name="LOCATION" value="1940:242"/>
+<Comment/>
+<Attribute datatype="INT" defaultvalue="" extra="AUTO_INCREMENT PRIMARY KEY" fraction="0" id="2be2a911-3c10-4311-807b-4a64710bab2d" name="item_field_id" nullable="false" scale="10" size="10">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="a1e354cb-9ae6-496f-8e8d-3cc8c381be95" name="name" nullable="false" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="4e57ef16-9d1c-4735-83f9-a97fbe5c5069" name="parent_item_field_id" nullable="true" scale="10" size="">
+<Comment/>
+</Attribute>
+<Index id="1873341a-8b2f-4b1c-ab19-6a2308598905" indextype="PRIMARYKEY" name="PK_centro_item_fields">
+<Indexattribute attributerefid="2be2a911-3c10-4311-807b-4a64710bab2d" id="ad21642b-20a4-49fc-881c-f7dd48de8336"/>
+</Index>
+<Index id="62da5f88-6e7b-4d6e-9f99-bdc0d207b1f3" indextype="UNIQUE" name="UNQ_name">
+<Indexattribute attributerefid="a1e354cb-9ae6-496f-8e8d-3cc8c381be95" id="36dfca9a-2d37-44cb-8cca-0451b334bca9"/>
+</Index>
+<Index id="b02dc23e-f681-48ba-a3d8-cd0b390e8961" indextype="NONUNIQUE" name="parent_item_field_id">
+<Indexattribute attributerefid="4e57ef16-9d1c-4735-83f9-a97fbe5c5069" id="e51c6b6f-3e6a-4f0d-980a-1a6aa2ebd1dc"/>
+</Index>
+</Table>
+<Table id="df703dc2-bdbf-40f1-a49c-b4b9e08c9d69" name="centro_item_values" schema="">
+<Property name="LOCATION" value="1484:224"/>
+<Comment/>
+<Attribute datatype="INT" defaultvalue="" extra="AUTO_INCREMENT PRIMARY KEY" fraction="0" id="ad23d9e1-c45a-4360-9326-2db1360a1811" name="item_value_id" nullable="false" scale="10" size="10">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="1d8c5a56-565a-4def-af2d-04411cefb4b5" name="item_field_id" nullable="false" scale="10" size="10">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="0dd6df53-09ee-4774-8c64-6952ae5465b3" name="value" nullable="true" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="0b19e8bd-5daf-43fa-a8a8-b955d107c81f" name="item_id" nullable="false" scale="10" size="">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="3a387dec-4265-4f3b-898a-5764f28ddb41" name="item_field_value_id" nullable="true" scale="10" size="">
+<Comment/>
+</Attribute>
+<Index id="e578cf8c-6f84-466f-8d50-13ab06c45bd2" indextype="PRIMARYKEY" name="PK_item_values">
+<Indexattribute attributerefid="ad23d9e1-c45a-4360-9326-2db1360a1811" id="4ea7ff80-1ff6-4f17-885c-05c21f9037a4"/>
+</Index>
+<Index id="64f7dae4-32d6-4308-a2c3-5f4318b58ac4" indextype="NONUNIQUE" name="item_field_id">
+<Indexattribute attributerefid="1d8c5a56-565a-4def-af2d-04411cefb4b5" id="d07bb87a-6b61-48eb-a1c7-da7ce60a517a"/>
+</Index>
+<Index id="816de68c-defb-482e-b45f-2f24182b5d1d" indextype="NONUNIQUE" name="value">
+<Indexattribute attributerefid="0dd6df53-09ee-4774-8c64-6952ae5465b3" id="3d6bc1b6-6386-42e1-a833-22564392d55d"/>
+</Index>
+<Index id="b1c9eaf1-81ad-4e4a-a857-0e2fd98c61a7" indextype="NONUNIQUE" name="item_id">
+<Indexattribute attributerefid="0b19e8bd-5daf-43fa-a8a8-b955d107c81f" id="3c268e25-0565-4a25-8ce6-e3c452c2de0b"/>
+</Index>
+<Index id="1986f7ee-8bc4-40c1-853b-f3d075ee5e9e" indextype="NONUNIQUE" name="item_field_value_id">
+<Indexattribute attributerefid="3a387dec-4265-4f3b-898a-5764f28ddb41" id="e32cd7ad-da55-4097-a56c-ed6fe36998ec"/>
+</Index>
+</Table>
+<Table id="2368f383-d799-4d0a-bbb1-7e47469be2b5" name="centro_company" schema="">
+<Property name="LOCATION" value="66:6"/>
+<Comment/>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="c02819d7-ea9d-408f-93c6-d711042f6812" name="company_id" nullable="false" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="a506c903-5a63-4da8-92b8-d3d15065f7ea" name="name" nullable="false" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="4512d471-af99-4644-8cde-cfb3770aa147" name="address" nullable="true" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="6179c642-15b0-4688-a7ff-5123eacc2a24" name="identification" nullable="true" scale="10" size="255">
+<Comment>In Slovenia, this would be ID for DDV.</Comment>
+</Attribute>
+<Index id="38f18221-2e41-4500-80cf-4354d8a3bcc2" indextype="PRIMARYKEY" name="PK_centro_company">
+<Indexattribute attributerefid="c02819d7-ea9d-408f-93c6-d711042f6812" id="42afa05c-a067-496b-884f-2411be3039ae"/>
+</Index>
+<Index id="89f7c51b-1e8a-4d90-b625-838cab627f4e" indextype="NONUNIQUE" name="IDX_centro_company_names">
+<Indexattribute attributerefid="a506c903-5a63-4da8-92b8-d3d15065f7ea" id="9f850f87-1eec-4dce-ba4d-143e2b59b97c"/>
+</Index>
+</Table>
+<Table id="85239f57-1b6c-4e57-b0f9-291ced625a3f" name="centro_stores" schema="">
+<Property name="LOCATION" value="216:159"/>
+<Comment/>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="5ee6c9d2-18ad-450e-a3ad-d0097100c8d2" name="store_id" nullable="false" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="461d3db4-a59b-45d2-9add-a9b054887518" name="name" nullable="true" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="c6206a61-17d9-44f6-8ba5-796654682b62" name="address" nullable="true" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="96de4be0-7b83-4dbe-8dd3-db1e44e52bcb" name="telephone" nullable="true" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="4689ee65-6c9f-4b4a-a2a2-4fef9d23f677" name="company_id" nullable="false" scale="10" size="">
+<Comment/>
+</Attribute>
+<Index id="6ebed278-3023-4488-b9d9-8facd2c9ef87" indextype="PRIMARYKEY" name="PK_centro_stores">
+<Indexattribute attributerefid="5ee6c9d2-18ad-450e-a3ad-d0097100c8d2" id="1adbd616-243d-47ce-b993-9dc37ed1a2f5"/>
+</Index>
+<Index id="4b94f044-b844-47cb-8da6-7670e42ffbcf" indextype="NONUNIQUE" name="IDX_centro_stores_name">
+<Indexattribute attributerefid="461d3db4-a59b-45d2-9add-a9b054887518" id="f5a4b72b-8375-4620-8920-b0d3c85c1afb"/>
+</Index>
+</Table>
+<Table id="12514b77-8b83-4eb5-9e41-4ec71cb0bda1" name="centro_terminals" schema="">
+<Property name="LOCATION" value="238:394"/>
+<Comment/>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="70a785ff-b875-4e2c-95db-81eeeaaffd6e" name="terminal_id" nullable="false" scale="10" size="">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="9dc00077-1415-4aa5-91a3-d7f653ab47fc" name="store_id" nullable="false" scale="10" size="">
+<Comment/>
+</Attribute>
+<Index id="2d73c3d7-9f86-4341-b9bf-f3a3044ca487" indextype="PRIMARYKEY" name="PK_centro_terminals">
+<Indexattribute attributerefid="70a785ff-b875-4e2c-95db-81eeeaaffd6e" id="0826f436-9fbb-4c82-8aed-104980d330e6"/>
+</Index>
+</Table>
+<Table id="3f7adbe1-07c6-4a30-ba33-fafcffc67884" name="centro_customers" schema="">
+<Property name="LOCATION" value="362:1055"/>
+<Comment/>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="f96097dd-ea0d-4084-85f9-7fc0de0ed8df" name="customer_id" nullable="false" scale="10" size="">
+<Comment/>
+</Attribute>
+<Attribute datatype="TEXT" defaultvalue="" extra="" fraction="0" id="068b1f4b-cf26-4107-9476-e867a3d28584" name="comments" nullable="true" scale="10" size="">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="9a6477c2-4f21-432d-a84c-1cfae22fd5fd" name="country" nullable="true" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="3bf21def-4396-4fe9-aba8-842a482c34fd" name="city" nullable="true" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="21e8ff56-2a58-4844-9517-614f261bc537" name="phone_number" nullable="true" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="f3a1a2ed-903f-425b-a8ef-2267571463d1" name="address" nullable="true" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="558ff5ca-55e5-4d97-ad01-582ead134ce1" name="state" nullable="true" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="e8eb8512-4c2c-4c88-9246-b8a6e766d4c3" name="name" nullable="false" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="36f38021-224b-4725-8825-489fedbbf521" name="zip" nullable="true" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="d9db0193-c106-4532-9f53-ca310dd8e981" name="email" nullable="true" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="BOOL" defaultvalue="" extra="" fraction="0" id="65f6797d-12f4-442b-8c40-148a41ecab5e" name="tax_payback" nullable="false" scale="10" size="">
+<Comment/>
+</Attribute>
+<Index id="53b5bef5-2bcc-48f5-ab1b-dda89a6f7d59" indextype="PRIMARYKEY" name="PK_centro_customers">
+<Indexattribute attributerefid="f96097dd-ea0d-4084-85f9-7fc0de0ed8df" id="6c187c76-538b-4a78-9e4b-a0fadc76c37d"/>
+</Index>
+<Index id="1d7c3db3-3c89-449d-9705-b63ca249e8f0" indextype="NONUNIQUE" name="name">
+<Indexattribute attributerefid="e8eb8512-4c2c-4c88-9246-b8a6e766d4c3" id="b26bbab7-fe56-4abc-88be-822a3cf26fcc"/>
+</Index>
+</Table>
+<Table id="a5a1ff57-4391-4027-ae3b-14370141b068" name="centro_terminals_modules_employees" schema="">
+<Property name="LOCATION" value="505:610"/>
+<Comment>Many-to-many relationship table.-</Comment>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="c62ec7a6-772b-4c16-95a0-104b37f590ae" name="terminal_id" nullable="false" scale="10" size="">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="3393177d-2b5e-4852-b72b-b8f80de629d0" name="module_id" nullable="false" scale="10" size="">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="b6164e85-978b-4d86-80e8-7bf748fabdaf" name="employee_id" nullable="false" scale="10" size="">
+<Comment/>
+</Attribute>
+<Index id="308d9e3d-f2f1-4fab-af13-0e6187c3056f" indextype="PRIMARYKEY" name="centro_terminals_modules_PK">
+<Indexattribute attributerefid="c62ec7a6-772b-4c16-95a0-104b37f590ae" id="e7f9d353-3c3e-4b1a-8841-d21ac09b3c50"/>
+<Indexattribute attributerefid="3393177d-2b5e-4852-b72b-b8f80de629d0" id="b698ee3e-06ed-414f-ae84-a3fdb8c9e8d7"/>
+<Indexattribute attributerefid="b6164e85-978b-4d86-80e8-7bf748fabdaf" id="1ab35497-d7f3-4558-972e-70c58c4390c8"/>
+</Index>
+</Table>
+<Table id="a40b1939-a2a1-4a5e-a134-4308501df8cc" name="centro_payments" schema="">
+<Property name="LOCATION" value="2132:1015"/>
+<Comment/>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="649b435f-4e90-45ee-a2b1-fac265ed142c" name="payment_id" nullable="false" scale="10" size="">
+<Comment/>
+</Attribute>
+<Index id="37536c0c-cbcd-4eea-a0c7-1eeebbf13b53" indextype="PRIMARYKEY" name="PK_centro_payments">
+<Indexattribute attributerefid="649b435f-4e90-45ee-a2b1-fac265ed142c" id="21766bc6-281f-40fc-b959-0516c1c6c9b0"/>
+</Index>
+</Table>
+<Table id="c89ea30f-313f-41d4-918d-f7bcd1bbda58" name="centro_payments_lang" schema="">
+<Property name="LOCATION" value="2129:866"/>
+<Comment/>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="d8dc3c77-d1e1-4b7c-b7f9-ca45f7c60b3d" name="payment_id" nullable="false" scale="10" size="">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="ebc70454-c5aa-48df-acfc-e578eb705ec0" name="language_id" nullable="false" scale="10" size="">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="96ce3a92-65a9-4c98-a8ef-2822b15292fb" name="name" nullable="false" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Index id="758fc596-3052-4b4e-8e8e-86e03313edb8" indextype="PRIMARYKEY" name="PK_centro_payments_languages">
+<Indexattribute attributerefid="d8dc3c77-d1e1-4b7c-b7f9-ca45f7c60b3d" id="2ac3aa81-aec5-4dac-96ed-67cdf717679c"/>
+<Indexattribute attributerefid="ebc70454-c5aa-48df-acfc-e578eb705ec0" id="8aaca4fd-d969-43d3-bdd9-19bc02b89fc2"/>
+</Index>
+<Index id="13e03286-4655-43b0-83ab-670d7e4b8d0b" indextype="NONUNIQUE" name="name">
+<Indexattribute attributerefid="96ce3a92-65a9-4c98-a8ef-2822b15292fb" id="7d6c3783-859e-42ba-831f-3bbd6fc01e04"/>
+</Index>
+</Table>
+<Table id="c9c09d35-b853-460d-8dfd-54fcf8d2ae95" name="centro_sale_payments" schema="">
+<Property name="LOCATION" value="2007:1153"/>
+<Comment/>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="0f70ba55-e965-46f6-926a-6b9f30a02a5f" name="sale_payment_id" nullable="false" scale="10" size="">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="f40f1c05-21df-4f6f-ba53-f4d823242df3" name="sale_id" nullable="false" scale="10" size="">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="0604a8be-c45a-4168-9b11-122f87b1ee6b" name="amount" nullable="false" scale="10" size="12">
+<Comment>The value is expressed in 1/100 units.</Comment>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="8b444cb8-3f99-43fb-b4b5-561060a5f067" name="payment_id" nullable="false" scale="10" size="">
+<Comment/>
+</Attribute>
+<Index id="8feb7ae7-2171-485e-8cae-b5bfc20fb182" indextype="PRIMARYKEY" name="PK_centro_sales_payments">
+<Indexattribute attributerefid="0f70ba55-e965-46f6-926a-6b9f30a02a5f" id="c0992881-7e9d-41ba-be57-bbeeb8a4f357"/>
+</Index>
+<Index id="5e7144d0-5d4f-4319-85b6-f0412a05852a" indextype="NONUNIQUE" name="sale_id">
+<Indexattribute attributerefid="f40f1c05-21df-4f6f-ba53-f4d823242df3" id="e004da54-a91d-4703-998a-aef27bb55581"/>
+</Index>
+<Index id="e6aa8b68-65a9-48d4-8f3b-e6699538d1f5" indextype="NONUNIQUE" name="payment_id">
+<Indexattribute attributerefid="8b444cb8-3f99-43fb-b4b5-561060a5f067" id="38b433a6-fe5d-4f76-95da-f8301ac68b7e"/>
+</Index>
+</Table>
+<Table id="32809d9a-4d04-465e-9c3e-9a345162acf4" name="centro_stocks" schema="">
+<Property name="LOCATION" value="928:453"/>
+<Comment/>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="94411ea8-16ff-4226-bd1a-eb6bfd507d8f" name="stock_id" nullable="false" scale="10" size="">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="2859e4f8-15e1-4733-aa34-19a612e17325" name="store_id" nullable="false" scale="10" size="">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="300bab3d-9f73-426e-9f0e-a0e3d325f5b0" name="item_id" nullable="false" scale="10" size="">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="0" extra="" fraction="0" id="fcab0fdd-585e-47af-b91f-33399961cc86" name="reorder_level" nullable="false" scale="10" size="">
+<Comment>Expressed in 1/100 units.</Comment>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="0" extra="" fraction="0" id="32c7fab0-6e67-4260-87f8-feb34013b48c" name="quantity" nullable="false" scale="10" size="">
+<Comment>Expressed in 1/100 units.</Comment>
+</Attribute>
+<Index id="5a0b1cb3-cd1c-433c-9318-f301463b05fb" indextype="PRIMARYKEY" name="PK_centro_stocks">
+<Indexattribute attributerefid="94411ea8-16ff-4226-bd1a-eb6bfd507d8f" id="739eb8ba-f196-4761-acb5-249ce119fd72"/>
+</Index>
+<Index id="7734d881-10a4-4db2-a2e8-ec1395ba0d5a" indextype="NONUNIQUE" name="reorder_level">
+<Indexattribute attributerefid="fcab0fdd-585e-47af-b91f-33399961cc86" id="a3b37211-75fa-4ba8-a180-0feb39c35c96"/>
+</Index>
+<Index id="4f84708a-1975-401a-8093-1489329b64c2" indextype="NONUNIQUE" name="item_id">
+<Indexattribute attributerefid="300bab3d-9f73-426e-9f0e-a0e3d325f5b0" id="724d3d40-ea28-4ee7-a553-8d19ebe1a952"/>
+</Index>
+<Index id="a3d59fc2-225f-4918-a4ea-9cdf48566efe" indextype="NONUNIQUE" name="store_id">
+<Indexattribute attributerefid="2859e4f8-15e1-4733-aa34-19a612e17325" id="0cf08afb-22ba-4191-8206-d043c4c4f810"/>
+</Index>
+</Table>
+<Table id="2df9dfed-9932-4fff-95d7-da7b97e48b93" name="centro_item_field_values" schema="">
+<Property name="LOCATION" value="1920:646"/>
+<Comment/>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="6a8cb96b-9706-4cbd-85a5-9b347cfce5dc" name="item_field_value_id" nullable="false" scale="10" size="">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="6c9c293d-3c1e-4493-a18e-5560c3a5fd1e" name="order" nullable="true" scale="10" size="">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="0ce3419d-c600-498e-a0fd-19f4224571d9" name="value" nullable="false" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="263a9761-f44d-4df5-aa03-45dd73b54916" name="item_field_id" nullable="false" scale="10" size="">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="8e33eb06-501c-4b17-b90a-1cd83f36e521" name="parent_item_field_value_id" nullable="true" scale="10" size="">
+<Comment/>
+</Attribute>
+<Index id="c8ce8c15-bb2b-4f33-9db4-e175f35d69ea" indextype="PRIMARYKEY" name="PK_item_field_values">
+<Indexattribute attributerefid="6a8cb96b-9706-4cbd-85a5-9b347cfce5dc" id="e6e95c78-21ed-410d-955c-e19904d0a228"/>
+</Index>
+<Index id="aa4caf33-1c41-417f-a437-0f644046429a" indextype="NONUNIQUE" name="value">
+<Indexattribute attributerefid="0ce3419d-c600-498e-a0fd-19f4224571d9" id="1bc10cc3-3d4f-41c5-bc99-11985fd3564b"/>
+</Index>
+<Index id="c44e79a6-d649-484f-aa9d-7eaa80b5097f" indextype="NONUNIQUE" name="item_field_id">
+<Indexattribute attributerefid="263a9761-f44d-4df5-aa03-45dd73b54916" id="77b8db46-0150-44a4-9b3d-9a92e549dd6c"/>
+</Index>
+</Table>
+<Table id="64d4d54a-d8bd-45db-baa7-fe32754d0214" name="centro_modules_lang" schema="">
+<Property name="LOCATION" value="656:16"/>
+<Comment/>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="82717cdb-bb61-4181-be23-e5abda067b2c" name="name" nullable="false" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="CHAR" defaultvalue="" extra="" fraction="0" id="3901e397-9098-4443-a0ad-2c28899c67a6" name="description" nullable="false" scale="10" size="255">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="a0e2b5c0-2d1f-45d9-92d6-4329a806029d" name="module_lang_id" nullable="false" scale="10" size="">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="cdd46e73-cef0-45d7-8f59-97ea1e7f99dc" name="language_id" nullable="false" scale="10" size="">
+<Comment/>
+</Attribute>
+<Attribute datatype="INT" defaultvalue="" extra="" fraction="0" id="67faefbe-10d2-4dcc-8fab-9ee03fce5e8a" name="module_id" nullable="false" scale="10" size="">
+<Comment/>
+</Attribute>
+<Index id="600e24db-cd0a-4501-8c09-0935e7fcb563" indextype="PRIMARYKEY" name="PK_centro_modules_lang">
+<Indexattribute attributerefid="a0e2b5c0-2d1f-45d9-92d6-4329a806029d" id="f83519b9-e475-450d-962d-be952bf4d57d"/>
+</Index>
+<Index id="7171d9bf-2a40-4b1b-bab4-fb6560b28601" indextype="NONUNIQUE" name="language_id">
+<Indexattribute attributerefid="cdd46e73-cef0-45d7-8f59-97ea1e7f99dc" id="f785c046-774c-40c6-b183-183968fbd7e1"/>
+</Index>
+<Index id="36f9be18-f8db-4711-b709-8c748601d503" indextype="NONUNIQUE" name="module_id">
+<Indexattribute attributerefid="67faefbe-10d2-4dcc-8fab-9ee03fce5e8a" id="39e218a7-40f3-4b5d-8d8b-d70ec0669ad4"/>
+</Index>
+</Table>
+</Tables>
+<Relations>
+<Relation exportingtablerefid="06aa2611-85d4-4cc1-9241-095172eeb7ff" id="95ed1227-0762-4aeb-be30-cc56e8f74e80" importingtablerefid="06aa2611-85d4-4cc1-9241-095172eeb7ff" name="centro_categories_ibfk_1" ondelete="nothing" onupdate="nothing">
+<Property name="labelposition" value="760:-87"/>
+<Property name="points" value="1159:231,1199:231"/>
+<Property name="textoffset" value="0:2"/>
+<Comment/>
+<Mapping exportingexpressionrefid="bc60c21a-8c0d-4506-8e96-122520fc2ff2" importingattributerefid="f3c874ae-447f-4a5b-9bb8-83efe005fca8"/>
+</Relation>
+<Relation exportingtablerefid="06aa2611-85d4-4cc1-9241-095172eeb7ff" id="a1d2e67f-0687-4e02-ace9-9a0a5256a21a" importingtablerefid="493c6ca9-1a74-49d3-a3ec-52d27c02e53d" name="centro_categories_lang_ibfk_1" ondelete="cascade" onupdate="nothing">
+<Property name="labelposition" value="290:-2"/>
+<Property name="points" value="1179:100,1179:231"/>
+<Property name="textoffset" value="-13:-14"/>
+<Comment/>
+<Mapping exportingexpressionrefid="bc60c21a-8c0d-4506-8e96-122520fc2ff2" importingattributerefid="f1288095-17d8-4c7b-804d-237489fe0c01"/>
+</Relation>
+<Relation exportingtablerefid="24f95a00-cc91-47a8-a4b7-9a33639a654a" id="fba34d8d-cb45-48a2-86c5-b42b6b1aeaa0" importingtablerefid="493c6ca9-1a74-49d3-a3ec-52d27c02e53d" name="centro_categories_lang_ibfk_2" ondelete="nothing" onupdate="nothing">
+<Property name="labelposition" value="538:-15"/>
+<Property name="points" value="1396:61,1913:60"/>
+<Property name="textoffset" value="0:0"/>
+<Comment/>
+<Mapping exportingexpressionrefid="433de372-76b5-4049-8095-a95555a7ca9c" importingattributerefid="7e8061d5-5782-452c-b0ce-b00eb3014469"/>
+</Relation>
+<Relation exportingtablerefid="06aa2611-85d4-4cc1-9241-095172eeb7ff" id="371508e3-72f7-433b-ae0e-8cc4bef8cdeb" importingtablerefid="fe42aa71-75d9-4ef2-bced-5bcd1ada7bd3" name="centro_items_ibfk_1" ondelete="nothing" onupdate="nothing">
+<Comment/>
+<Mapping exportingexpressionrefid="bc60c21a-8c0d-4506-8e96-122520fc2ff2" importingattributerefid="caefd2c3-c580-42ba-971f-08795c6700c5"/>
+</Relation>
+<Relation exportingtablerefid="ac7fd7d1-4788-441e-821c-76360bde5dd7" id="e528fb3a-1ec5-4d34-9b43-692c41c0ecab" importingtablerefid="f1099e74-d04d-4314-833e-3d630a990cb7" name="centro_sales_ibfk_1" ondelete="nothing" onupdate="nothing">
+<Property name="labelposition" value="360:2"/>
+<Property name="points" value="1132:1060,809:908"/>
+<Property name="textoffset" value="0:0"/>
+<Comment/>
+<Mapping exportingexpressionrefid="70266fe8-b1e2-42a7-8a45-a64d3a4152e4" importingattributerefid="3244ce04-f91b-48ec-8eca-df4d6349224d"/>
+</Relation>
+<Relation exportingtablerefid="fe42aa71-75d9-4ef2-bced-5bcd1ada7bd3" id="eca63ded-dea6-494d-bdbc-8083822ea4db" importingtablerefid="1eaaebc6-6500-40b7-82fc-e852e0d1e597" name="centro_sales_items_ibfk_1" ondelete="nothing" onupdate="nothing">
+<Property name="labelposition" value="127:8"/>
+<Property name="points" value="1556:832,1721:526"/>
+<Comment/>
+<Mapping exportingexpressionrefid="eec2242e-dcbf-40e7-9cbf-c60ba342307f" importingattributerefid="0148e835-5a1a-4fc5-a262-401e3dcd347f"/>
+</Relation>
+<Relation exportingtablerefid="f1099e74-d04d-4314-833e-3d630a990cb7" id="538e0c68-0970-4718-a74a-6a29da193448" importingtablerefid="1eaaebc6-6500-40b7-82fc-e852e0d1e597" name="centro_sales_details_ibfk_2" ondelete="cascade" onupdate="nothing">
+<Property name="labelposition" value="500:0"/>
+<Property name="points" value="1412:931,1284:1060"/>
+<Comment/>
+<Mapping exportingexpressionrefid="6d4a8cf8-fff4-48ba-aded-3e205027fa20" importingattributerefid="ba2758fc-4982-4d2e-96df-30ba3a95d5ee"/>
+</Relation>
+<Relation exportingtablerefid="2368f383-d799-4d0a-bbb1-7e47469be2b5" id="bb912820-1a4b-4701-ba15-c9c7fd5c7617" importingtablerefid="85239f57-1b6c-4e57-b0f9-291ced625a3f" name="centro_stores_ibfk_1" ondelete="nothing" onupdate="nothing">
+<Property name="labelposition" value="500:0"/>
+<Property name="points" value="196:257,332:78"/>
+<Comment/>
+<Mapping exportingexpressionrefid="42afa05c-a067-496b-884f-2411be3039ae" importingattributerefid="4689ee65-6c9f-4b4a-a2a2-4fef9d23f677"/>
+</Relation>
+<Relation exportingtablerefid="85239f57-1b6c-4e57-b0f9-291ced625a3f" id="327453c0-44c9-46e7-a8f6-ab453b8adf92" importingtablerefid="12514b77-8b83-4eb5-9e41-4ec71cb0bda1" name="centro_terminals_ibfk_1" ondelete="nothing" onupdate="nothing">
+<Property name="labelposition" value="517:0"/>
+<Property name="points" value="260:518,260:342"/>
+<Property name="textoffset" value="0:0"/>
+<Comment/>
+<Mapping exportingexpressionrefid="1adbd616-243d-47ce-b993-9dc37ed1a2f5" importingattributerefid="9dc00077-1415-4aa5-91a3-d7f653ab47fc"/>
+</Relation>
+<Relation exportingtablerefid="12514b77-8b83-4eb5-9e41-4ec71cb0bda1" id="194ca694-b2ff-4ec9-b21f-3cdda60c1a43" importingtablerefid="79d0a776-2d44-4008-93dd-e3d64cc526a9" name="centro_terminal_configuration_ibfk_1" ondelete="nothing" onupdate="nothing">
+<Comment/>
+<Mapping exportingexpressionrefid="0826f436-9fbb-4c82-8aed-104980d330e6" importingattributerefid="b252b28e-102d-4d01-bfe5-b0254f8e454e"/>
+</Relation>
+<Relation exportingtablerefid="12514b77-8b83-4eb5-9e41-4ec71cb0bda1" id="cffc2170-da46-4871-a8ab-93a149235d60" importingtablerefid="a5a1ff57-4391-4027-ae3b-14370141b068" name="centro_terminals_modules_employees_ibfk_1" ondelete="nothing" onupdate="nothing">
+<Property name="labelposition" value="486:1"/>
+<Property name="points" value="685:325,311:518"/>
+<Property name="textoffset" value="0:0"/>
+<Comment/>
+<Mapping exportingexpressionrefid="0826f436-9fbb-4c82-8aed-104980d330e6" importingattributerefid="c62ec7a6-772b-4c16-95a0-104b37f590ae"/>
+</Relation>
+<Relation exportingtablerefid="b1ceaaab-811c-4db2-9df1-8bc94c89d327" id="b0a8fc14-da05-4cab-85d0-bdb1b630cf5f" importingtablerefid="a5a1ff57-4391-4027-ae3b-14370141b068" name="centro_terminals_modules_employees_ibfk_2" ondelete="nothing" onupdate="nothing">
+<Property name="labelposition" value="349:5"/>
+<Property name="points" value="746:610,746:264"/>
+<Property name="textoffset" value="0:0"/>
+<Comment/>
+<Mapping exportingexpressionrefid="2ff8a9e7-6e81-4e68-a48e-ddbbb50adf1b" importingattributerefid="3393177d-2b5e-4852-b72b-b8f80de629d0"/>
+</Relation>
+<Relation exportingtablerefid="ac7fd7d1-4788-441e-821c-76360bde5dd7" id="52bc9563-71e8-43ce-be5e-807c524b0dd4" importingtablerefid="a5a1ff57-4391-4027-ae3b-14370141b068" name="centro_terminals_modules_employees_ibfk_3" ondelete="nothing" onupdate="nothing">
+<Property name="labelposition" value="468:-2"/>
+<Property name="points" value="746:678,746:806"/>
+<Property name="textoffset" value="0:-27"/>
+<Comment/>
+<Mapping exportingexpressionrefid="70266fe8-b1e2-42a7-8a45-a64d3a4152e4" importingattributerefid="b6164e85-978b-4d86-80e8-7bf748fabdaf"/>
+</Relation>
+<Relation exportingtablerefid="1eaaebc6-6500-40b7-82fc-e852e0d1e597" id="badbced5-a3ab-4d11-90f9-80fcb6a7a13d" importingtablerefid="894522c5-397f-4aef-ba9a-3027b5822795" name="centro_sales_details_taxes_ibfk_1" ondelete="cascade" onupdate="nothing">
+<Comment/>
+<Mapping exportingexpressionrefid="b5ad0d98-9dff-4e82-b645-6f6cafe7c698" importingattributerefid="67b7811c-c2cd-4b6e-a5df-00ae4c9db721"/>
+</Relation>
+<Relation exportingtablerefid="f1099e74-d04d-4314-833e-3d630a990cb7" id="b98a8900-885f-4e6e-9e4a-863ae98ee420" importingtablerefid="c9c09d35-b853-460d-8dfd-54fcf8d2ae95" name="centro_sale_payments_ibfk_2" ondelete="cascade" onupdate="nothing">
+<Property name="labelposition" value="477:-15"/>
+<Property name="points" value="2001:1195,1708:1195"/>
+<Comment/>
+<Mapping exportingexpressionrefid="6d4a8cf8-fff4-48ba-aded-3e205027fa20" importingattributerefid="f40f1c05-21df-4f6f-ba53-f4d823242df3"/>
+</Relation>
+<Relation exportingtablerefid="a40b1939-a2a1-4a5e-a134-4308501df8cc" id="fad0b136-7629-48d4-9cf6-73a0f70f1c12" importingtablerefid="c9c09d35-b853-460d-8dfd-54fcf8d2ae95" name="centro_sale_payments_ibfk_1" ondelete="nothing" onupdate="nothing">
+<Property name="labelposition" value="399:9"/>
+<Property name="points" value="2224:1153,2224:1053"/>
+<Property name="textoffset" value="0:47"/>
+<Comment/>
+<Mapping exportingexpressionrefid="21766bc6-281f-40fc-b959-0516c1c6c9b0" importingattributerefid="8b444cb8-3f99-43fb-b4b5-561060a5f067"/>
+</Relation>
+<Relation exportingtablerefid="a40b1939-a2a1-4a5e-a134-4308501df8cc" id="9d83ba85-1c57-4188-b521-75f72186d212" importingtablerefid="c89ea30f-313f-41d4-918d-f7bcd1bbda58" name="centro_payments_lang_ibfk_1" ondelete="cascade" onupdate="nothing">
+<Property name="labelposition" value="506:1"/>
+<Property name="points" value="2217:869,2217:1015"/>
+<Property name="textoffset" value="1:-428"/>
+<Comment/>
+<Mapping exportingexpressionrefid="21766bc6-281f-40fc-b959-0516c1c6c9b0" importingattributerefid="d8dc3c77-d1e1-4b7c-b7f9-ca45f7c60b3d"/>
+</Relation>
+<Relation exportingtablerefid="24f95a00-cc91-47a8-a4b7-9a33639a654a" id="08f61ff7-9c4d-47b5-b548-0d037f9e92c5" importingtablerefid="c89ea30f-313f-41d4-918d-f7bcd1bbda58" name="centro_payments_lang_ibfk_2" ondelete="nothing" onupdate="nothing">
+<Property name="labelposition" value="450:0"/>
+<Property name="points" value="2200:799,2200:85"/>
+<Property name="textoffset" value="0:0"/>
+<Comment/>
+<Mapping exportingexpressionrefid="433de372-76b5-4049-8095-a95555a7ca9c" importingattributerefid="ebc70454-c5aa-48df-acfc-e578eb705ec0"/>
+</Relation>
+<Relation exportingtablerefid="fe42aa71-75d9-4ef2-bced-5bcd1ada7bd3" id="3a1a9bf4-765a-4d8c-a426-e76313ea1d7e" importingtablerefid="32809d9a-4d04-465e-9c3e-9a345162acf4" name="centro_stocks_ibfk_1" ondelete="nothing" onupdate="nothing">
+<Comment/>
+<Mapping exportingexpressionrefid="eec2242e-dcbf-40e7-9cbf-c60ba342307f" importingattributerefid="300bab3d-9f73-426e-9f0e-a0e3d325f5b0"/>
+</Relation>
+<Relation exportingtablerefid="85239f57-1b6c-4e57-b0f9-291ced625a3f" id="3bb311e2-463b-471b-85a2-61aaa5ac18ca" importingtablerefid="32809d9a-4d04-465e-9c3e-9a345162acf4" name="centro_stocks_ibfk_2" ondelete="nothing" onupdate="nothing">
+<Property name="labelposition" value="713:-4"/>
+<Property name="points" value="987:454,422:245"/>
+<Property name="textoffset" value="0:0"/>
+<Comment/>
+<Mapping exportingexpressionrefid="1adbd616-243d-47ce-b993-9dc37ed1a2f5" importingattributerefid="2859e4f8-15e1-4733-aa34-19a612e17325"/>
+</Relation>
+<Relation exportingtablerefid="3f7adbe1-07c6-4a30-ba33-fafcffc67884" id="fcf21d21-419b-4e50-8231-0cefe47d9b78" importingtablerefid="f1099e74-d04d-4314-833e-3d630a990cb7" name="centro_sales_ibfk_2" ondelete="nothing" onupdate="nothing">
+<Property name="labelposition" value="475:-15"/>
+<Property name="points" value="1072:1165,555:1123"/>
+<Property name="textoffset" value="0:0"/>
+<Comment/>
+<Mapping exportingexpressionrefid="6c187c76-538b-4a78-9e4b-a0fadc76c37d" importingattributerefid="3244ce04-f91b-48ec-8eca-df4d6349224d"/>
+</Relation>
+<Relation exportingtablerefid="fe42aa71-75d9-4ef2-bced-5bcd1ada7bd3" id="f2cbb93e-7b2f-47a5-9a4e-c469560a7c5e" importingtablerefid="df703dc2-bdbf-40f1-a49c-b4b9e08c9d69" name="centro_item_values_ibfk_2" ondelete="nothing" onupdate="nothing">
+<Comment/>
+<Mapping exportingexpressionrefid="eec2242e-dcbf-40e7-9cbf-c60ba342307f" importingattributerefid="0b19e8bd-5daf-43fa-a8a8-b955d107c81f"/>
+</Relation>
+<Relation exportingtablerefid="2c379d52-fb61-4107-9084-97008ce68991" id="ca8b1329-5331-4b87-bf2e-673958d1c7c7" importingtablerefid="2df9dfed-9932-4fff-95d7-da7b97e48b93" name="centro_item_field_values_ibfk_1" ondelete="nothing" onupdate="nothing">
+<Comment/>
+<Mapping exportingexpressionrefid="ad21642b-20a4-49fc-881c-f7dd48de8336" importingattributerefid="263a9761-f44d-4df5-aa03-45dd73b54916"/>
+</Relation>
+<Relation exportingtablerefid="2c379d52-fb61-4107-9084-97008ce68991" id="75411c91-16a5-4cda-92ce-bf3e780ad88b" importingtablerefid="df703dc2-bdbf-40f1-a49c-b4b9e08c9d69" name="centro_item_values_ibfk_1" ondelete="nothing" onupdate="nothing">
+<Comment/>
+<Mapping exportingexpressionrefid="ad21642b-20a4-49fc-881c-f7dd48de8336" importingattributerefid="1d8c5a56-565a-4def-af2d-04411cefb4b5"/>
+</Relation>
+<Relation exportingtablerefid="2c379d52-fb61-4107-9084-97008ce68991" id="864cc8d2-c078-4acc-a867-a781095e8dba" importingtablerefid="2c379d52-fb61-4107-9084-97008ce68991" name="centro_item_fields_ibfk_1" ondelete="nothing" onupdate="nothing">
+<Comment/>
+<Mapping exportingexpressionrefid="ad21642b-20a4-49fc-881c-f7dd48de8336" importingattributerefid="4e57ef16-9d1c-4735-83f9-a97fbe5c5069"/>
+</Relation>
+<Relation exportingtablerefid="2df9dfed-9932-4fff-95d7-da7b97e48b93" id="a5b2067e-9913-4050-b7ac-f088e12be3c2" importingtablerefid="2df9dfed-9932-4fff-95d7-da7b97e48b93" name="centro_item_field_values_ibfk_2" ondelete="nothing" onupdate="nothing">
+<Comment/>
+<Mapping exportingexpressionrefid="e6e95c78-21ed-410d-955c-e19904d0a228" importingattributerefid="8e33eb06-501c-4b17-b90a-1cd83f36e521"/>
+</Relation>
+<Relation exportingtablerefid="2df9dfed-9932-4fff-95d7-da7b97e48b93" id="cc02c822-6cae-4811-beb6-5a8d9c1cc25e" importingtablerefid="df703dc2-bdbf-40f1-a49c-b4b9e08c9d69" name="centro_item_values_ibfk_3" ondelete="nothing" onupdate="nothing">
+<Comment/>
+<Mapping exportingexpressionrefid="e6e95c78-21ed-410d-955c-e19904d0a228" importingattributerefid="3a387dec-4265-4f3b-898a-5764f28ddb41"/>
+</Relation>
+<Relation exportingtablerefid="24f95a00-cc91-47a8-a4b7-9a33639a654a" id="88b55f93-7083-4b23-976f-56762ce94ad8" importingtablerefid="64d4d54a-d8bd-45db-baa7-fe32754d0214" name="centro_modules_lang_ibfk_1" ondelete="nothing" onupdate="nothing">
+<Comment/>
+<Mapping exportingexpressionrefid="433de372-76b5-4049-8095-a95555a7ca9c" importingattributerefid="cdd46e73-cef0-45d7-8f59-97ea1e7f99dc"/>
+</Relation>
+<Relation exportingtablerefid="b1ceaaab-811c-4db2-9df1-8bc94c89d327" id="e495853f-11ba-4abd-af23-dd8c90d50b33" importingtablerefid="64d4d54a-d8bd-45db-baa7-fe32754d0214" name="centro_modules_lang_ibfk_2" ondelete="nothing" onupdate="nothing">
+<Comment/>
+<Mapping exportingexpressionrefid="2ff8a9e7-6e81-4e68-a48e-ddbbb50adf1b" importingattributerefid="67faefbe-10d2-4dcc-8fab-9ee03fce5e8a"/>
+</Relation>
+</Relations>
+<Views/>
+<Subjectareas>
+<Subjectarea color="-4144960" id="168b9382-5691-404a-b832-61cbfea66e1d" name="Runtime configuration" visible="true">
+<Item tablerefid="0fc0417c-f950-4925-9606-3e9e8eda082e"/>
+<Item tablerefid="79d0a776-2d44-4008-93dd-e3d64cc526a9"/>
+</Subjectarea>
+</Subjectareas>
+<Comments/>
+</Model>

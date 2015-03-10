@@ -1,0 +1,82 @@
+[{"pk": 1, "model": "items.category", "fields": {"parent": null}
+},
+ {"pk": 2, "model": "items.category", "fields": {"parent": 1}
+},
+ {"pk": 3, "model": "items.category", "fields": {"parent": 1}
+},
+ {"pk": 11, "model": "items.categorytranslation", "fields": {"description": "High quality shirts. 100% cotton", "name": "Shirts", "parent": 1, "language_code": "en"}
+},
+ {"pk": 12, "model": "items.categorytranslation", "fields": {"description": "Majce prvega razreda. 100% bomba\u017e", "name": "Majce", "parent": 1, "language_code": "sl"}
+},
+ {"pk": 21, "model": "items.categorytranslation", "fields": {"description": "Spring oriented t-shirts", "name": "T-shirts", "parent": 2, "language_code": "en"}
+},
+ {"pk": 22, "model": "items.categorytranslation", "fields": {"description": "Prava izbira za spomlad", "name": "S kratkimi rokavami", "parent": 2, "language_code": "sl"}
+},
+ {"pk": 31, "model": "items.categorytranslation", "fields": {"description": "Autumm oriented shirts", "name": "Long-sleeved shirts", "parent": 3, "language_code": "en"}
+},
+ {"pk": 32, "model": "items.categorytranslation", "fields": {"description": "Za zimo ali jesen", "name": "Z dolgimi rokavami", "parent": 3, "language_code": "sl"}
+},
+ {"pk": 1, "model": "items.size_group", "fields": {"name": "XS, S, M, L, XL"}
+},
+ {"pk": 2, "model": "items.size_group", "fields": {"name": "34, 36, 38, ..."}
+},
+ {"pk": 1, "model": "items.size", "fields": {"sort": 1, "name": "XS", "size_group": 1}
+},
+ {"pk": 2, "model": "items.size", "fields": {"sort": 2, "name": "S", "size_group": 1}
+},
+ {"pk": 3, "model": "items.size", "fields": {"sort": 3, "name": "M", "size_group": 1}
+},
+ {"pk": 4, "model": "items.size", "fields": {"sort": 4, "name": "L", "size_group": 1}
+},
+ {"pk": 5, "model": "items.size", "fields": {"sort": 5, "name": "XL", "size_group": 1}
+},
+ {"pk": 6, "model": "items.size", "fields": {"sort": 34, "name": "34", "size_group": 2}
+},
+ {"pk": 7, "model": "items.size", "fields": {"sort": 36, "name": "36", "size_group": 2}
+},
+ {"pk": 8, "model": "items.size", "fields": {"sort": 38, "name": "38", "size_group": 2}
+},
+ {"pk": 9, "model": "items.size", "fields": {"sort": 40, "name": "40", "size_group": 2}
+},
+ {"pk": 10, "model": "items.size", "fields": {"sort": 42, "name": "42", "size_group": 2}
+},
+ {"pk": 11, "model": "items.size", "fields": {"sort": 44, "name": "44", "size_group": 2}
+},
+ {"pk": 12, "model": "items.size", "fields": {"sort": 46, "name": "46", "size_group": 2}
+},
+ {"pk": 1, "model": "items.tax", "fields": {"locale": "sl_SI", "percent": "20", "name": "D.D.V. 20%"}
+},
+ {"pk": 2, "model": "items.tax", "fields": {"locale": "sl_SI", "percent": "8.5", "name": "D.D.V. 8,5%"}
+},
+ {"pk": 3, "model": "items.tax", "fields": {"locale": "en_US", "percent": "17", "name": "V.A.T. 17%"}
+},
+ {"pk": 1, "model": "items.item", "fields": {"category": 1, "barcode": "0001-1", "tax": 1, "size_group": 1, "active": true, "size": 1}
+},
+ {"pk": 2, "model": "items.item", "fields": {"category": 1, "barcode": "0001-2", "tax": 1, "size_group": 1, "active": true, "size": 2}
+},
+ {"pk": 3, "model": "items.item", "fields": {"category": 1, "barcode": "0001-3", "tax": 1, "size_group": 1, "active": true, "size": 3}
+},
+ {"pk": 4, "model": "items.item", "fields": {"category": 1, "barcode": "0001-4", "tax": 1, "size_group": 1, "active": true, "size": 4}
+},
+ {"pk": 5, "model": "items.item", "fields": {"category": 1, "barcode": "0001-5", "tax": 1, "size_group": 1, "active": true, "size": 5}
+},
+ {"pk": 11, "model": "items.itemtranslation", "fields": {"description": "Our first item description", "parent": 1, "name": "First item", "language_code": "en", "sale_price": "11", "cost_price": "1"}
+},
+ {"pk": 12, "model": "items.itemtranslation", "fields": {"description": "Na\u0161 prvi opis artikla", "parent": 1, "name": "Prvi artikel", "language_code": "sl", "sale_price": "11", "cost_price": "1"}
+},
+ {"pk": 21, "model": "items.itemtranslation", "fields": {"description": "Our first item description", "parent": 2, "name": "First item", "language_code": "en", "sale_price": "12", "cost_price": "2"}
+},
+ {"pk": 22, "model": "items.itemtranslation", "fields": {"description": "Na\u0161 prvi opis artikla", "parent": 2, "name": "Prvi artikel", "language_code": "sl", "sale_price": "12", "cost_price": "2"}
+},
+ {"pk": 31, "model": "items.itemtranslation", "fields": {"description": "Our first item description", "parent": 3, "name": "First item", "language_code": "en", "sale_price": "13", "cost_price": "3"}
+},
+ {"pk": 32, "model": "items.itemtranslation", "fields": {"description": "Na\u0161 prvi opis artikla", "parent": 3, "name": "Prvi artikel", "language_code": "sl", "sale_price": "13", "cost_price": "3"}
+},
+ {"pk": 41, "model": "items.itemtranslation", "fields": {"description": "Our first item description", "parent": 4, "name": "First item", "language_code": "en", "sale_price": "14", "cost_price": "4"}
+},
+ {"pk": 42, "model": "items.itemtranslation", "fields": {"description": "Na\u0161 prvi opis artikla", "parent": 4, "name": "Prvi artikel", "language_code": "sl", "sale_price": "14", "cost_price": "4"}
+},
+ {"pk": 51, "model": "items.itemtranslation", "fields": {"description": "Our first item description", "parent": 5, "name": "First item", "language_code": "en", "sale_price": "15", "cost_price": "5"}
+},
+ {"pk": 52, "model": "items.itemtranslation", "fields": {"description": "Na\u0161 prvi opis artikla", "parent": 5, "name": "Prvi artikel", "language_code": "sl", "sale_price": "15", "cost_price": "5"}
+}]

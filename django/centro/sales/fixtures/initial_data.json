@@ -1,0 +1,55 @@
+[
+{"pk": 1, "model": "sales.saledetail", "fields": 
+{"comment": "", "sale": 1, "item": 2, "sale_price": "5", "quantity": "2", "cost_price": "3.2"}},
+ 
+{"pk": 1, "model": "sales.saletax", "fields": 
+{"percent": "8.5", "sale_detail": 1, "name": "D.D.V. 8,5%"}},
+ 
+{"pk": 1, "model": "sales.sale", "fields": 
+{"customer": "Kon\u010dni kupec", "date_time": "2011-05-09 12:10:00", "completed": false, "number": 1, "user": 7}},
+ 
+{"pk": 1, "model": "sales.payment", "fields": 
+{"sort": 1}},
+ 
+{"pk": 2, "model": "sales.payment", "fields": 
+{"sort": 2}},
+ 
+{"pk": 3, "model": "sales.payment", "fields": 
+{"sort": 3}},
+ 
+{"pk": 4, "model": "sales.payment", "fields": 
+{"sort": 4}},
+ 
+{"pk": 5, "model": "sales.payment", "fields": 
+{"sort": 5}},
+ 
+{"pk": 1, "model": "sales.paymenttranslation", "fields": 
+{"name": "Gotovina", "parent": 1, "language_code": "sl"}},
+ 
+{"pk": 2, "model": "sales.paymenttranslation", "fields": 
+{"name": "Cash", "parent": 1, "language_code": "en"}},
+ 
+{"pk": 3, "model": "sales.paymenttranslation", "fields": 
+{"name": "Pla\u010dilna kartica", "parent": 2, "language_code": "sl"}},
+ 
+{"pk": 4, "model": "sales.paymenttranslation", "fields": 
+{"name": "Debit card", "parent": 2, "language_code": "en"}},
+ 
+{"pk": 5, "model": "sales.paymenttranslation", "fields": 
+{"name": "Kreditna kartica", "parent": 3, "language_code": "sl"}},
+ 
+{"pk": 6, "model": "sales.paymenttranslation", "fields": 
+{"name": "Credit card", "parent": 3, "language_code": "en"}},
+ 
+{"pk": 7, "model": "sales.paymenttranslation", "fields": 
+{"name": "Darilni bon", "parent": 4, "language_code": "sl"}},
+ 
+{"pk": 8, "model": "sales.paymenttranslation", "fields": 
+{"name": "Gift certificate", "parent": 4, "language_code": "en"}},
+ 
+{"pk": 9, "model": "sales.paymenttranslation", "fields": 
+{"name": "Zastonj", "parent": 5, "language_code": "sl"}},
+ 
+{"pk": 10, "model": "sales.paymenttranslation", "fields": 
+{"name": "Free", "parent": 5, "language_code": "en"}}
+]

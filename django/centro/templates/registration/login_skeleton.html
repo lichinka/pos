@@ -1,0 +1,41 @@
+{% load i18n %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<title>
+		{% trans "CenTRO ::: Powered by Python" %}
+	</title>
+
+	<!-- THE STYLE FOR THE LOGIN PAGE-->
+	<link rel="stylesheet" rev="stylesheet" href="/css/style_green_login.css"/>
+
+	<!-- JQUERY LIBRARY -->
+	<script src="/js/jquery.js" type="text/javascript" language="javascript" charset="UTF-8"></script>
+
+	<!-- SOME JS FUNCTIONS USED FORM THE LOGIN PAGE -->
+	<script src="/js/login.js" type="text/javascript" language="javascript" charset="UTF-8"></script>	
+</head>
+
+<body>
+	<!-- MAIN CONTAINER -->
+	<div id="container">
+        {% block content %} Login content goes here. {% endblock %}
+	</div>
+	
+	<!-- PROGRAM NAME, VERSION, USER AND TERMINAL ID -->
+	<p>
+        {% if user.is_authenticated %}
+            {{ user.username }}
+        {% else %}
+            {% trans "Anonymous" %}
+        {% endif %}
+        @ {{ terminal_name }}  ..:: {{ application_name }} v{{ application_version }} ::.. 
+	</p>	
+</body>
+</html>
+

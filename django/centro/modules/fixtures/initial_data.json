@@ -1,0 +1,91 @@
+[
+{"pk": 20, "model": "modules.moduletranslation", "fields": 
+{"description": "Change the customers database", "name": "Customers", "parent": 2, "language_code": "en"}},
+ 
+{"pk": 21, "model": "modules.moduletranslation", "fields": 
+{"description": "Urejanje \u0161ifranta strank", "name": "Stranke", "parent": 2, "language_code": "sl"}},
+ 
+{"pk": 40, "model": "modules.moduletranslation", "fields": 
+{"description": "Change the items database", "name": "Items", "parent": 4, "language_code": "en"}},
+ 
+{"pk": 41, "model": "modules.moduletranslation", "fields": 
+{"description": "Urejanje \u0161ifranta artiklov", "name": "Artikli", "parent": 4, "language_code": "sl"}},
+ 
+{"pk": 50, "model": "modules.moduletranslation", "fields": 
+{"description": "View and generate reports", "name": "Reports", "parent": 5, "language_code": "en"}},
+ 
+{"pk": 51, "model": "modules.moduletranslation", "fields": 
+{"description": "Pogled in urejanje poro\u010dil", "name": "Poro\u010dila", "parent": 5, "language_code": "sl"}},
+ 
+{"pk": 61, "model": "modules.moduletranslation", "fields": 
+{"description": "Process sales and returns", "name": "Sales", "parent": 6, "language_code": "en"}},
+ 
+{"pk": 62, "model": "modules.moduletranslation", "fields": 
+{"description": "Izdaja ra\u010dunov in dobropisov", "name": "Prodaja", "parent": 6, "language_code": "sl"}},
+ 
+{"pk": 71, "model": "modules.moduletranslation", "fields": 
+{"description": "Item stock per warehouse", "name": "Stock", "parent": 7, "language_code": "en"}},
+ 
+{"pk": 72, "model": "modules.moduletranslation", "fields": 
+{"description": "Iskanje in urejanje zalogo artiklov", "name": "Skladi\u0161\u010de", "parent": 7, "language_code": "sl"}},
+ 
+{"pk": 400, "model": "modules.moduletranslation", "fields": 
+{"description": "Change the items database", "name": "Items", "parent": 40, "language_code": "en"}},
+ 
+{"pk": 401, "model": "modules.moduletranslation", "fields": 
+{"description": "Urejanje \u0161ifranta artiklov", "name": "Artikli", "parent": 40, "language_code": "sl"}},
+ 
+{"pk": 410, "model": "modules.moduletranslation", "fields": 
+{"description": "Change categories into which items are arranged", "name": "Categories", "parent": 41, "language_code": "en"}},
+ 
+{"pk": 411, "model": "modules.moduletranslation", "fields": 
+{"description": "Urejanje kategorij, v katere so artikli razporejeni", "name": "Kategorije", "parent": 41, "language_code": "sl"}},
+ 
+{"pk": 440, "model": "modules.moduletranslation", "fields": 
+{"description": "Change size groups an item may take", "name": "Sizes", "parent": 44, "language_code": "en"}},
+ 
+{"pk": 441, "model": "modules.moduletranslation", "fields": 
+{"description": "Urejanje skupine velikosti artiklov", "name": "Velikosti", "parent": 44, "language_code": "sl"}},
+ 
+{"pk": 442, "model": "modules.moduletranslation", "fields": 
+{"description": "Ra\u010duni, ki \u010dakajo zaklju\u010dek", "name": "Odprti ra\u010duni", "parent": 45, "language_code": "sl"}},
+ 
+{"pk": 443, "model": "modules.moduletranslation", "fields": 
+{"description": "Sales still open", "name": "Open sales", "parent": 45, "language_code": "en"}},
+ 
+{"pk": 444, "model": "modules.moduletranslation", "fields": 
+{"description": "Arhiv zaklju\u010denih ra\u010dunov", "name": "Zaklju\u010deni ra\u010duni", "parent": 46, "language_code": "sl"}},
+ 
+{"pk": 445, "model": "modules.moduletranslation", "fields": 
+{"description": "Sales archive", "name": "Closed sales", "parent": 46, "language_code": "en"}},
+ 
+{"pk": 2, "model": "modules.module", "fields": 
+{"sort": 40, "path": "#", "parent": null}},
+ 
+{"pk": 4, "model": "modules.module", "fields": 
+{"sort": 30, "path": "/items", "parent": null}},
+ 
+{"pk": 5, "model": "modules.module", "fields": 
+{"sort": 60, "path": "#", "parent": null}},
+ 
+{"pk": 6, "model": "modules.module", "fields": 
+{"sort": 10, "path": "/sales", "parent": null}},
+ 
+{"pk": 7, "model": "modules.module", "fields": 
+{"sort": 20, "path": "#", "parent": null}},
+ 
+{"pk": 40, "model": "modules.module", "fields": 
+{"sort": 20, "path": "/items", "parent": 4}},
+ 
+{"pk": 41, "model": "modules.module", "fields": 
+{"sort": 10, "path": "/items/categories", "parent": 4}},
+ 
+{"pk": 44, "model": "modules.module", "fields": 
+{"sort": 30, "path": "/items/sizes", "parent": 4}},
+ 
+{"pk": 45, "model": "modules.module", "fields": 
+{"sort": 11, "path": "/sales/open_sale_list", "parent": 6}},
+ 
+{"pk": 46, "model": "modules.module", "fields": 
+{"sort": 12, "path": "/sales/closed_sale_list", "parent": 6}}
+]

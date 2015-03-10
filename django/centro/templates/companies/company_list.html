@@ -1,0 +1,13 @@
+{% extends "skeleton.html" %}
+
+{% block content %}
+	{% if all_companies %}
+	    <ul>
+	    {% for company in all_companies %}
+	        <li><a href="/companies/{{ company.id }}/">{{ company.name }}</a></li>
+	    {% endfor %}
+	    </ul>
+	{% else %}
+	    <h3>No companies are available.</h3>
+	{% endif %}
+{% endblock %}

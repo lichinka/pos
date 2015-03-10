@@ -1,0 +1,23 @@
+- Folder "application/controllers" mora imeti enako notranjo strukturo kot folder "application/models" z izjemo, da imajo kontrolerji pripono "_controller".
+- "Store->Terminal" za določanje pravic: če izberem 'store' namesto terminala, ne javi nobene napake.
+
+Module "Stranke"
+----------------
+- "Stranka je bila uspešno spremenjena" is not ok. Should be "Spememba uspešna" like in "Nastavitve sistema" and everywhere else.
+- While adding a new customer I pressed ENTER to move from the current field to the next one. The cursor didn't move, and the customer was created with partial data. When I finished entering all the data and clicked "Pošlji", I had two customers created. This must be corrected by using <form action="javascript:void ( )" ...> or similar.
+
+Module "Osebje"
+---------------
+- When opening "Uredi", I cannot save the form as the system shows it to me. Just clicking "Pošlji" has no effect, not even an error message.
+
+Module "Artikli"
+----------------
+- "Uredi" must look like the other modules when in edit mode. It should not go to a new page.
+- "Množično urejanje artiklov" will be implemented using the "Export as CSV" and "Import from CSV" functionalities. The current implementation should be deleted.
+- Add a button for "Uredi kategorije": it should be implemented like when editing the other ones. Different languages are to be used during category modification. 
+- Add a button for "Uredi velikosti": it should be implemented like when editing the other ones. Different languages are to be used during category modification.
+
+GUI
+---
+- All information and errors should be displayed in the status bar (see 'wrong email' @ Osebje). Information and errors must look different, for the user to understand if it is an error or not.
+- Form validation should be done "on submit" only!

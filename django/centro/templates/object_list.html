@@ -1,0 +1,53 @@
+{% extends "skeleton.html" %}
+
+{% load i18n %}
+
+{% block content %}
+    {% if selected_submodule %}
+        {% load submodule_tabs %}
+        {% submodule_tabs selected_submodule %}
+    {% endif %}
+
+    {% if display_title %}
+        <div id="title_bar">
+            <div id="page_title" class="float_left">
+                {{ display_title|capfirst }}
+            </div>
+        </div>
+    {% endif %}
+
+    <div id="table_holder">
+        <table>
+            {% if column_data %}
+                <thead>
+                    <tr>
+                        {% for column in columns %}
+                            <th>{{ column|capfirst }}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    {% for row in column_data %}
+                        {% if row.detail_url %}
+                            <tr class='clickable' onclick="document.location.href='{{ row.detail_url }}';">
+                        {% else %}
+                            <tr>
+                        {% endif %}
+                            {% for column in row.fields %}
+                                <td>{{ column }}</td>
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            {% else %}
+                 <thead>
+                    <tr>
+                        <th> {% trans "No data to display." %} </th>
+                    </tr>
+                </thead>
+            {% endif %}
+        </table>
+    </div>
+{% endblock %}
+

@@ -1,0 +1,916 @@
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Python locale set to sl_SI
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Python locale set to sl_SI
+DEBUG:django.db.backends:(0.001) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = contenttype  AND "django_content_type"."app_label" = contenttypes ); args=('contenttype', 'contenttypes')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = contenttype  AND "django_content_type"."app_label" = contenttypes ); args=('contenttype', 'contenttypes')
+DEBUG:django.db.backends:(0.001) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = user  AND "django_content_type"."app_label" = auth ); args=('user', 'auth')
+DEBUG:django.db.backends:(0.000) INSERT INTO "auth_user" ("username", "first_name", "last_name", "email", "password", "is_staff", "is_active", "is_superuser", "last_login", "date_joined") VALUES (john, , , , , False, True, False, 2011-04-30 22:02:49.678071, 2011-04-30 22:02:49.678081); args=('john', '', '', '', '', False, True, False, u'2011-04-30 22:02:49.678071', u'2011-04-30 22:02:49.678081')
+DEBUG:django.db.backends:(0.000) SELECT "django_site"."id", "django_site"."domain", "django_site"."name" FROM "django_site" WHERE "django_site"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."id" = 3 ; args=(3,)
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."id" = 3 ; args=(3,)
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+ERROR:django.request:Internal Server Error: /add/debug/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/cache.py", line 79, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/tests/urls.py", line 31, in add
+    getattr(messages, message_type)(request, msg)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 82, in debug
+    fail_silently=fail_silently)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 26, in add_message
+    raise MessageFailure('Without the django.contrib.messages '
+MessageFailure: Without the django.contrib.messages middleware, messages can only be added to authenticated users.
+ERROR:django.request:Internal Server Error: /add/info/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/cache.py", line 79, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/tests/urls.py", line 31, in add
+    getattr(messages, message_type)(request, msg)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 90, in info
+    fail_silently=fail_silently)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 26, in add_message
+    raise MessageFailure('Without the django.contrib.messages '
+MessageFailure: Without the django.contrib.messages middleware, messages can only be added to authenticated users.
+ERROR:django.request:Internal Server Error: /add/success/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/cache.py", line 79, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/tests/urls.py", line 31, in add
+    getattr(messages, message_type)(request, msg)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 98, in success
+    fail_silently=fail_silently)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 26, in add_message
+    raise MessageFailure('Without the django.contrib.messages '
+MessageFailure: Without the django.contrib.messages middleware, messages can only be added to authenticated users.
+ERROR:django.request:Internal Server Error: /add/warning/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/cache.py", line 79, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/tests/urls.py", line 31, in add
+    getattr(messages, message_type)(request, msg)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 106, in warning
+    fail_silently=fail_silently)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 26, in add_message
+    raise MessageFailure('Without the django.contrib.messages '
+MessageFailure: Without the django.contrib.messages middleware, messages can only be added to authenticated users.
+ERROR:django.request:Internal Server Error: /add/error/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/cache.py", line 79, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/tests/urls.py", line 31, in add
+    getattr(messages, message_type)(request, msg)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 114, in error
+    fail_silently=fail_silently)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 26, in add_message
+    raise MessageFailure('Without the django.contrib.messages '
+MessageFailure: Without the django.contrib.messages middleware, messages can only be added to authenticated users.
+ERROR:django.request:Internal Server Error: /add/debug/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/cache.py", line 79, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/tests/urls.py", line 31, in add
+    getattr(messages, message_type)(request, msg)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 82, in debug
+    fail_silently=fail_silently)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 26, in add_message
+    raise MessageFailure('Without the django.contrib.messages '
+MessageFailure: Without the django.contrib.messages middleware, messages can only be added to authenticated users.
+ERROR:django.request:Internal Server Error: /add/info/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/cache.py", line 79, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/tests/urls.py", line 31, in add
+    getattr(messages, message_type)(request, msg)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 90, in info
+    fail_silently=fail_silently)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 26, in add_message
+    raise MessageFailure('Without the django.contrib.messages '
+MessageFailure: Without the django.contrib.messages middleware, messages can only be added to authenticated users.
+ERROR:django.request:Internal Server Error: /add/success/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/cache.py", line 79, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/tests/urls.py", line 31, in add
+    getattr(messages, message_type)(request, msg)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 98, in success
+    fail_silently=fail_silently)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 26, in add_message
+    raise MessageFailure('Without the django.contrib.messages '
+MessageFailure: Without the django.contrib.messages middleware, messages can only be added to authenticated users.
+ERROR:django.request:Internal Server Error: /add/warning/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/cache.py", line 79, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/tests/urls.py", line 31, in add
+    getattr(messages, message_type)(request, msg)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 106, in warning
+    fail_silently=fail_silently)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 26, in add_message
+    raise MessageFailure('Without the django.contrib.messages '
+MessageFailure: Without the django.contrib.messages middleware, messages can only be added to authenticated users.
+ERROR:django.request:Internal Server Error: /add/error/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/cache.py", line 79, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/tests/urls.py", line 31, in add
+    getattr(messages, message_type)(request, msg)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 114, in error
+    fail_silently=fail_silently)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 26, in add_message
+    raise MessageFailure('Without the django.contrib.messages '
+MessageFailure: Without the django.contrib.messages middleware, messages can only be added to authenticated users.
+ERROR:django.request:Internal Server Error: /add/debug/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/cache.py", line 79, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/tests/urls.py", line 31, in add
+    getattr(messages, message_type)(request, msg)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 82, in debug
+    fail_silently=fail_silently)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 26, in add_message
+    raise MessageFailure('Without the django.contrib.messages '
+MessageFailure: Without the django.contrib.messages middleware, messages can only be added to authenticated users.
+ERROR:django.request:Internal Server Error: /add/info/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/cache.py", line 79, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/tests/urls.py", line 31, in add
+    getattr(messages, message_type)(request, msg)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 90, in info
+    fail_silently=fail_silently)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 26, in add_message
+    raise MessageFailure('Without the django.contrib.messages '
+MessageFailure: Without the django.contrib.messages middleware, messages can only be added to authenticated users.
+ERROR:django.request:Internal Server Error: /add/success/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/cache.py", line 79, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/tests/urls.py", line 31, in add
+    getattr(messages, message_type)(request, msg)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 98, in success
+    fail_silently=fail_silently)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 26, in add_message
+    raise MessageFailure('Without the django.contrib.messages '
+MessageFailure: Without the django.contrib.messages middleware, messages can only be added to authenticated users.
+ERROR:django.request:Internal Server Error: /add/warning/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/cache.py", line 79, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/tests/urls.py", line 31, in add
+    getattr(messages, message_type)(request, msg)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 106, in warning
+    fail_silently=fail_silently)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 26, in add_message
+    raise MessageFailure('Without the django.contrib.messages '
+MessageFailure: Without the django.contrib.messages middleware, messages can only be added to authenticated users.
+ERROR:django.request:Internal Server Error: /add/error/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/cache.py", line 79, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/tests/urls.py", line 31, in add
+    getattr(messages, message_type)(request, msg)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 114, in error
+    fail_silently=fail_silently)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 26, in add_message
+    raise MessageFailure('Without the django.contrib.messages '
+MessageFailure: Without the django.contrib.messages middleware, messages can only be added to authenticated users.
+ERROR:django.request:Internal Server Error: /add/debug/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/cache.py", line 79, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/tests/urls.py", line 31, in add
+    getattr(messages, message_type)(request, msg)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 82, in debug
+    fail_silently=fail_silently)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 26, in add_message
+    raise MessageFailure('Without the django.contrib.messages '
+MessageFailure: Without the django.contrib.messages middleware, messages can only be added to authenticated users.
+ERROR:django.request:Internal Server Error: /add/info/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/cache.py", line 79, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/tests/urls.py", line 31, in add
+    getattr(messages, message_type)(request, msg)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 90, in info
+    fail_silently=fail_silently)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 26, in add_message
+    raise MessageFailure('Without the django.contrib.messages '
+MessageFailure: Without the django.contrib.messages middleware, messages can only be added to authenticated users.
+ERROR:django.request:Internal Server Error: /add/success/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/cache.py", line 79, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/tests/urls.py", line 31, in add
+    getattr(messages, message_type)(request, msg)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 98, in success
+    fail_silently=fail_silently)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 26, in add_message
+    raise MessageFailure('Without the django.contrib.messages '
+MessageFailure: Without the django.contrib.messages middleware, messages can only be added to authenticated users.
+ERROR:django.request:Internal Server Error: /add/warning/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/cache.py", line 79, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/tests/urls.py", line 31, in add
+    getattr(messages, message_type)(request, msg)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 106, in warning
+    fail_silently=fail_silently)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 26, in add_message
+    raise MessageFailure('Without the django.contrib.messages '
+MessageFailure: Without the django.contrib.messages middleware, messages can only be added to authenticated users.
+ERROR:django.request:Internal Server Error: /add/error/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/cache.py", line 79, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/tests/urls.py", line 31, in add
+    getattr(messages, message_type)(request, msg)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 114, in error
+    fail_silently=fail_silently)
+  File "/usr/lib/python2.7/site-packages/django/contrib/messages/api.py", line 26, in add_message
+    raise MessageFailure('Without the django.contrib.messages '
+MessageFailure: Without the django.contrib.messages middleware, messages can only be added to authenticated users.
+DEBUG:multilingual_model:Regular expression match, resulting code: en-kk
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'en'
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: en-us
+DEBUG:multilingual_model:Matched with field title for language en-us. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dumbo's.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: pl
+DEBUG:multilingual_model:Matched with field title for language pl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django dla Idiotow.
+DEBUG:multilingual_model:Regular expression match, resulting code: dk
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'dk'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Regular expression match, resulting code: sl
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Matched with field name for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object CategoryTranslation object, returning value Shirts.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Matched with field name for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object CategoryTranslation object, returning value T-shirts.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Matched with field name for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object CategoryTranslation object, returning value Long-sleeved shirts.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Matched with field name for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value First item.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Matched with field name for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value First item.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Matched with field name for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value First item.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Matched with field name for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value First item.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Matched with field name for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value First item.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Matched with field name for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value First item.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Matched with field name for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value First item.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Matched with field name for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value First item.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Matched with field name for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value First item.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for Dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: pl
+DEBUG:multilingual_model:Matched with field description for language pl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django opisane w prostych slowach.
+DEBUG:multilingual_model:Regular expression match, resulting code: nl
+DEBUG:multilingual_model:Matched with field title for language nl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django voor dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Matched with field title for language en. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for dummies.
+DEBUG:multilingual_model:Regular expression match, resulting code: en
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django for absolute nitwits..
+DEBUG:multilingual_model:Regular expression match, resulting code: nl
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Found translation object BookTranslation object, returning value Django voor complete idioten..
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Python locale set to sl_SI
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Python locale set to sl_SI
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Python locale set to sl_SI
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Python locale set to sl_SI
+DEBUG:django.db.backends:(0.003) SELECT "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id" FROM "items_item" LIMIT 21; args=()
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_itemtranslation"."id", "items_itemtranslation"."language_code", "items_itemtranslation"."parent_id", "items_itemtranslation"."name", "items_itemtranslation"."description", "items_itemtranslation"."cost_price", "items_itemtranslation"."sale_price", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "items_itemtranslation" INNER JOIN "items_item" ON ("items_itemtranslation"."parent_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") WHERE ("items_itemtranslation"."parent_id" = 1  AND "items_itemtranslation"."language_code" = sl ); args=(1, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value Prvi artikel.
+DEBUG:django.db.backends:(0.000) SELECT "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id" FROM "items_size" WHERE "items_size"."id" = 1 ; args=(1,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_itemtranslation"."id", "items_itemtranslation"."language_code", "items_itemtranslation"."parent_id", "items_itemtranslation"."name", "items_itemtranslation"."description", "items_itemtranslation"."cost_price", "items_itemtranslation"."sale_price", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "items_itemtranslation" INNER JOIN "items_item" ON ("items_itemtranslation"."parent_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") WHERE ("items_itemtranslation"."parent_id" = 2  AND "items_itemtranslation"."language_code" = sl ); args=(2, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value Prvi artikel.
+DEBUG:django.db.backends:(0.000) SELECT "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id" FROM "items_size" WHERE "items_size"."id" = 2 ; args=(2,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_itemtranslation"."id", "items_itemtranslation"."language_code", "items_itemtranslation"."parent_id", "items_itemtranslation"."name", "items_itemtranslation"."description", "items_itemtranslation"."cost_price", "items_itemtranslation"."sale_price", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "items_itemtranslation" INNER JOIN "items_item" ON ("items_itemtranslation"."parent_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") WHERE ("items_itemtranslation"."parent_id" = 3  AND "items_itemtranslation"."language_code" = sl ); args=(3, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value Prvi artikel.
+DEBUG:django.db.backends:(0.000) SELECT "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id" FROM "items_size" WHERE "items_size"."id" = 3 ; args=(3,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_itemtranslation"."id", "items_itemtranslation"."language_code", "items_itemtranslation"."parent_id", "items_itemtranslation"."name", "items_itemtranslation"."description", "items_itemtranslation"."cost_price", "items_itemtranslation"."sale_price", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "items_itemtranslation" INNER JOIN "items_item" ON ("items_itemtranslation"."parent_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") WHERE ("items_itemtranslation"."parent_id" = 4  AND "items_itemtranslation"."language_code" = sl ); args=(4, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value Prvi artikel.
+DEBUG:django.db.backends:(0.000) SELECT "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id" FROM "items_size" WHERE "items_size"."id" = 4 ; args=(4,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_itemtranslation"."id", "items_itemtranslation"."language_code", "items_itemtranslation"."parent_id", "items_itemtranslation"."name", "items_itemtranslation"."description", "items_itemtranslation"."cost_price", "items_itemtranslation"."sale_price", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "items_itemtranslation" INNER JOIN "items_item" ON ("items_itemtranslation"."parent_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") WHERE ("items_itemtranslation"."parent_id" = 5  AND "items_itemtranslation"."language_code" = sl ); args=(5, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value Prvi artikel.
+DEBUG:django.db.backends:(0.000) SELECT "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id" FROM "items_size" WHERE "items_size"."id" = 5 ; args=(5,)
+DEBUG:django.db.backends:(0.000) SELECT "items_item"."category_id" FROM "items_item" LIMIT 21; args=()
+DEBUG:django.db.backends:(0.000) SELECT "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id" FROM "items_item" LIMIT 21; args=()
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_itemtranslation"."id", "items_itemtranslation"."language_code", "items_itemtranslation"."parent_id", "items_itemtranslation"."name", "items_itemtranslation"."description", "items_itemtranslation"."cost_price", "items_itemtranslation"."sale_price", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "items_itemtranslation" INNER JOIN "items_item" ON ("items_itemtranslation"."parent_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") WHERE ("items_itemtranslation"."parent_id" = 1  AND "items_itemtranslation"."language_code" = sl ); args=(1, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value Prvi artikel.
+DEBUG:django.db.backends:(0.000) SELECT "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id" FROM "items_size" WHERE "items_size"."id" = 1 ; args=(1,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_itemtranslation"."id", "items_itemtranslation"."language_code", "items_itemtranslation"."parent_id", "items_itemtranslation"."name", "items_itemtranslation"."description", "items_itemtranslation"."cost_price", "items_itemtranslation"."sale_price", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "items_itemtranslation" INNER JOIN "items_item" ON ("items_itemtranslation"."parent_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") WHERE ("items_itemtranslation"."parent_id" = 2  AND "items_itemtranslation"."language_code" = sl ); args=(2, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value Prvi artikel.
+DEBUG:django.db.backends:(0.000) SELECT "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id" FROM "items_size" WHERE "items_size"."id" = 2 ; args=(2,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_itemtranslation"."id", "items_itemtranslation"."language_code", "items_itemtranslation"."parent_id", "items_itemtranslation"."name", "items_itemtranslation"."description", "items_itemtranslation"."cost_price", "items_itemtranslation"."sale_price", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "items_itemtranslation" INNER JOIN "items_item" ON ("items_itemtranslation"."parent_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") WHERE ("items_itemtranslation"."parent_id" = 3  AND "items_itemtranslation"."language_code" = sl ); args=(3, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value Prvi artikel.
+DEBUG:django.db.backends:(0.000) SELECT "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id" FROM "items_size" WHERE "items_size"."id" = 3 ; args=(3,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_itemtranslation"."id", "items_itemtranslation"."language_code", "items_itemtranslation"."parent_id", "items_itemtranslation"."name", "items_itemtranslation"."description", "items_itemtranslation"."cost_price", "items_itemtranslation"."sale_price", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "items_itemtranslation" INNER JOIN "items_item" ON ("items_itemtranslation"."parent_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") WHERE ("items_itemtranslation"."parent_id" = 4  AND "items_itemtranslation"."language_code" = sl ); args=(4, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value Prvi artikel.
+DEBUG:django.db.backends:(0.000) SELECT "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id" FROM "items_size" WHERE "items_size"."id" = 4 ; args=(4,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_itemtranslation"."id", "items_itemtranslation"."language_code", "items_itemtranslation"."parent_id", "items_itemtranslation"."name", "items_itemtranslation"."description", "items_itemtranslation"."cost_price", "items_itemtranslation"."sale_price", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "items_itemtranslation" INNER JOIN "items_item" ON ("items_itemtranslation"."parent_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") WHERE ("items_itemtranslation"."parent_id" = 5  AND "items_itemtranslation"."language_code" = sl ); args=(5, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value Prvi artikel.
+DEBUG:django.db.backends:(0.000) SELECT "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id" FROM "items_size" WHERE "items_size"."id" = 5 ; args=(5,)
+DEBUG:django.db.backends:(0.000) SELECT "items_item"."category_id" FROM "items_item" LIMIT 21; args=()
+DEBUG:django.db.backends:(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:06:43.144592 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:06:43.144592')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT "auth_message"."id", "auth_message"."user_id", "auth_message"."message" FROM "auth_message" WHERE "auth_message"."user_id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.001) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined", "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "auth_user" ON ("django_admin_log"."user_id" = "auth_user"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 1  ORDER BY "django_admin_log"."action_time" DESC LIMIT 10; args=(1,)
+DEBUG:django.db.backends:(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:06:52.012477 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:06:52.012477')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT COUNT(*) FROM "items_category"; args=()
+DEBUG:django.db.backends:(0.000) SELECT "items_category"."id", "items_category"."parent_id" FROM "items_category" LEFT OUTER JOIN "items_category" T2 ON ("items_category"."parent_id" = T2."id") ORDER BY "items_category"."parent_id" ASC; args=()
+DEBUG:django.db.backends:(0.000) SELECT "auth_message"."id", "auth_message"."user_id", "auth_message"."message" FROM "auth_message" WHERE "auth_message"."user_id" = 1 ; args=(1,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_categorytranslation"."id", "items_categorytranslation"."language_code", "items_categorytranslation"."parent_id", "items_categorytranslation"."name", "items_categorytranslation"."description", "items_category"."id", "items_category"."parent_id" FROM "items_categorytranslation" INNER JOIN "items_category" ON ("items_categorytranslation"."parent_id" = "items_category"."id") WHERE ("items_categorytranslation"."parent_id" = 1  AND "items_categorytranslation"."language_code" = sl ); args=(1, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object CategoryTranslation object, returning value Majce.
+DEBUG:django.db.backends:(0.000) SELECT "items_category"."id", "items_category"."parent_id" FROM "items_category" WHERE "items_category"."id" = 1 ; args=(1,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_categorytranslation"."id", "items_categorytranslation"."language_code", "items_categorytranslation"."parent_id", "items_categorytranslation"."name", "items_categorytranslation"."description", "items_category"."id", "items_category"."parent_id" FROM "items_categorytranslation" INNER JOIN "items_category" ON ("items_categorytranslation"."parent_id" = "items_category"."id") WHERE ("items_categorytranslation"."parent_id" = 2  AND "items_categorytranslation"."language_code" = sl ); args=(2, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object CategoryTranslation object, returning value S kratkimi rokavami.
+DEBUG:django.db.backends:(0.000) SELECT "items_category"."id", "items_category"."parent_id" FROM "items_category" WHERE "items_category"."id" = 1 ; args=(1,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_categorytranslation"."id", "items_categorytranslation"."language_code", "items_categorytranslation"."parent_id", "items_categorytranslation"."name", "items_categorytranslation"."description", "items_category"."id", "items_category"."parent_id" FROM "items_categorytranslation" INNER JOIN "items_category" ON ("items_categorytranslation"."parent_id" = "items_category"."id") WHERE ("items_categorytranslation"."parent_id" = 3  AND "items_categorytranslation"."language_code" = sl ); args=(3, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object CategoryTranslation object, returning value Z dolgimi rokavami.
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:06:52.135824 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:06:52.135824')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:06:55.255805 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:06:55.255805')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT "items_category"."id", "items_category"."parent_id" FROM "items_category" WHERE "items_category"."id" = 2 ; args=(2,)
+DEBUG:django.db.backends:(0.000) SELECT "items_categorytranslation"."id", "items_categorytranslation"."language_code", "items_categorytranslation"."parent_id", "items_categorytranslation"."name", "items_categorytranslation"."description" FROM "items_categorytranslation" WHERE "items_categorytranslation"."parent_id" = 2  ORDER BY "items_categorytranslation"."language_code" ASC; args=(2,)
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = categorytranslation  AND "django_content_type"."app_label" = items ); args=('categorytranslation', 'items')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = category  AND "django_content_type"."app_label" = items ); args=('category', 'items')
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_categorytranslation"."id", "items_categorytranslation"."language_code", "items_categorytranslation"."parent_id", "items_categorytranslation"."name", "items_categorytranslation"."description", "items_category"."id", "items_category"."parent_id" FROM "items_categorytranslation" INNER JOIN "items_category" ON ("items_categorytranslation"."parent_id" = "items_category"."id") WHERE ("items_categorytranslation"."parent_id" = 2  AND "items_categorytranslation"."language_code" = sl ); args=(2, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object CategoryTranslation object, returning value S kratkimi rokavami.
+DEBUG:django.db.backends:(0.000) SELECT "auth_message"."id", "auth_message"."user_id", "auth_message"."message" FROM "auth_message" WHERE "auth_message"."user_id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT "items_category"."id", "items_category"."parent_id" FROM "items_category"; args=()
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_categorytranslation"."id", "items_categorytranslation"."language_code", "items_categorytranslation"."parent_id", "items_categorytranslation"."name", "items_categorytranslation"."description", "items_category"."id", "items_category"."parent_id" FROM "items_categorytranslation" INNER JOIN "items_category" ON ("items_categorytranslation"."parent_id" = "items_category"."id") WHERE ("items_categorytranslation"."parent_id" = 1  AND "items_categorytranslation"."language_code" = sl ); args=(1, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object CategoryTranslation object, returning value Majce.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_categorytranslation"."id", "items_categorytranslation"."language_code", "items_categorytranslation"."parent_id", "items_categorytranslation"."name", "items_categorytranslation"."description", "items_category"."id", "items_category"."parent_id" FROM "items_categorytranslation" INNER JOIN "items_category" ON ("items_categorytranslation"."parent_id" = "items_category"."id") WHERE ("items_categorytranslation"."parent_id" = 2  AND "items_categorytranslation"."language_code" = sl ); args=(2, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object CategoryTranslation object, returning value S kratkimi rokavami.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_categorytranslation"."id", "items_categorytranslation"."language_code", "items_categorytranslation"."parent_id", "items_categorytranslation"."name", "items_categorytranslation"."description", "items_category"."id", "items_category"."parent_id" FROM "items_categorytranslation" INNER JOIN "items_category" ON ("items_categorytranslation"."parent_id" = "items_category"."id") WHERE ("items_categorytranslation"."parent_id" = 3  AND "items_categorytranslation"."language_code" = sl ); args=(3, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object CategoryTranslation object, returning value Z dolgimi rokavami.
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:06:55.380518 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:06:55.380518')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:07:24.340902 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:07:24.340902')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT COUNT(*) FROM "items_category"; args=()
+DEBUG:django.db.backends:(0.000) SELECT "items_category"."id", "items_category"."parent_id" FROM "items_category" LEFT OUTER JOIN "items_category" T2 ON ("items_category"."parent_id" = T2."id") ORDER BY "items_category"."parent_id" ASC; args=()
+DEBUG:django.db.backends:(0.000) SELECT "auth_message"."id", "auth_message"."user_id", "auth_message"."message" FROM "auth_message" WHERE "auth_message"."user_id" = 1 ; args=(1,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_categorytranslation"."id", "items_categorytranslation"."language_code", "items_categorytranslation"."parent_id", "items_categorytranslation"."name", "items_categorytranslation"."description", "items_category"."id", "items_category"."parent_id" FROM "items_categorytranslation" INNER JOIN "items_category" ON ("items_categorytranslation"."parent_id" = "items_category"."id") WHERE ("items_categorytranslation"."parent_id" = 1  AND "items_categorytranslation"."language_code" = sl ); args=(1, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object CategoryTranslation object, returning value Majce.
+DEBUG:django.db.backends:(0.000) SELECT "items_category"."id", "items_category"."parent_id" FROM "items_category" WHERE "items_category"."id" = 1 ; args=(1,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_categorytranslation"."id", "items_categorytranslation"."language_code", "items_categorytranslation"."parent_id", "items_categorytranslation"."name", "items_categorytranslation"."description", "items_category"."id", "items_category"."parent_id" FROM "items_categorytranslation" INNER JOIN "items_category" ON ("items_categorytranslation"."parent_id" = "items_category"."id") WHERE ("items_categorytranslation"."parent_id" = 2  AND "items_categorytranslation"."language_code" = sl ); args=(2, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object CategoryTranslation object, returning value S kratkimi rokavami.
+DEBUG:django.db.backends:(0.000) SELECT "items_category"."id", "items_category"."parent_id" FROM "items_category" WHERE "items_category"."id" = 1 ; args=(1,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_categorytranslation"."id", "items_categorytranslation"."language_code", "items_categorytranslation"."parent_id", "items_categorytranslation"."name", "items_categorytranslation"."description", "items_category"."id", "items_category"."parent_id" FROM "items_categorytranslation" INNER JOIN "items_category" ON ("items_categorytranslation"."parent_id" = "items_category"."id") WHERE ("items_categorytranslation"."parent_id" = 3  AND "items_categorytranslation"."language_code" = sl ); args=(3, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object CategoryTranslation object, returning value Z dolgimi rokavami.
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:07:24.412636 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:07:24.412636')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:07:25.910399 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:07:25.910399')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT "auth_message"."id", "auth_message"."user_id", "auth_message"."message" FROM "auth_message" WHERE "auth_message"."user_id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:07:28.230845 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:07:28.230845')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT COUNT(*) FROM "items_item"; args=()
+DEBUG:django.db.backends:(0.000) SELECT "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id" FROM "items_item" ORDER BY "items_item"."active" DESC; args=()
+DEBUG:django.db.backends:(0.000) SELECT "auth_message"."id", "auth_message"."user_id", "auth_message"."message" FROM "auth_message" WHERE "auth_message"."user_id" = 1 ; args=(1,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_itemtranslation"."id", "items_itemtranslation"."language_code", "items_itemtranslation"."parent_id", "items_itemtranslation"."name", "items_itemtranslation"."description", "items_itemtranslation"."cost_price", "items_itemtranslation"."sale_price", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "items_itemtranslation" INNER JOIN "items_item" ON ("items_itemtranslation"."parent_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") WHERE ("items_itemtranslation"."parent_id" = 1  AND "items_itemtranslation"."language_code" = sl ); args=(1, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value Prvi artikel.
+DEBUG:django.db.backends:(0.000) SELECT "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id" FROM "items_size" WHERE "items_size"."id" = 1 ; args=(1,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_itemtranslation"."id", "items_itemtranslation"."language_code", "items_itemtranslation"."parent_id", "items_itemtranslation"."name", "items_itemtranslation"."description", "items_itemtranslation"."cost_price", "items_itemtranslation"."sale_price", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "items_itemtranslation" INNER JOIN "items_item" ON ("items_itemtranslation"."parent_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") WHERE ("items_itemtranslation"."parent_id" = 2  AND "items_itemtranslation"."language_code" = sl ); args=(2, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value Prvi artikel.
+DEBUG:django.db.backends:(0.000) SELECT "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id" FROM "items_size" WHERE "items_size"."id" = 2 ; args=(2,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_itemtranslation"."id", "items_itemtranslation"."language_code", "items_itemtranslation"."parent_id", "items_itemtranslation"."name", "items_itemtranslation"."description", "items_itemtranslation"."cost_price", "items_itemtranslation"."sale_price", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "items_itemtranslation" INNER JOIN "items_item" ON ("items_itemtranslation"."parent_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") WHERE ("items_itemtranslation"."parent_id" = 3  AND "items_itemtranslation"."language_code" = sl ); args=(3, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value Prvi artikel.
+DEBUG:django.db.backends:(0.000) SELECT "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id" FROM "items_size" WHERE "items_size"."id" = 3 ; args=(3,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_itemtranslation"."id", "items_itemtranslation"."language_code", "items_itemtranslation"."parent_id", "items_itemtranslation"."name", "items_itemtranslation"."description", "items_itemtranslation"."cost_price", "items_itemtranslation"."sale_price", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "items_itemtranslation" INNER JOIN "items_item" ON ("items_itemtranslation"."parent_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") WHERE ("items_itemtranslation"."parent_id" = 4  AND "items_itemtranslation"."language_code" = sl ); args=(4, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value Prvi artikel.
+DEBUG:django.db.backends:(0.000) SELECT "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id" FROM "items_size" WHERE "items_size"."id" = 4 ; args=(4,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_itemtranslation"."id", "items_itemtranslation"."language_code", "items_itemtranslation"."parent_id", "items_itemtranslation"."name", "items_itemtranslation"."description", "items_itemtranslation"."cost_price", "items_itemtranslation"."sale_price", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "items_itemtranslation" INNER JOIN "items_item" ON ("items_itemtranslation"."parent_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") WHERE ("items_itemtranslation"."parent_id" = 5  AND "items_itemtranslation"."language_code" = sl ); args=(5, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value Prvi artikel.
+DEBUG:django.db.backends:(0.000) SELECT "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id" FROM "items_size" WHERE "items_size"."id" = 5 ; args=(5,)
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:07:28.302614 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:07:28.302614')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:07:33.211833 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:07:33.211833')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id" FROM "items_item" WHERE "items_item"."id" = 2 ; args=(2,)
+DEBUG:django.db.backends:(0.000) SELECT "items_itemtranslation"."id", "items_itemtranslation"."language_code", "items_itemtranslation"."parent_id", "items_itemtranslation"."name", "items_itemtranslation"."description", "items_itemtranslation"."cost_price", "items_itemtranslation"."sale_price" FROM "items_itemtranslation" WHERE "items_itemtranslation"."parent_id" = 2  ORDER BY "items_itemtranslation"."language_code" ASC; args=(2,)
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = itemtranslation  AND "django_content_type"."app_label" = items ); args=('itemtranslation', 'items')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = item  AND "django_content_type"."app_label" = items ); args=('item', 'items')
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_itemtranslation"."id", "items_itemtranslation"."language_code", "items_itemtranslation"."parent_id", "items_itemtranslation"."name", "items_itemtranslation"."description", "items_itemtranslation"."cost_price", "items_itemtranslation"."sale_price", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "items_itemtranslation" INNER JOIN "items_item" ON ("items_itemtranslation"."parent_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") WHERE ("items_itemtranslation"."parent_id" = 2  AND "items_itemtranslation"."language_code" = sl ); args=(2, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value Prvi artikel.
+DEBUG:django.db.backends:(0.000) SELECT "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id" FROM "items_size" WHERE "items_size"."id" = 2 ; args=(2,)
+DEBUG:django.db.backends:(0.000) SELECT "auth_message"."id", "auth_message"."user_id", "auth_message"."message" FROM "auth_message" WHERE "auth_message"."user_id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT "items_category"."id", "items_category"."parent_id" FROM "items_category"; args=()
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_categorytranslation"."id", "items_categorytranslation"."language_code", "items_categorytranslation"."parent_id", "items_categorytranslation"."name", "items_categorytranslation"."description", "items_category"."id", "items_category"."parent_id" FROM "items_categorytranslation" INNER JOIN "items_category" ON ("items_categorytranslation"."parent_id" = "items_category"."id") WHERE ("items_categorytranslation"."parent_id" = 1  AND "items_categorytranslation"."language_code" = sl ); args=(1, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object CategoryTranslation object, returning value Majce.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_categorytranslation"."id", "items_categorytranslation"."language_code", "items_categorytranslation"."parent_id", "items_categorytranslation"."name", "items_categorytranslation"."description", "items_category"."id", "items_category"."parent_id" FROM "items_categorytranslation" INNER JOIN "items_category" ON ("items_categorytranslation"."parent_id" = "items_category"."id") WHERE ("items_categorytranslation"."parent_id" = 2  AND "items_categorytranslation"."language_code" = sl ); args=(2, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object CategoryTranslation object, returning value S kratkimi rokavami.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_categorytranslation"."id", "items_categorytranslation"."language_code", "items_categorytranslation"."parent_id", "items_categorytranslation"."name", "items_categorytranslation"."description", "items_category"."id", "items_category"."parent_id" FROM "items_categorytranslation" INNER JOIN "items_category" ON ("items_categorytranslation"."parent_id" = "items_category"."id") WHERE ("items_categorytranslation"."parent_id" = 3  AND "items_categorytranslation"."language_code" = sl ); args=(3, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object CategoryTranslation object, returning value Z dolgimi rokavami.
+DEBUG:django.db.backends:(0.000) SELECT "items_size_group"."id", "items_size_group"."name" FROM "items_size_group"; args=()
+DEBUG:django.db.backends:(0.000) SELECT "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id" FROM "items_size" ORDER BY "items_size"."sort" ASC; args=()
+DEBUG:django.db.backends:(0.000) SELECT "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "items_tax"; args=()
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:07:33.326109 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:07:33.326109')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:08:26.555150 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:08:26.555150')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id" FROM "items_item" WHERE "items_item"."id" = 2 ; args=(2,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_itemtranslation"."id", "items_itemtranslation"."language_code", "items_itemtranslation"."parent_id", "items_itemtranslation"."name", "items_itemtranslation"."description", "items_itemtranslation"."cost_price", "items_itemtranslation"."sale_price", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "items_itemtranslation" INNER JOIN "items_item" ON ("items_itemtranslation"."parent_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") WHERE ("items_itemtranslation"."parent_id" = 2  AND "items_itemtranslation"."language_code" = sl ); args=(2, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value Prvi artikel.
+DEBUG:django.db.backends:(0.000) SELECT "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id" FROM "items_size" WHERE "items_size"."id" = 2 ; args=(2,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value Prvi artikel.
+DEBUG:django.db.backends:(0.000) SELECT "auth_message"."id", "auth_message"."user_id", "auth_message"."message" FROM "auth_message" WHERE "auth_message"."user_id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "django_admin_log" INNER JOIN "auth_user" ON ("django_admin_log"."user_id" = "auth_user"."id") WHERE ("django_admin_log"."content_type_id" = 19  AND "django_admin_log"."object_id" = 2 ) ORDER BY "django_admin_log"."action_time" ASC; args=(19, u'2')
+DEBUG:django.db.backends:(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:08:34.637293 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:08:34.637293')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT COUNT(*) FROM "items_item"; args=()
+DEBUG:django.db.backends:(0.000) SELECT "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id" FROM "items_item" ORDER BY "items_item"."active" DESC; args=()
+DEBUG:django.db.backends:(0.000) SELECT "auth_message"."id", "auth_message"."user_id", "auth_message"."message" FROM "auth_message" WHERE "auth_message"."user_id" = 1 ; args=(1,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_itemtranslation"."id", "items_itemtranslation"."language_code", "items_itemtranslation"."parent_id", "items_itemtranslation"."name", "items_itemtranslation"."description", "items_itemtranslation"."cost_price", "items_itemtranslation"."sale_price", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "items_itemtranslation" INNER JOIN "items_item" ON ("items_itemtranslation"."parent_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") WHERE ("items_itemtranslation"."parent_id" = 1  AND "items_itemtranslation"."language_code" = sl ); args=(1, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value Prvi artikel.
+DEBUG:django.db.backends:(0.000) SELECT "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id" FROM "items_size" WHERE "items_size"."id" = 1 ; args=(1,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_itemtranslation"."id", "items_itemtranslation"."language_code", "items_itemtranslation"."parent_id", "items_itemtranslation"."name", "items_itemtranslation"."description", "items_itemtranslation"."cost_price", "items_itemtranslation"."sale_price", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "items_itemtranslation" INNER JOIN "items_item" ON ("items_itemtranslation"."parent_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") WHERE ("items_itemtranslation"."parent_id" = 2  AND "items_itemtranslation"."language_code" = sl ); args=(2, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value Prvi artikel.
+DEBUG:django.db.backends:(0.000) SELECT "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id" FROM "items_size" WHERE "items_size"."id" = 2 ; args=(2,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_itemtranslation"."id", "items_itemtranslation"."language_code", "items_itemtranslation"."parent_id", "items_itemtranslation"."name", "items_itemtranslation"."description", "items_itemtranslation"."cost_price", "items_itemtranslation"."sale_price", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "items_itemtranslation" INNER JOIN "items_item" ON ("items_itemtranslation"."parent_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") WHERE ("items_itemtranslation"."parent_id" = 3  AND "items_itemtranslation"."language_code" = sl ); args=(3, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value Prvi artikel.
+DEBUG:django.db.backends:(0.000) SELECT "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id" FROM "items_size" WHERE "items_size"."id" = 3 ; args=(3,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_itemtranslation"."id", "items_itemtranslation"."language_code", "items_itemtranslation"."parent_id", "items_itemtranslation"."name", "items_itemtranslation"."description", "items_itemtranslation"."cost_price", "items_itemtranslation"."sale_price", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "items_itemtranslation" INNER JOIN "items_item" ON ("items_itemtranslation"."parent_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") WHERE ("items_itemtranslation"."parent_id" = 4  AND "items_itemtranslation"."language_code" = sl ); args=(4, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value Prvi artikel.
+DEBUG:django.db.backends:(0.000) SELECT "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id" FROM "items_size" WHERE "items_size"."id" = 4 ; args=(4,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_itemtranslation"."id", "items_itemtranslation"."language_code", "items_itemtranslation"."parent_id", "items_itemtranslation"."name", "items_itemtranslation"."description", "items_itemtranslation"."cost_price", "items_itemtranslation"."sale_price", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "items_itemtranslation" INNER JOIN "items_item" ON ("items_itemtranslation"."parent_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") WHERE ("items_itemtranslation"."parent_id" = 5  AND "items_itemtranslation"."language_code" = sl ); args=(5, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value Prvi artikel.
+DEBUG:django.db.backends:(0.000) SELECT "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id" FROM "items_size" WHERE "items_size"."id" = 5 ; args=(5,)
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:08:34.716860 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:08:34.716860')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:08:35.753656 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:08:35.753656')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT "auth_message"."id", "auth_message"."user_id", "auth_message"."message" FROM "auth_message" WHERE "auth_message"."user_id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:08:37.322271 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:08:37.322271')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT COUNT(*) FROM "items_size_group"; args=()
+DEBUG:django.db.backends:(0.000) SELECT "items_size_group"."id", "items_size_group"."name" FROM "items_size_group" ORDER BY "items_size_group"."id" DESC; args=()
+DEBUG:django.db.backends:(0.000) SELECT "auth_message"."id", "auth_message"."user_id", "auth_message"."message" FROM "auth_message" WHERE "auth_message"."user_id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:08:37.379311 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:08:37.379311')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:08:39.336438 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:08:39.336438')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT "items_size_group"."id", "items_size_group"."name" FROM "items_size_group" WHERE "items_size_group"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id" FROM "items_size" WHERE "items_size"."size_group_id" = 1  ORDER BY "items_size"."id" ASC; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = size  AND "django_content_type"."app_label" = items ); args=('size', 'items')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = size_group  AND "django_content_type"."app_label" = items ); args=('size_group', 'items')
+DEBUG:django.db.backends:(0.000) SELECT "auth_message"."id", "auth_message"."user_id", "auth_message"."message" FROM "auth_message" WHERE "auth_message"."user_id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:08:39.436744 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:08:39.436744')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:08:45.649011 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:08:45.649011')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT "auth_message"."id", "auth_message"."user_id", "auth_message"."message" FROM "auth_message" WHERE "auth_message"."user_id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:08:46.936377 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:08:46.936377')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT "auth_message"."id", "auth_message"."user_id", "auth_message"."message" FROM "auth_message" WHERE "auth_message"."user_id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.001) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined", "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "auth_user" ON ("django_admin_log"."user_id" = "auth_user"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 1  ORDER BY "django_admin_log"."action_time" DESC LIMIT 10; args=(1,)
+DEBUG:django.db.backends:(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:08:54.544495 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:08:54.544495')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT COUNT(*) FROM "stock_stockevent"; args=()
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockevent"."id", "stock_stockevent"."user", "stock_stockevent"."user_group" FROM "stock_stockevent" ORDER BY "stock_stockevent"."id" DESC; args=()
+DEBUG:django.db.backends:(0.000) SELECT "auth_message"."id", "auth_message"."user_id", "auth_message"."message" FROM "auth_message" WHERE "auth_message"."user_id" = 1 ; args=(1,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockeventtranslation"."id", "stock_stockeventtranslation"."language_code", "stock_stockeventtranslation"."parent_id", "stock_stockeventtranslation"."name", "stock_stockeventtranslation"."description", "stock_stockevent"."id", "stock_stockevent"."user", "stock_stockevent"."user_group" FROM "stock_stockeventtranslation" INNER JOIN "stock_stockevent" ON ("stock_stockeventtranslation"."parent_id" = "stock_stockevent"."id") WHERE ("stock_stockeventtranslation"."parent_id" = 5  AND "stock_stockeventtranslation"."language_code" = sl ); args=(5, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object StockEventTranslation object, returning value Sprejem.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockeventtranslation"."id", "stock_stockeventtranslation"."language_code", "stock_stockeventtranslation"."parent_id", "stock_stockeventtranslation"."name", "stock_stockeventtranslation"."description", "stock_stockevent"."id", "stock_stockevent"."user", "stock_stockevent"."user_group" FROM "stock_stockeventtranslation" INNER JOIN "stock_stockevent" ON ("stock_stockeventtranslation"."parent_id" = "stock_stockevent"."id") WHERE ("stock_stockeventtranslation"."parent_id" = 4  AND "stock_stockeventtranslation"."language_code" = sl ); args=(4, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object StockEventTranslation object, returning value Pošiljanje.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockeventtranslation"."id", "stock_stockeventtranslation"."language_code", "stock_stockeventtranslation"."parent_id", "stock_stockeventtranslation"."name", "stock_stockeventtranslation"."description", "stock_stockevent"."id", "stock_stockevent"."user", "stock_stockevent"."user_group" FROM "stock_stockeventtranslation" INNER JOIN "stock_stockevent" ON ("stock_stockeventtranslation"."parent_id" = "stock_stockevent"."id") WHERE ("stock_stockeventtranslation"."parent_id" = 3  AND "stock_stockeventtranslation"."language_code" = sl ); args=(3, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object StockEventTranslation object, returning value Prodaja.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockeventtranslation"."id", "stock_stockeventtranslation"."language_code", "stock_stockeventtranslation"."parent_id", "stock_stockeventtranslation"."name", "stock_stockeventtranslation"."description", "stock_stockevent"."id", "stock_stockevent"."user", "stock_stockevent"."user_group" FROM "stock_stockeventtranslation" INNER JOIN "stock_stockevent" ON ("stock_stockeventtranslation"."parent_id" = "stock_stockevent"."id") WHERE ("stock_stockeventtranslation"."parent_id" = 2  AND "stock_stockeventtranslation"."language_code" = sl ); args=(2, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object StockEventTranslation object, returning value Lastna raba.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockeventtranslation"."id", "stock_stockeventtranslation"."language_code", "stock_stockeventtranslation"."parent_id", "stock_stockeventtranslation"."name", "stock_stockeventtranslation"."description", "stock_stockevent"."id", "stock_stockevent"."user", "stock_stockevent"."user_group" FROM "stock_stockeventtranslation" INNER JOIN "stock_stockevent" ON ("stock_stockeventtranslation"."parent_id" = "stock_stockevent"."id") WHERE ("stock_stockeventtranslation"."parent_id" = 1  AND "stock_stockeventtranslation"."language_code" = sl ); args=(1, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object StockEventTranslation object, returning value Nabava.
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:08:54.617205 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:08:54.617205')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:09:18.419576 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:09:18.419576')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockevent"."id", "stock_stockevent"."user", "stock_stockevent"."user_group" FROM "stock_stockevent" WHERE "stock_stockevent"."id" = 5 ; args=(5,)
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockeventtranslation"."id", "stock_stockeventtranslation"."language_code", "stock_stockeventtranslation"."parent_id", "stock_stockeventtranslation"."name", "stock_stockeventtranslation"."description" FROM "stock_stockeventtranslation" WHERE "stock_stockeventtranslation"."parent_id" = 5  ORDER BY "stock_stockeventtranslation"."language_code" ASC; args=(5,)
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = stockeventtranslation  AND "django_content_type"."app_label" = stock ); args=('stockeventtranslation', 'stock')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = stockevent  AND "django_content_type"."app_label" = stock ); args=('stockevent', 'stock')
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockeventtranslation"."id", "stock_stockeventtranslation"."language_code", "stock_stockeventtranslation"."parent_id", "stock_stockeventtranslation"."name", "stock_stockeventtranslation"."description", "stock_stockevent"."id", "stock_stockevent"."user", "stock_stockevent"."user_group" FROM "stock_stockeventtranslation" INNER JOIN "stock_stockevent" ON ("stock_stockeventtranslation"."parent_id" = "stock_stockevent"."id") WHERE ("stock_stockeventtranslation"."parent_id" = 5  AND "stock_stockeventtranslation"."language_code" = sl ); args=(5, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object StockEventTranslation object, returning value Sprejem.
+DEBUG:django.db.backends:(0.000) SELECT "auth_message"."id", "auth_message"."user_id", "auth_message"."message" FROM "auth_message" WHERE "auth_message"."user_id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:09:18.510098 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:09:18.510098')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:10:03.051056 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:10:03.051056')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockevent"."id", "stock_stockevent"."user", "stock_stockevent"."user_group" FROM "stock_stockevent" WHERE "stock_stockevent"."id" = 5 ; args=(5,)
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockeventtranslation"."id", "stock_stockeventtranslation"."language_code", "stock_stockeventtranslation"."parent_id", "stock_stockeventtranslation"."name", "stock_stockeventtranslation"."description" FROM "stock_stockeventtranslation" WHERE "stock_stockeventtranslation"."parent_id" = 5  ORDER BY "stock_stockeventtranslation"."language_code" ASC; args=(5,)
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockeventtranslation"."id", "stock_stockeventtranslation"."language_code", "stock_stockeventtranslation"."parent_id", "stock_stockeventtranslation"."name", "stock_stockeventtranslation"."description" FROM "stock_stockeventtranslation" WHERE "stock_stockeventtranslation"."id" = 52 ; args=(52,)
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "stock_stockeventtranslation" WHERE ("stock_stockeventtranslation"."parent_id" = 5  AND "stock_stockeventtranslation"."language_code" = en  AND NOT ("stock_stockeventtranslation"."id" = 52 )) LIMIT 1; args=(5, u'en', 52)
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockeventtranslation"."id", "stock_stockeventtranslation"."language_code", "stock_stockeventtranslation"."parent_id", "stock_stockeventtranslation"."name", "stock_stockeventtranslation"."description" FROM "stock_stockeventtranslation" WHERE "stock_stockeventtranslation"."id" = 51 ; args=(51,)
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "stock_stockeventtranslation" WHERE ("stock_stockeventtranslation"."parent_id" = 5  AND "stock_stockeventtranslation"."language_code" = sl  AND NOT ("stock_stockeventtranslation"."id" = 51 )) LIMIT 1; args=(5, u'sl', 51)
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "stock_stockevent" WHERE "stock_stockevent"."id" = 5  LIMIT 1; args=(5,)
+DEBUG:django.db.backends:(0.000) UPDATE "stock_stockevent" SET "user" = , "user_group" =  WHERE "stock_stockevent"."id" = 5 ; args=(u'', u'', 5)
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockeventtranslation"."id", "stock_stockeventtranslation"."language_code", "stock_stockeventtranslation"."parent_id", "stock_stockeventtranslation"."name", "stock_stockeventtranslation"."description" FROM "stock_stockeventtranslation" WHERE "stock_stockeventtranslation"."id" = 52 ; args=(52,)
+DEBUG:django.db.backends:(0.000) DELETE FROM "stock_stockeventtranslation" WHERE "id" IN (52); args=(52,)
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockeventtranslation"."id", "stock_stockeventtranslation"."language_code", "stock_stockeventtranslation"."parent_id", "stock_stockeventtranslation"."name", "stock_stockeventtranslation"."description" FROM "stock_stockeventtranslation" WHERE "stock_stockeventtranslation"."id" = 51 ; args=(51,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockeventtranslation"."id", "stock_stockeventtranslation"."language_code", "stock_stockeventtranslation"."parent_id", "stock_stockeventtranslation"."name", "stock_stockeventtranslation"."description", "stock_stockevent"."id", "stock_stockevent"."user", "stock_stockevent"."user_group" FROM "stock_stockeventtranslation" INNER JOIN "stock_stockevent" ON ("stock_stockeventtranslation"."parent_id" = "stock_stockevent"."id") WHERE ("stock_stockeventtranslation"."parent_id" = 5  AND "stock_stockeventtranslation"."language_code" = sl ); args=(5, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object StockEventTranslation object, returning value Sprejem.
+DEBUG:django.db.backends:(0.000) INSERT INTO "django_admin_log" ("action_time", "user_id", "content_type_id", "object_id", "object_repr", "action_flag", "change_message") VALUES (2011-04-30 22:10:03.075625, 1, 24, 5, Sprejem, 2, Izbrisan stock event translation "StockEventTranslation object".); args=(u'2011-04-30 22:10:03.075625', 1, 24, u'5', u'Sprejem', 2, u'Izbrisan stock event translation "StockEventTranslation object".')
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Found translation object StockEventTranslation object, returning value Sprejem.
+DEBUG:django.db.backends:(0.000) SELECT "auth_message"."id", "auth_message"."user_id", "auth_message"."message" FROM "auth_message" WHERE "auth_message"."user_id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT "auth_message"."id", "auth_message"."user_id", "auth_message"."message" FROM "auth_message" WHERE "auth_message"."user_id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:10:03.107506 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:10:03.107506')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT COUNT(*) FROM "stock_stockevent"; args=()
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockevent"."id", "stock_stockevent"."user", "stock_stockevent"."user_group" FROM "stock_stockevent" ORDER BY "stock_stockevent"."id" DESC; args=()
+DEBUG:django.db.backends:(0.000) SELECT "auth_message"."id", "auth_message"."user_id", "auth_message"."message" FROM "auth_message" WHERE "auth_message"."user_id" = 1 ; args=(1,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockeventtranslation"."id", "stock_stockeventtranslation"."language_code", "stock_stockeventtranslation"."parent_id", "stock_stockeventtranslation"."name", "stock_stockeventtranslation"."description", "stock_stockevent"."id", "stock_stockevent"."user", "stock_stockevent"."user_group" FROM "stock_stockeventtranslation" INNER JOIN "stock_stockevent" ON ("stock_stockeventtranslation"."parent_id" = "stock_stockevent"."id") WHERE ("stock_stockeventtranslation"."parent_id" = 5  AND "stock_stockeventtranslation"."language_code" = sl ); args=(5, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object StockEventTranslation object, returning value Sprejem.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockeventtranslation"."id", "stock_stockeventtranslation"."language_code", "stock_stockeventtranslation"."parent_id", "stock_stockeventtranslation"."name", "stock_stockeventtranslation"."description", "stock_stockevent"."id", "stock_stockevent"."user", "stock_stockevent"."user_group" FROM "stock_stockeventtranslation" INNER JOIN "stock_stockevent" ON ("stock_stockeventtranslation"."parent_id" = "stock_stockevent"."id") WHERE ("stock_stockeventtranslation"."parent_id" = 4  AND "stock_stockeventtranslation"."language_code" = sl ); args=(4, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object StockEventTranslation object, returning value Pošiljanje.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockeventtranslation"."id", "stock_stockeventtranslation"."language_code", "stock_stockeventtranslation"."parent_id", "stock_stockeventtranslation"."name", "stock_stockeventtranslation"."description", "stock_stockevent"."id", "stock_stockevent"."user", "stock_stockevent"."user_group" FROM "stock_stockeventtranslation" INNER JOIN "stock_stockevent" ON ("stock_stockeventtranslation"."parent_id" = "stock_stockevent"."id") WHERE ("stock_stockeventtranslation"."parent_id" = 3  AND "stock_stockeventtranslation"."language_code" = sl ); args=(3, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object StockEventTranslation object, returning value Prodaja.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockeventtranslation"."id", "stock_stockeventtranslation"."language_code", "stock_stockeventtranslation"."parent_id", "stock_stockeventtranslation"."name", "stock_stockeventtranslation"."description", "stock_stockevent"."id", "stock_stockevent"."user", "stock_stockevent"."user_group" FROM "stock_stockeventtranslation" INNER JOIN "stock_stockevent" ON ("stock_stockeventtranslation"."parent_id" = "stock_stockevent"."id") WHERE ("stock_stockeventtranslation"."parent_id" = 2  AND "stock_stockeventtranslation"."language_code" = sl ); args=(2, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object StockEventTranslation object, returning value Lastna raba.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockeventtranslation"."id", "stock_stockeventtranslation"."language_code", "stock_stockeventtranslation"."parent_id", "stock_stockeventtranslation"."name", "stock_stockeventtranslation"."description", "stock_stockevent"."id", "stock_stockevent"."user", "stock_stockevent"."user_group" FROM "stock_stockeventtranslation" INNER JOIN "stock_stockevent" ON ("stock_stockeventtranslation"."parent_id" = "stock_stockevent"."id") WHERE ("stock_stockeventtranslation"."parent_id" = 1  AND "stock_stockeventtranslation"."language_code" = sl ); args=(1, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object StockEventTranslation object, returning value Nabava.
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:10:03.184710 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:10:03.184710')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:10:07.081226 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:10:07.081226')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockevent"."id", "stock_stockevent"."user", "stock_stockevent"."user_group" FROM "stock_stockevent" WHERE "stock_stockevent"."id" = 5 ; args=(5,)
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockeventtranslation"."id", "stock_stockeventtranslation"."language_code", "stock_stockeventtranslation"."parent_id", "stock_stockeventtranslation"."name", "stock_stockeventtranslation"."description" FROM "stock_stockeventtranslation" WHERE "stock_stockeventtranslation"."parent_id" = 5  ORDER BY "stock_stockeventtranslation"."language_code" ASC; args=(5,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockeventtranslation"."id", "stock_stockeventtranslation"."language_code", "stock_stockeventtranslation"."parent_id", "stock_stockeventtranslation"."name", "stock_stockeventtranslation"."description", "stock_stockevent"."id", "stock_stockevent"."user", "stock_stockevent"."user_group" FROM "stock_stockeventtranslation" INNER JOIN "stock_stockevent" ON ("stock_stockeventtranslation"."parent_id" = "stock_stockevent"."id") WHERE ("stock_stockeventtranslation"."parent_id" = 5  AND "stock_stockeventtranslation"."language_code" = sl ); args=(5, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object StockEventTranslation object, returning value Sprejem.
+DEBUG:django.db.backends:(0.000) SELECT "auth_message"."id", "auth_message"."user_id", "auth_message"."message" FROM "auth_message" WHERE "auth_message"."user_id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:10:07.230284 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:10:07.230284')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:10:48.813058 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:10:48.813058')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT "auth_message"."id", "auth_message"."user_id", "auth_message"."message" FROM "auth_message" WHERE "auth_message"."user_id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:11:02.489980 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:11:02.489980')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT COUNT(*) FROM "stock_stock"; args=()
+DEBUG:django.db.backends:(0.000) SELECT "stock_stock"."id", "stock_stock"."store_id", "stock_stock"."item_id", "stock_stock"."reorder_level", "stock_stock"."quantity", "companies_store"."id", "companies_store"."name", "companies_store"."address", "companies_store"."telephone", "companies_store"."company_id", "companies_company"."id", "companies_company"."name", "companies_company"."address", "companies_company"."email", "companies_company"."identification", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T8."id", T8."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "stock_stock" INNER JOIN "companies_store" ON ("stock_stock"."store_id" = "companies_store"."id") INNER JOIN "companies_company" ON ("companies_store"."company_id" = "companies_company"."id") INNER JOIN "items_item" ON ("stock_stock"."item_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T8 ON ("items_size"."size_group_id" = T8."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") ORDER BY "stock_stock"."id" DESC; args=()
+DEBUG:django.db.backends:(0.000) SELECT "auth_message"."id", "auth_message"."user_id", "auth_message"."message" FROM "auth_message" WHERE "auth_message"."user_id" = 1 ; args=(1,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.001) SELECT "items_itemtranslation"."id", "items_itemtranslation"."language_code", "items_itemtranslation"."parent_id", "items_itemtranslation"."name", "items_itemtranslation"."description", "items_itemtranslation"."cost_price", "items_itemtranslation"."sale_price", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "items_itemtranslation" INNER JOIN "items_item" ON ("items_itemtranslation"."parent_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") WHERE ("items_itemtranslation"."parent_id" = 2  AND "items_itemtranslation"."language_code" = sl ); args=(2, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value Prvi artikel.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_itemtranslation"."id", "items_itemtranslation"."language_code", "items_itemtranslation"."parent_id", "items_itemtranslation"."name", "items_itemtranslation"."description", "items_itemtranslation"."cost_price", "items_itemtranslation"."sale_price", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "items_itemtranslation" INNER JOIN "items_item" ON ("items_itemtranslation"."parent_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") WHERE ("items_itemtranslation"."parent_id" = 1  AND "items_itemtranslation"."language_code" = sl ); args=(1, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value Prvi artikel.
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:11:02.554238 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:11:02.554238')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:11:07.182228 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:11:07.182228')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT "auth_message"."id", "auth_message"."user_id", "auth_message"."message" FROM "auth_message" WHERE "auth_message"."user_id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:11:07.980793 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:11:07.980793')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT COUNT(*) FROM "stock_stocklog"; args=()
+DEBUG:django.db.backends:(0.000) SELECT "stock_stocklog"."id", "stock_stocklog"."date_time", "stock_stocklog"."item_id", "stock_stocklog"."event_id", "stock_stocklog"."user", "stock_stocklog"."terminal_id", "stock_stocklog"."receipt", "stock_stocklog"."quantity", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale", "stock_stockevent"."id", "stock_stockevent"."user", "stock_stockevent"."user_group", "companies_terminal"."id", "companies_terminal"."name", "companies_terminal"."store_id", "companies_store"."id", "companies_store"."name", "companies_store"."address", "companies_store"."telephone", "companies_store"."company_id", "companies_company"."id", "companies_company"."name", "companies_company"."address", "companies_company"."email", "companies_company"."identification" FROM "stock_stocklog" INNER JOIN "items_item" ON ("stock_stocklog"."item_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") INNER JOIN "stock_stockevent" ON ("stock_stocklog"."event_id" = "stock_stockevent"."id") INNER JOIN "companies_terminal" ON ("stock_stocklog"."terminal_id" = "companies_terminal"."id") INNER JOIN "companies_store" ON ("companies_terminal"."store_id" = "companies_store"."id") INNER JOIN "companies_company" ON ("companies_store"."company_id" = "companies_company"."id") ORDER BY "stock_stocklog"."id" DESC; args=()
+DEBUG:django.db.backends:(0.000) SELECT "auth_message"."id", "auth_message"."user_id", "auth_message"."message" FROM "auth_message" WHERE "auth_message"."user_id" = 1 ; args=(1,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockeventtranslation"."id", "stock_stockeventtranslation"."language_code", "stock_stockeventtranslation"."parent_id", "stock_stockeventtranslation"."name", "stock_stockeventtranslation"."description", "stock_stockevent"."id", "stock_stockevent"."user", "stock_stockevent"."user_group" FROM "stock_stockeventtranslation" INNER JOIN "stock_stockevent" ON ("stock_stockeventtranslation"."parent_id" = "stock_stockevent"."id") WHERE ("stock_stockeventtranslation"."parent_id" = 1  AND "stock_stockeventtranslation"."language_code" = sl ); args=(1, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object StockEventTranslation object, returning value Nabava.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockeventtranslation"."id", "stock_stockeventtranslation"."language_code", "stock_stockeventtranslation"."parent_id", "stock_stockeventtranslation"."name", "stock_stockeventtranslation"."description", "stock_stockevent"."id", "stock_stockevent"."user", "stock_stockevent"."user_group" FROM "stock_stockeventtranslation" INNER JOIN "stock_stockevent" ON ("stock_stockeventtranslation"."parent_id" = "stock_stockevent"."id") WHERE ("stock_stockeventtranslation"."parent_id" = 1  AND "stock_stockeventtranslation"."language_code" = sl ); args=(1, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object StockEventTranslation object, returning value Nabava.
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:11:08.050078 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:11:08.050078')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:11:15.901750 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:11:15.901750')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT "stock_stocklog"."id", "stock_stocklog"."date_time", "stock_stocklog"."item_id", "stock_stocklog"."event_id", "stock_stocklog"."user", "stock_stocklog"."terminal_id", "stock_stocklog"."receipt", "stock_stocklog"."quantity" FROM "stock_stocklog" WHERE "stock_stocklog"."id" = 2 ; args=(2,)
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = stocklog  AND "django_content_type"."app_label" = stock ); args=('stocklog', 'stock')
+DEBUG:django.db.backends:(0.000) SELECT "auth_message"."id", "auth_message"."user_id", "auth_message"."message" FROM "auth_message" WHERE "auth_message"."user_id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id" FROM "items_item"; args=()
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_itemtranslation"."id", "items_itemtranslation"."language_code", "items_itemtranslation"."parent_id", "items_itemtranslation"."name", "items_itemtranslation"."description", "items_itemtranslation"."cost_price", "items_itemtranslation"."sale_price", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "items_itemtranslation" INNER JOIN "items_item" ON ("items_itemtranslation"."parent_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") WHERE ("items_itemtranslation"."parent_id" = 1  AND "items_itemtranslation"."language_code" = sl ); args=(1, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value Prvi artikel.
+DEBUG:django.db.backends:(0.000) SELECT "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id" FROM "items_size" WHERE "items_size"."id" = 1 ; args=(1,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_itemtranslation"."id", "items_itemtranslation"."language_code", "items_itemtranslation"."parent_id", "items_itemtranslation"."name", "items_itemtranslation"."description", "items_itemtranslation"."cost_price", "items_itemtranslation"."sale_price", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "items_itemtranslation" INNER JOIN "items_item" ON ("items_itemtranslation"."parent_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") WHERE ("items_itemtranslation"."parent_id" = 2  AND "items_itemtranslation"."language_code" = sl ); args=(2, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value Prvi artikel.
+DEBUG:django.db.backends:(0.000) SELECT "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id" FROM "items_size" WHERE "items_size"."id" = 2 ; args=(2,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_itemtranslation"."id", "items_itemtranslation"."language_code", "items_itemtranslation"."parent_id", "items_itemtranslation"."name", "items_itemtranslation"."description", "items_itemtranslation"."cost_price", "items_itemtranslation"."sale_price", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "items_itemtranslation" INNER JOIN "items_item" ON ("items_itemtranslation"."parent_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") WHERE ("items_itemtranslation"."parent_id" = 3  AND "items_itemtranslation"."language_code" = sl ); args=(3, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value Prvi artikel.
+DEBUG:django.db.backends:(0.000) SELECT "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id" FROM "items_size" WHERE "items_size"."id" = 3 ; args=(3,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_itemtranslation"."id", "items_itemtranslation"."language_code", "items_itemtranslation"."parent_id", "items_itemtranslation"."name", "items_itemtranslation"."description", "items_itemtranslation"."cost_price", "items_itemtranslation"."sale_price", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "items_itemtranslation" INNER JOIN "items_item" ON ("items_itemtranslation"."parent_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") WHERE ("items_itemtranslation"."parent_id" = 4  AND "items_itemtranslation"."language_code" = sl ); args=(4, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value Prvi artikel.
+DEBUG:django.db.backends:(0.000) SELECT "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id" FROM "items_size" WHERE "items_size"."id" = 4 ; args=(4,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "items_itemtranslation"."id", "items_itemtranslation"."language_code", "items_itemtranslation"."parent_id", "items_itemtranslation"."name", "items_itemtranslation"."description", "items_itemtranslation"."cost_price", "items_itemtranslation"."sale_price", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale" FROM "items_itemtranslation" INNER JOIN "items_item" ON ("items_itemtranslation"."parent_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") WHERE ("items_itemtranslation"."parent_id" = 5  AND "items_itemtranslation"."language_code" = sl ); args=(5, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object ItemTranslation object, returning value Prvi artikel.
+DEBUG:django.db.backends:(0.000) SELECT "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id" FROM "items_size" WHERE "items_size"."id" = 5 ; args=(5,)
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockevent"."id", "stock_stockevent"."user", "stock_stockevent"."user_group" FROM "stock_stockevent"; args=()
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockeventtranslation"."id", "stock_stockeventtranslation"."language_code", "stock_stockeventtranslation"."parent_id", "stock_stockeventtranslation"."name", "stock_stockeventtranslation"."description", "stock_stockevent"."id", "stock_stockevent"."user", "stock_stockevent"."user_group" FROM "stock_stockeventtranslation" INNER JOIN "stock_stockevent" ON ("stock_stockeventtranslation"."parent_id" = "stock_stockevent"."id") WHERE ("stock_stockeventtranslation"."parent_id" = 1  AND "stock_stockeventtranslation"."language_code" = sl ); args=(1, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object StockEventTranslation object, returning value Nabava.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockeventtranslation"."id", "stock_stockeventtranslation"."language_code", "stock_stockeventtranslation"."parent_id", "stock_stockeventtranslation"."name", "stock_stockeventtranslation"."description", "stock_stockevent"."id", "stock_stockevent"."user", "stock_stockevent"."user_group" FROM "stock_stockeventtranslation" INNER JOIN "stock_stockevent" ON ("stock_stockeventtranslation"."parent_id" = "stock_stockevent"."id") WHERE ("stock_stockeventtranslation"."parent_id" = 2  AND "stock_stockeventtranslation"."language_code" = sl ); args=(2, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object StockEventTranslation object, returning value Lastna raba.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockeventtranslation"."id", "stock_stockeventtranslation"."language_code", "stock_stockeventtranslation"."parent_id", "stock_stockeventtranslation"."name", "stock_stockeventtranslation"."description", "stock_stockevent"."id", "stock_stockevent"."user", "stock_stockevent"."user_group" FROM "stock_stockeventtranslation" INNER JOIN "stock_stockevent" ON ("stock_stockeventtranslation"."parent_id" = "stock_stockevent"."id") WHERE ("stock_stockeventtranslation"."parent_id" = 3  AND "stock_stockeventtranslation"."language_code" = sl ); args=(3, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object StockEventTranslation object, returning value Prodaja.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockeventtranslation"."id", "stock_stockeventtranslation"."language_code", "stock_stockeventtranslation"."parent_id", "stock_stockeventtranslation"."name", "stock_stockeventtranslation"."description", "stock_stockevent"."id", "stock_stockevent"."user", "stock_stockevent"."user_group" FROM "stock_stockeventtranslation" INNER JOIN "stock_stockevent" ON ("stock_stockeventtranslation"."parent_id" = "stock_stockevent"."id") WHERE ("stock_stockeventtranslation"."parent_id" = 4  AND "stock_stockeventtranslation"."language_code" = sl ); args=(4, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object StockEventTranslation object, returning value Pošiljanje.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockeventtranslation"."id", "stock_stockeventtranslation"."language_code", "stock_stockeventtranslation"."parent_id", "stock_stockeventtranslation"."name", "stock_stockeventtranslation"."description", "stock_stockevent"."id", "stock_stockevent"."user", "stock_stockevent"."user_group" FROM "stock_stockeventtranslation" INNER JOIN "stock_stockevent" ON ("stock_stockeventtranslation"."parent_id" = "stock_stockevent"."id") WHERE ("stock_stockeventtranslation"."parent_id" = 5  AND "stock_stockeventtranslation"."language_code" = sl ); args=(5, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object StockEventTranslation object, returning value Sprejem.
+DEBUG:django.db.backends:(0.000) SELECT "companies_terminal"."id", "companies_terminal"."name", "companies_terminal"."store_id" FROM "companies_terminal"; args=()
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:11:16.001887 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:11:16.001887')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:12:02.131215 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:12:02.131215')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT COUNT(*) FROM "stock_stocklog"; args=()
+DEBUG:django.db.backends:(0.000) SELECT "stock_stocklog"."id", "stock_stocklog"."date_time", "stock_stocklog"."item_id", "stock_stocklog"."event_id", "stock_stocklog"."user", "stock_stocklog"."terminal_id", "stock_stocklog"."receipt", "stock_stocklog"."quantity", "items_item"."id", "items_item"."active", "items_item"."barcode", "items_item"."category_id", "items_item"."size_group_id", "items_item"."size_id", "items_item"."tax_id", "items_category"."id", "items_category"."parent_id", "items_size_group"."id", "items_size_group"."name", "items_size"."id", "items_size"."name", "items_size"."sort", "items_size"."size_group_id", T6."id", T6."name", "items_tax"."id", "items_tax"."name", "items_tax"."percent", "items_tax"."locale", "stock_stockevent"."id", "stock_stockevent"."user", "stock_stockevent"."user_group", "companies_terminal"."id", "companies_terminal"."name", "companies_terminal"."store_id", "companies_store"."id", "companies_store"."name", "companies_store"."address", "companies_store"."telephone", "companies_store"."company_id", "companies_company"."id", "companies_company"."name", "companies_company"."address", "companies_company"."email", "companies_company"."identification" FROM "stock_stocklog" INNER JOIN "items_item" ON ("stock_stocklog"."item_id" = "items_item"."id") INNER JOIN "items_category" ON ("items_item"."category_id" = "items_category"."id") INNER JOIN "items_size_group" ON ("items_item"."size_group_id" = "items_size_group"."id") INNER JOIN "items_size" ON ("items_item"."size_id" = "items_size"."id") INNER JOIN "items_size_group" T6 ON ("items_size"."size_group_id" = T6."id") INNER JOIN "items_tax" ON ("items_item"."tax_id" = "items_tax"."id") INNER JOIN "stock_stockevent" ON ("stock_stocklog"."event_id" = "stock_stockevent"."id") INNER JOIN "companies_terminal" ON ("stock_stocklog"."terminal_id" = "companies_terminal"."id") INNER JOIN "companies_store" ON ("companies_terminal"."store_id" = "companies_store"."id") INNER JOIN "companies_company" ON ("companies_store"."company_id" = "companies_company"."id") ORDER BY "stock_stocklog"."id" DESC; args=()
+DEBUG:django.db.backends:(0.000) SELECT "auth_message"."id", "auth_message"."user_id", "auth_message"."message" FROM "auth_message" WHERE "auth_message"."user_id" = 1 ; args=(1,)
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockeventtranslation"."id", "stock_stockeventtranslation"."language_code", "stock_stockeventtranslation"."parent_id", "stock_stockeventtranslation"."name", "stock_stockeventtranslation"."description", "stock_stockevent"."id", "stock_stockevent"."user", "stock_stockevent"."user_group" FROM "stock_stockeventtranslation" INNER JOIN "stock_stockevent" ON ("stock_stockeventtranslation"."parent_id" = "stock_stockevent"."id") WHERE ("stock_stockeventtranslation"."parent_id" = 1  AND "stock_stockeventtranslation"."language_code" = sl ); args=(1, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object StockEventTranslation object, returning value Nabava.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:django.db.backends:(0.000) SELECT "stock_stockeventtranslation"."id", "stock_stockeventtranslation"."language_code", "stock_stockeventtranslation"."parent_id", "stock_stockeventtranslation"."name", "stock_stockeventtranslation"."description", "stock_stockevent"."id", "stock_stockevent"."user", "stock_stockevent"."user_group" FROM "stock_stockeventtranslation" INNER JOIN "stock_stockevent" ON ("stock_stockeventtranslation"."parent_id" = "stock_stockevent"."id") WHERE ("stock_stockeventtranslation"."parent_id" = 1  AND "stock_stockeventtranslation"."language_code" = sl ); args=(1, 'sl')
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Found translation object StockEventTranslation object, returning value Nabava.
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:12:02.193767 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:12:02.193767')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 07dc47b1f79a39d4fac365c874992cf1  AND "django_session"."expire_date" > 2011-04-30 22:12:16.649519 ); args=('07dc47b1f79a39d4fac365c874992cf1', u'2011-04-30 22:12:16.649519')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 ; args=(1,)
+DEBUG:django.db.backends:(0.000) SELECT "auth_message"."id", "auth_message"."user_id", "auth_message"."message" FROM "auth_message" WHERE "auth_message"."user_id" = 1 ; args=(1,)

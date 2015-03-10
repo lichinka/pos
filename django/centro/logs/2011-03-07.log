@@ -1,0 +1,65 @@
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Matched with field name for language sl-si. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Matched with field name for language sl_SI. Attempting lookup.
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...

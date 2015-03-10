@@ -1,0 +1,27 @@
+- Funkcija "_validate_save ( )" je dober kandidat za prenos v kontroler "Secured_area".-
+- Zbrisanje @deprecated metod.
+- Export passwords: MD5 is one-way function, how to solve this?
+- Import employees: how to explicitly define to which terminals/models the employee has access to?
+- Pri sales:
+	- Ustvariti stolpca za subtotal in taxes, ki se shranijo sproti (tj. med ustvarjanjem računa).
+- Issue #15: 
+	* Drop the Persons table and class, and create two separate ralations Customers and Employees.
+	* Employees should have one address only, and username and password.
+	* Customers should also have account number.
+- Export/import employees: data about modul and terminal access???
+- Copy implementation on all Models like in module 'Nastavitve sistema', by extending Entity.
+- Add the terminal serial number to the page footer of all pages.-
+- Clicking twice on an avatar on the login screen breaks it.
+- Connect items to SIZES not to SIZES_GROUPS.-
+- Successful payment refreshes too fast.
+- Clicking multiple times on "OK" when adding terminals creates many replicated records. Maybe go back to the list?
+- Implement UNDO DELETE with negative IDs.
+- Clicklable tables?
+- Tabs for long forms.
+- Mark the selected modul (e.g. Prodaja, Osebje, ...) in a different way (color, shape?) so that the modul name can be deleted from the content panel.
+- Where is the MySQL log?
+- Go back after adding/editing a record has finished (i.e. 'OK' button has been clicked).
+- The length of the printed invoice is far too much, when the number of articles is 5 or more.
+- The 'no_access' view does not work (blank page is displayed).
+- Oktober 15 =>
+- Change the logout button in the sales modules from logout to home.-

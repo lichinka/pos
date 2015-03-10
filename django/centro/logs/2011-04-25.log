@@ -1,0 +1,422 @@
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:django.db.backends:(0.001) SELECT "modules_module"."id", "modules_module"."path", "modules_module"."sort", "modules_module"."parent_id" FROM "modules_module" LEFT OUTER JOIN "modules_module" T2 ON ("modules_module"."parent_id" = T2."id") WHERE T2."id" IS NULL ORDER BY "modules_module"."sort" ASC; args=()
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Matched with field name for language sl-si. Attempting lookup.
+DEBUG:django.db.backends:(0.000) SELECT "modules_moduletranslation"."id", "modules_moduletranslation"."language_code", "modules_moduletranslation"."parent_id", "modules_moduletranslation"."name", "modules_moduletranslation"."description", "modules_module"."id", "modules_module"."path", "modules_module"."sort", "modules_module"."parent_id" FROM "modules_moduletranslation" INNER JOIN "modules_module" ON ("modules_moduletranslation"."parent_id" = "modules_module"."id") WHERE ("modules_moduletranslation"."parent_id" = 6  AND "modules_moduletranslation"."language_code" = sl-si ); args=(6, 'sl-si')
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:django.db.backends:(0.000) SELECT "modules_moduletranslation"."id", "modules_moduletranslation"."language_code", "modules_moduletranslation"."parent_id", "modules_moduletranslation"."name", "modules_moduletranslation"."description", "modules_module"."id", "modules_module"."path", "modules_module"."sort", "modules_module"."parent_id" FROM "modules_moduletranslation" INNER JOIN "modules_module" ON ("modules_moduletranslation"."parent_id" = "modules_module"."id") WHERE ("modules_moduletranslation"."parent_id" = 6  AND "modules_moduletranslation"."language_code" = sl ); args=(6, 'sl')
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Matched with field name for language sl_SI. Attempting lookup.
+DEBUG:django.db.backends:(0.000) SELECT "modules_moduletranslation"."id", "modules_moduletranslation"."language_code", "modules_moduletranslation"."parent_id", "modules_moduletranslation"."name", "modules_moduletranslation"."description", "modules_module"."id", "modules_module"."path", "modules_module"."sort", "modules_module"."parent_id" FROM "modules_moduletranslation" INNER JOIN "modules_module" ON ("modules_moduletranslation"."parent_id" = "modules_module"."id") WHERE ("modules_moduletranslation"."parent_id" = 6  AND "modules_moduletranslation"."language_code" = sl_SI ); args=(6, 'sl_SI')
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:django.db.backends:(0.001) SELECT "modules_module"."id", "modules_module"."path", "modules_module"."sort", "modules_module"."parent_id" FROM "modules_module" LEFT OUTER JOIN "modules_module" T2 ON ("modules_module"."parent_id" = T2."id") WHERE T2."id" IS NULL ORDER BY "modules_module"."sort" ASC; args=()
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Matched with field name for language sl-si. Attempting lookup.
+DEBUG:django.db.backends:(0.000) SELECT "modules_moduletranslation"."id", "modules_moduletranslation"."language_code", "modules_moduletranslation"."parent_id", "modules_moduletranslation"."name", "modules_moduletranslation"."description", "modules_module"."id", "modules_module"."path", "modules_module"."sort", "modules_module"."parent_id" FROM "modules_moduletranslation" INNER JOIN "modules_module" ON ("modules_moduletranslation"."parent_id" = "modules_module"."id") WHERE ("modules_moduletranslation"."parent_id" = 6  AND "modules_moduletranslation"."language_code" = sl-si ); args=(6, 'sl-si')
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Matched with field name for language sl. Attempting lookup.
+DEBUG:django.db.backends:(0.000) SELECT "modules_moduletranslation"."id", "modules_moduletranslation"."language_code", "modules_moduletranslation"."parent_id", "modules_moduletranslation"."name", "modules_moduletranslation"."description", "modules_module"."id", "modules_module"."path", "modules_module"."sort", "modules_module"."parent_id" FROM "modules_moduletranslation" INNER JOIN "modules_module" ON ("modules_moduletranslation"."parent_id" = "modules_module"."id") WHERE ("modules_moduletranslation"."parent_id" = 6  AND "modules_moduletranslation"."language_code" = sl ); args=(6, 'sl')
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Matched with field name for language sl_SI. Attempting lookup.
+DEBUG:django.db.backends:(0.000) SELECT "modules_moduletranslation"."id", "modules_moduletranslation"."language_code", "modules_moduletranslation"."parent_id", "modules_moduletranslation"."name", "modules_moduletranslation"."description", "modules_module"."id", "modules_module"."path", "modules_module"."sort", "modules_module"."parent_id" FROM "modules_moduletranslation" INNER JOIN "modules_module" ON ("modules_moduletranslation"."parent_id" = "modules_module"."id") WHERE ("modules_moduletranslation"."parent_id" = 6  AND "modules_moduletranslation"."language_code" = sl_SI ); args=(6, 'sl_SI')
+DEBUG:multilingual_model:Translation not found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Regular expression not matched but translated field detected.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Attempting a match for the base 'sl'
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:multilingual_model:Lookup failed, attempting fallback or failing silently.
+DEBUG:multilingual_model:Translation found in cache.
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:django.db.backends:(0.001) 
+            SELECT name FROM sqlite_master
+            WHERE type='table' AND NOT name='sqlite_sequence'
+            ORDER BY name; args=()
+DEBUG:django.db.backends:(0.001) 
+            SELECT name FROM sqlite_master
+            WHERE type='table' AND NOT name='sqlite_sequence'
+            ORDER BY name; args=()
+DEBUG:django.db.backends:(0.004) DROP TABLE "modules_module";; args=()
+DEBUG:django.db.backends:(0.004) DROP TABLE "modules_moduletranslation";; args=()
+DEBUG:django.db.backends:(0.007) CREATE TABLE "modules_moduletranslation" (
+    "id" integer NOT NULL PRIMARY KEY,
+    "language_code" varchar(5) NOT NULL,
+    "parent_id" integer NOT NULL,
+    "name" varchar(70) NOT NULL,
+    "description" varchar(255),
+    UNIQUE ("parent_id", "language_code")
+)
+;; args=()
+DEBUG:django.db.backends:(0.006) CREATE TABLE "modules_module" (
+    "id" integer NOT NULL PRIMARY KEY,
+    "path" varchar(100) NOT NULL,
+    "sort" integer,
+    "parent_id" integer
+)
+;; args=()
+DEBUG:django.db.backends:(0.004) CREATE INDEX "modules_moduletranslation_63f17a16" ON "modules_moduletranslation" ("parent_id");; args=()
+DEBUG:django.db.backends:(0.006) CREATE INDEX "modules_module_63f17a16" ON "modules_module" ("parent_id");; args=()
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:django.db.backends:(0.002) 
+            SELECT name FROM sqlite_master
+            WHERE type='table' AND NOT name='sqlite_sequence'
+            ORDER BY name; args=()
+DEBUG:django.db.backends:(0.004) CREATE TABLE "items_categorytranslation" (
+    "id" integer NOT NULL PRIMARY KEY,
+    "language_code" varchar(5) NOT NULL,
+    "parent_id" integer NOT NULL REFERENCES "items_category" ("id"),
+    "name" varchar(100) NOT NULL,
+    "description" varchar(255),
+    UNIQUE ("parent_id", "language_code")
+)
+;; args=()
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = permission  AND "django_content_type"."app_label" = auth ); args=('permission', 'auth')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = group  AND "django_content_type"."app_label" = auth ); args=('group', 'auth')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = user  AND "django_content_type"."app_label" = auth ); args=('user', 'auth')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = message  AND "django_content_type"."app_label" = auth ); args=('message', 'auth')
+DEBUG:django.db.backends:(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1, 2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1, 2, 3, 4)
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = auth  ORDER BY "django_content_type"."name" ASC; args=('auth',)
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = permission  AND "django_content_type"."app_label" = auth ); args=('permission', 'auth')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = group  AND "django_content_type"."app_label" = auth ); args=('group', 'auth')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = user  AND "django_content_type"."app_label" = auth ); args=('user', 'auth')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = message  AND "django_content_type"."app_label" = auth ); args=('message', 'auth')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = contenttype  AND "django_content_type"."app_label" = contenttypes ); args=('contenttype', 'contenttypes')
+DEBUG:django.db.backends:(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = contenttypes  ORDER BY "django_content_type"."name" ASC; args=('contenttypes',)
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = contenttype  AND "django_content_type"."app_label" = contenttypes ); args=('contenttype', 'contenttypes')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = session  AND "django_content_type"."app_label" = sessions ); args=('session', 'sessions')
+DEBUG:django.db.backends:(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = sessions  ORDER BY "django_content_type"."name" ASC; args=('sessions',)
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = session  AND "django_content_type"."app_label" = sessions ); args=('session', 'sessions')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = site  AND "django_content_type"."app_label" = sites ); args=('site', 'sites')
+DEBUG:django.db.backends:(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (7) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(7,)
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = sites  ORDER BY "django_content_type"."name" ASC; args=('sites',)
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = site  AND "django_content_type"."app_label" = sites ); args=('site', 'sites')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = messages  ORDER BY "django_content_type"."name" ASC; args=('messages',)
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = logentry  AND "django_content_type"."app_label" = admin ); args=('logentry', 'admin')
+DEBUG:django.db.backends:(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (8) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(8,)
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = admin  ORDER BY "django_content_type"."name" ASC; args=('admin',)
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = logentry  AND "django_content_type"."app_label" = admin ); args=('logentry', 'admin')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = multilingual_model  ORDER BY "django_content_type"."name" ASC; args=('multilingual_model',)
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = moduletranslation  AND "django_content_type"."app_label" = modules ); args=('moduletranslation', 'modules')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = module  AND "django_content_type"."app_label" = modules ); args=('module', 'modules')
+DEBUG:django.db.backends:(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (9, 10) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(9, 10)
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = modules  ORDER BY "django_content_type"."name" ASC; args=('modules',)
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = moduletranslation  AND "django_content_type"."app_label" = modules ); args=('moduletranslation', 'modules')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = module  AND "django_content_type"."app_label" = modules ); args=('module', 'modules')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = company  AND "django_content_type"."app_label" = companies ); args=('company', 'companies')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = store  AND "django_content_type"."app_label" = companies ); args=('store', 'companies')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = terminal  AND "django_content_type"."app_label" = companies ); args=('terminal', 'companies')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = terminal_configuration  AND "django_content_type"."app_label" = companies ); args=('terminal_configuration', 'companies')
+DEBUG:django.db.backends:(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (11, 12, 13, 14) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(11, 12, 13, 14)
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = companies  ORDER BY "django_content_type"."name" ASC; args=('companies',)
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = company  AND "django_content_type"."app_label" = companies ); args=('company', 'companies')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = store  AND "django_content_type"."app_label" = companies ); args=('store', 'companies')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = terminal  AND "django_content_type"."app_label" = companies ); args=('terminal', 'companies')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = terminal_configuration  AND "django_content_type"."app_label" = companies ); args=('terminal_configuration', 'companies')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = category  AND "django_content_type"."app_label" = items ); args=('category', 'items')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = categorytranslation  AND "django_content_type"."app_label" = items ); args=('categorytranslation', 'items')
+DEBUG:django.db.backends:(0.000) INSERT INTO "django_content_type" ("name", "app_label", "model") VALUES (category translation, items, categorytranslation); args=(u'category translation', 'items', 'categorytranslation')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = size_group  AND "django_content_type"."app_label" = items ); args=('size_group', 'items')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = size  AND "django_content_type"."app_label" = items ); args=('size', 'items')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = tax  AND "django_content_type"."app_label" = items ); args=('tax', 'items')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = item  AND "django_content_type"."app_label" = items ); args=('item', 'items')
+DEBUG:django.db.backends:(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (15, 16, 17, 18, 19, 20) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(15, 16, 17, 18, 19, 20)
+DEBUG:django.db.backends:(0.000) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") VALUES (Can add category translation, 20, add_categorytranslation); args=(u'Can add category translation', 20, u'add_categorytranslation')
+DEBUG:django.db.backends:(0.000) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") VALUES (Can change category translation, 20, change_categorytranslation); args=(u'Can change category translation', 20, u'change_categorytranslation')
+DEBUG:django.db.backends:(0.000) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") VALUES (Can delete category translation, 20, delete_categorytranslation); args=(u'Can delete category translation', 20, u'delete_categorytranslation')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = items  ORDER BY "django_content_type"."name" ASC; args=('items',)
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = category  AND "django_content_type"."app_label" = items ); args=('category', 'items')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = categorytranslation  AND "django_content_type"."app_label" = items ); args=('categorytranslation', 'items')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = size_group  AND "django_content_type"."app_label" = items ); args=('size_group', 'items')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = size  AND "django_content_type"."app_label" = items ); args=('size', 'items')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = tax  AND "django_content_type"."app_label" = items ); args=('tax', 'items')
+DEBUG:django.db.backends:(0.000) SELECT "django_content_type"."id", "django_content_type"."name", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = item  AND "django_content_type"."app_label" = items ); args=('item', 'items')
+DEBUG:django.db.backends:(0.005) CREATE INDEX "items_categorytranslation_63f17a16" ON "items_categorytranslation" ("parent_id");; args=()
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "modules_module" WHERE "modules_module"."id" = 1  LIMIT 1; args=(1,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "modules_module" ("id", "path", "sort", "parent_id") VALUES (1, /companies, 70, None); args=(1, u'/companies', 70, None)
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "modules_moduletranslation" WHERE "modules_moduletranslation"."id" = 10  LIMIT 1; args=(10,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "modules_moduletranslation" ("id", "language_code", "parent_id", "name", "description") VALUES (10, en, 1, System settings, Change system settings for the application); args=(10, u'en', 1, u'System settings', u'Change system settings for the application')
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "modules_moduletranslation" WHERE "modules_moduletranslation"."id" = 11  LIMIT 1; args=(11,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "modules_moduletranslation" ("id", "language_code", "parent_id", "name", "description") VALUES (11, si, 1, Nastavitve sistema, Sprememba nastavitev aplikacije); args=(11, u'si', 1, u'Nastavitve sistema', u'Sprememba nastavitev aplikacije')
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "modules_module" WHERE "modules_module"."id" = 2  LIMIT 1; args=(2,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "modules_module" ("id", "path", "sort", "parent_id") VALUES (2, #, 40, None); args=(2, u'#', 40, None)
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "modules_moduletranslation" WHERE "modules_moduletranslation"."id" = 20  LIMIT 1; args=(20,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "modules_moduletranslation" ("id", "language_code", "parent_id", "name", "description") VALUES (20, en, 2, Customers, Change the customers database); args=(20, u'en', 2, u'Customers', u'Change the customers database')
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "modules_moduletranslation" WHERE "modules_moduletranslation"."id" = 21  LIMIT 1; args=(21,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "modules_moduletranslation" ("id", "language_code", "parent_id", "name", "description") VALUES (21, si, 2, Stranke, Urejanje šifranta strank); args=(21, u'si', 2, u'Stranke', u'Urejanje \u0161ifranta strank')
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "modules_module" WHERE "modules_module"."id" = 3  LIMIT 1; args=(3,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "modules_module" ("id", "path", "sort", "parent_id") VALUES (3, #, 50, None); args=(3, u'#', 50, None)
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "modules_moduletranslation" WHERE "modules_moduletranslation"."id" = 30  LIMIT 1; args=(30,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "modules_moduletranslation" ("id", "language_code", "parent_id", "name", "description") VALUES (30, en, 3, Employees, Change the employees database); args=(30, u'en', 3, u'Employees', u'Change the employees database')
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "modules_moduletranslation" WHERE "modules_moduletranslation"."id" = 31  LIMIT 1; args=(31,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "modules_moduletranslation" ("id", "language_code", "parent_id", "name", "description") VALUES (31, si, 3, Osebje, Urejanje šifranta osebja); args=(31, u'si', 3, u'Osebje', u'Urejanje \u0161ifranta osebja')
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "modules_module" WHERE "modules_module"."id" = 4  LIMIT 1; args=(4,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "modules_module" ("id", "path", "sort", "parent_id") VALUES (4, /items, 30, None); args=(4, u'/items', 30, None)
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "modules_moduletranslation" WHERE "modules_moduletranslation"."id" = 40  LIMIT 1; args=(40,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "modules_moduletranslation" ("id", "language_code", "parent_id", "name", "description") VALUES (40, en, 4, Items, Change the items database); args=(40, u'en', 4, u'Items', u'Change the items database')
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "modules_moduletranslation" WHERE "modules_moduletranslation"."id" = 41  LIMIT 1; args=(41,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "modules_moduletranslation" ("id", "language_code", "parent_id", "name", "description") VALUES (41, si, 4, Artikli, Urejanje šifranta artiklov); args=(41, u'si', 4, u'Artikli', u'Urejanje \u0161ifranta artiklov')
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "modules_module" WHERE "modules_module"."id" = 40  LIMIT 1; args=(40,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "modules_module" ("id", "path", "sort", "parent_id") VALUES (40, /items, 20, 4); args=(40, u'/items', 20, 4)
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "modules_moduletranslation" WHERE "modules_moduletranslation"."id" = 400  LIMIT 1; args=(400,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "modules_moduletranslation" ("id", "language_code", "parent_id", "name", "description") VALUES (400, en, 40, Items, Change the items database); args=(400, u'en', 40, u'Items', u'Change the items database')
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "modules_moduletranslation" WHERE "modules_moduletranslation"."id" = 401  LIMIT 1; args=(401,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "modules_moduletranslation" ("id", "language_code", "parent_id", "name", "description") VALUES (401, si, 40, Artikli, Urejanje šifranta artiklov); args=(401, u'si', 40, u'Artikli', u'Urejanje \u0161ifranta artiklov')
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "modules_module" WHERE "modules_module"."id" = 41  LIMIT 1; args=(41,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "modules_module" ("id", "path", "sort", "parent_id") VALUES (41, /items/categories, 10, 4); args=(41, u'/items/categories', 10, 4)
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "modules_moduletranslation" WHERE "modules_moduletranslation"."id" = 410  LIMIT 1; args=(410,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "modules_moduletranslation" ("id", "language_code", "parent_id", "name", "description") VALUES (410, en, 41, Categories, Change categories into which items are arranged); args=(410, u'en', 41, u'Categories', u'Change categories into which items are arranged')
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "modules_moduletranslation" WHERE "modules_moduletranslation"."id" = 411  LIMIT 1; args=(411,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "modules_moduletranslation" ("id", "language_code", "parent_id", "name", "description") VALUES (411, si, 41, Kategorije, Urejanje kategorij, v katere so artikli razporejeni); args=(411, u'si', 41, u'Kategorije', u'Urejanje kategorij, v katere so artikli razporejeni')
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "modules_module" WHERE "modules_module"."id" = 44  LIMIT 1; args=(44,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "modules_module" ("id", "path", "sort", "parent_id") VALUES (44, /items/sizes, 30, 4); args=(44, u'/items/sizes', 30, 4)
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "modules_moduletranslation" WHERE "modules_moduletranslation"."id" = 440  LIMIT 1; args=(440,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "modules_moduletranslation" ("id", "language_code", "parent_id", "name", "description") VALUES (440, en, 44, Sizes, Change size groups an item may take); args=(440, u'en', 44, u'Sizes', u'Change size groups an item may take')
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "modules_moduletranslation" WHERE "modules_moduletranslation"."id" = 441  LIMIT 1; args=(441,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "modules_moduletranslation" ("id", "language_code", "parent_id", "name", "description") VALUES (441, si, 44, Velikosti, Urejanje skupine velikosti artiklov); args=(441, u'si', 44, u'Velikosti', u'Urejanje skupine velikosti artiklov')
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "modules_module" WHERE "modules_module"."id" = 5  LIMIT 1; args=(5,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "modules_module" ("id", "path", "sort", "parent_id") VALUES (5, #, 60, None); args=(5, u'#', 60, None)
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "modules_moduletranslation" WHERE "modules_moduletranslation"."id" = 50  LIMIT 1; args=(50,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "modules_moduletranslation" ("id", "language_code", "parent_id", "name", "description") VALUES (50, en, 5, Reports, View and generate reports); args=(50, u'en', 5, u'Reports', u'View and generate reports')
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "modules_moduletranslation" WHERE "modules_moduletranslation"."id" = 51  LIMIT 1; args=(51,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "modules_moduletranslation" ("id", "language_code", "parent_id", "name", "description") VALUES (51, si, 5, Poročila, Pogled in urejanje poročil); args=(51, u'si', 5, u'Poro\u010dila', u'Pogled in urejanje poro\u010dil')
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "modules_module" WHERE "modules_module"."id" = 6  LIMIT 1; args=(6,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "modules_module" ("id", "path", "sort", "parent_id") VALUES (6, #, 10, None); args=(6, u'#', 10, None)
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "modules_moduletranslation" WHERE "modules_moduletranslation"."id" = 61  LIMIT 1; args=(61,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "modules_moduletranslation" ("id", "language_code", "parent_id", "name", "description") VALUES (61, en, 6, Sales, Process sales and returns); args=(61, u'en', 6, u'Sales', u'Process sales and returns')
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "modules_moduletranslation" WHERE "modules_moduletranslation"."id" = 62  LIMIT 1; args=(62,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "modules_moduletranslation" ("id", "language_code", "parent_id", "name", "description") VALUES (62, si, 6, Prodaja, Izdaja računov in dobropisov); args=(62, u'si', 6, u'Prodaja', u'Izdaja ra\u010dunov in dobropisov')
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "modules_module" WHERE "modules_module"."id" = 7  LIMIT 1; args=(7,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "modules_module" ("id", "path", "sort", "parent_id") VALUES (7, #, 20, None); args=(7, u'#', 20, None)
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "modules_moduletranslation" WHERE "modules_moduletranslation"."id" = 71  LIMIT 1; args=(71,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "modules_moduletranslation" ("id", "language_code", "parent_id", "name", "description") VALUES (71, en, 7, Stock, Item stock per warehouse); args=(71, u'en', 7, u'Stock', u'Item stock per warehouse')
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "modules_moduletranslation" WHERE "modules_moduletranslation"."id" = 72  LIMIT 1; args=(72,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "modules_moduletranslation" ("id", "language_code", "parent_id", "name", "description") VALUES (72, si, 7, Skladišče, Iskanje in urejanje zalogo artiklov); args=(72, u'si', 7, u'Skladi\u0161\u010de', u'Iskanje in urejanje zalogo artiklov')
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "companies_company" WHERE "companies_company"."id" = 1  LIMIT 1; args=(1,)
+DEBUG:django.db.backends:(0.000) UPDATE "companies_company" SET "name" = Centro, inc., "address" = Cesta na hrib 123, "email" = info@centro.si, "identification" = SI123456 WHERE "companies_company"."id" = 1 ; args=(u'Centro, inc.', u'Cesta na hrib 123', u'info@centro.si', u'SI123456', 1)
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "companies_company" WHERE "companies_company"."id" = 2  LIMIT 1; args=(2,)
+DEBUG:django.db.backends:(0.001) UPDATE "companies_company" SET "name" = Another company, "address" = Titov trg 214, "email" = webmaster@the-company.com, "identification" = 12 3456789 2 WHERE "companies_company"."id" = 2 ; args=(u'Another company', u'Titov trg 214', u'webmaster@the-company.com', u'12 3456789 2', 2)
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "items_category" WHERE "items_category"."id" = 1  LIMIT 1; args=(1,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "items_category" ("id", "name", "description", "parent_id") VALUES (1, , None, None); args=(1, '', None, None)
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "items_categorytranslation" WHERE "items_categorytranslation"."id" = 11  LIMIT 1; args=(11,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "items_categorytranslation" ("id", "language_code", "parent_id", "name", "description") VALUES (11, en, 1, Shirts, High quality shirts. 100% cotton); args=(11, u'en', 1, u'Shirts', u'High quality shirts. 100% cotton')
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "items_categorytranslation" WHERE "items_categorytranslation"."id" = 12  LIMIT 1; args=(12,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "items_categorytranslation" ("id", "language_code", "parent_id", "name", "description") VALUES (12, si, 1, Majce, Majce prvega razreda. 100% bombaž); args=(12, u'si', 1, u'Majce', u'Majce prvega razreda. 100% bomba\u017e')
+DEBUG:django.db.backends:(0.000) SELECT (1) AS "a" FROM "items_category" WHERE "items_category"."id" = 2  LIMIT 1; args=(2,)
+DEBUG:django.db.backends:(0.000) INSERT INTO "items_category" ("id", "name", "description", "parent_id") VALUES (2, , None, 1); args=(2, '', None, 1)
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:root:Logging debug facility re-started ...
+DEBUG:django.db.backends:(0.001) SELECT "modules_module"."id", "modules_module"."path", "modules_module"."sort", "modules_module"."parent_id" FROM "modules_module" LEFT OUTER JOIN "modules_module" T2 ON ("modules_module"."parent_id" = T2."id") WHERE T2."id" IS NULL ORDER BY "modules_module"."sort" ASC; args=()
+DEBUG:django.db.backends:(0.002) SELECT "modules_module"."id", "modules_module"."path", "modules_module"."sort", "modules_module"."parent_id" FROM "modules_module" LEFT OUTER JOIN "modules_module" T2 ON ("modules_module"."parent_id" = T2."id") WHERE T2."id" IS NULL ORDER BY "modules_module"."sort" ASC; args=()

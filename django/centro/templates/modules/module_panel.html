@@ -1,0 +1,10 @@
+{% if all_top_modules %}
+    {% for module in all_top_modules %}
+        <div id="module-button">
+            <a href="{{ module.path }}">{{ module.name }}</a>
+        </div>
+    {% endfor %}
+{% else %}
+    No modules?
+{% endif %}
+

@@ -1,0 +1,4 @@
+#!/opt/zend/bin/php --php-ini /opt/zend/etc/php.ini
+<?php
+
+require_once(dirname(__FILE__).'/yiic.php');

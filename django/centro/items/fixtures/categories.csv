@@ -1,0 +1,12 @@
+"model","pk","fields",,,
+"items.category",-1,"parent",,,
+"items.categorytranslation",-1,"name;description;language_code;parent",,,
+"items.category",1,"null",,,
+"items.categorytranslation",11,"Shirts","Hight quality shirts. 100% cotton","en",1
+"items.categorytranslation",12,"Majce","Majce prvega razreda. 100% bombaž","si",1
+"items.category",2,1,,,
+"items.categorytranslation",21,"T-shirts","Spring-oriented","en",2
+"items.categorytranslation",22,"S kratkimi rokavami","Prava izbira za spomlad","si",2
+"items.category",3,1,,,
+"items.categorytranslation",31,"Long-sleeved shirts","Autumm-oriented","en",3
+"items.categorytranslation",32,"Z dolgimi rokavami","Za zimo ali jesen","si",3

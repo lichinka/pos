@@ -1,0 +1,56 @@
+- UML: All controllers should have a '_controller' suffix.
+- UML: Create sequence diagrams for the implemented controllers.
+- Check translations in GUI.
+- What about 'Entity.delete ( )'? How should it work?
+
+================================================================
+Milestone do 31.8.
+------------------
+- Folder "application/controllers" mora imeti enako notranjo strukturo kot folder "application/models" z izjemo, da imajo kontrolerji pripono "_controller".
+- "Store->Terminal" za določanje pravic. Pri tem mora vsaka izbira biti "default" na vrednosti "--- None ---".
+
+Module "Nastavitve sistema"
+---------------------------
+- Nastavitve podjetja. Should be 'Uredi podjetje'.
+    - Uredi trgovine => Naslov trgovnie?
+- What about the "BACK" button in the browser? What is the behaviour?
+- "Seznam terminal" is not ok. Should be "Terminali" or "Seznam terminalov".
+- "Terminalova id" is not ok. Should be "Serijska številka" angl. "Serial number".
+- "Uredi terminal" => How do I go back?
+- "Data recieved" is not ok. Should be "Data received" in ENG and "Sprememba uspešna" or something similar.
+
+Module "Stranke"
+----------------
+- Why is John Doe a customer and 'osebje'?
+- "Seznam Stranke" is not ok. Should be "Stranke" or "Seznam strank".
+- "Uredi stranko" is not working correctly. When I click "Pošlji" I cannot see the status bar and the system logged me off once.
+- "Stranka je bila uspešno spremenjena" is not ok. Should be "Spememba uspešna" like in "Nastavitve sistema" and everywhere else.
+- While adding a new customer I pressed ENTER to move from the current field to the next one. The cursor didn't move, and the customer was created with partial data. When I finished entering all the data and clicked "Pošlji", I had two customers created.
+
+Module "Osebje"
+---------------
+- When opening "Uredi", I cannot save the form as the system shows it to me. Just clicking "Pošlji" has no effect, not even an error message.
+
+Module "Artikli"
+----------------
+- The file "database.sql" has broken šumniki for some article descriptions and names.
+- "Množično urejanje artiklov" is not working correctly. It looks like it is not even connected?
+
+GUI
+---
+- We need a clear and well defined GUI.
+- There should be place reserved for the buttons (remember is touch-screen!) and the status bar.
+- All information and errors should be displayed in the status bar.
+- Only the central part of the screen should change during work with the application. The rest should be unchanged.
+
+Modul "Nastavitve sistema"
+--------------------------
+- Controller 'config' has a redirect in index ( ). Should be correctly directed from the module button!
+- 'company_controller' uses the template engine. It looks like an overkill to maintain ...
+- 'company_controller.index ( )' and 'company_controller.save ( )' are hard-coded to edit the company with ID=1!
+- 'store_controller.index ( )' contains a redirect to display the page. Is this the correct way to implement it?
+- 'store_controller' has a massive amount of code to feed the template engine.
+- 'store_controller' FIXME: if no company was given use any existing one (e.g. the first element of get_all). But do not hard-code!
+- 'store_controller' FIXME: why rename the module?
+- 'company/edit_store.php' contains the same JS snippet as in 'company/edit_company.php'. Why not keep it in a JS external file?
+- 'company/edit_store.php', 'company/edit_company.php', 'company/edit_terminal.php' are identical! There only difference is in '{store_data}', '{company_data}' and '{terminal_data}'. Why not name it just '{data}' and use the same structure for all of them?

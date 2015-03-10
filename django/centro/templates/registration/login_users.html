@@ -1,0 +1,131 @@
+{% extends "registration/login_skeleton.html" %}
+
+{% load i18n %}
+
+{% block content %}
+
+<!-- TOP ICON ROW --> 
+<div id='top_icon_row'>
+    <!-- EMPTY SQUARE -->
+    <div id='icon_square'>
+    </div>
+
+    {% if user_groups.0 %}
+        {% for user in user_groups.0 %}
+            <div id='icon_square'>
+                <a href='#' id='user_{{ user.id }}' onclick="return user_selected (event, '{{ user.username }}', document.forms[0]);">
+                    {% if user.userprofile %}
+                        <img src='{{ user.userprofile.avatar }}'/>
+                    {% else %}
+                        <img src='/images/login/style_green_x_medium.png'/>
+                    {% endif %}
+
+                    </br>
+
+                    {% if user.first_name %}
+                        {{ user.first_name }} {{ user.last_name }}
+                    {% else %}
+                        {{ user.username }}
+                    {% endif %}
+                </a>
+            </div>
+        {% endfor %}
+    {% endif %}
+
+    <!-- EMPTY SQUARE -->
+    <div id='icon_square'>
+    </div>    
+</div>
+
+<!-- CENTER ROW WITH THE PASS PANEL -->
+<div id='center_row'>
+    <div id='icon_column_left'>
+
+        {% if user_groups.3 %}
+            {% for user in user_groups.3 %}
+                <div id='icon_square'>
+                    <a href='#' id='user_{{ user.id }}' onclick="return user_selected (event, '{{ user.username }}', document.forms[0]);">
+                        {% if user.userprofile %}
+                            <img src='{{ user.userprofile.avatar }}'/>
+                        {% else %}
+                            <img src='/images/login/style_green_x_medium.png'/>
+                        {% endif %}
+
+                        </br>
+
+                        {% if user.first_name %}
+                            {{ user.first_name }} {{ user.last_name }}
+                        {% else %}
+                            {{ user.username }}
+                        {% endif %}
+                    </a>
+                </div>
+            {% endfor %}
+        {% endif %}
+
+    </div>
+               
+    {% block login_panel %} Login panel goes here. {% endblock %}
+           
+    <div id='icon_column_right'>
+
+        {% if user_groups.1 %}
+            {% for user in user_groups.1 %}
+                <div id='icon_square'>
+                    <a href='#' id='user_{{ user.id }}' onclick="return user_selected (event, '{{ user.username }}', document.forms[0]);">
+                        {% if user.userprofile %}
+                            <img src='{{ user.userprofile.avatar }}'/>
+                        {% else %}
+                            <img src='/images/login/style_green_x_medium.png'/>
+                        {% endif %}
+
+                        </br>
+
+                        {% if user.first_name %}
+                            {{ user.first_name }} {{ user.last_name }}
+                        {% else %}
+                            {{ user.username }}
+                        {% endif %}
+                    </a>
+                </div>
+            {% endfor %}
+        {% endif %}
+
+    </div>
+</div>
+
+<!-- BOTTOM ICON ROW -->
+<div id='bottom_icon_row'>
+    <!-- EMPTY SQUARE -->
+    <div id='icon_square'>
+    </div>
+
+    {% if user_groups.2 %}
+        {% for user in user_groups.2 %}
+            <div id='icon_square'>
+                <a href='#' id='user_{{ user.id }}' onclick="return user_selected (event, '{{ user.username }}', document.forms[0]);">
+                    {% if user.userprofile %}
+                        <img src='{{ user.userprofile.avatar }}'/>
+                    {% else %}
+                        <img src='/images/login/style_green_x_medium.png'/>
+                    {% endif %}
+
+                    </br>
+
+                    {% if user.first_name %}
+                        {{ user.first_name }} {{ user.last_name }}
+                    {% else %}
+                        {{ user.username }}
+                    {% endif %}
+                </a>
+            </div>
+        {% endfor %}
+    {% endif %}
+
+   <!-- EMPTY SQUARE -->
+    <div id='icon_square'>
+    </div>
+</div>
+
+{% endblock %}
+

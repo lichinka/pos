@@ -1,0 +1,77 @@
+{% extends "object_list.html" %}
+
+{% load i18n %}
+
+{% block right_column %}
+
+<!-- SALE FUNCTIONALITY IN THE RIGHT COLUMN -->
+<div id="right_column">
+
+    <!-- ALL SEARCHES START FROM HERE -->
+    <div id="search_panel">
+        <div id="search_element">
+            <input onfocus="this.select ( )" type="text" name="search-string"
+                   value="{% trans 'search'|capfirst %} ..." id="search-string"/>
+            <a href="#" title="{% trans 'item'|capfirst %}"
+               onClick="return search_element (event, document.getElementById ('search-string'))"> </a>
+        </div>
+        <div id="customer_element">
+            <a href="#" title="{% trans 'customer'|capfirst %}"
+               onClick="return search_element (event, document.getElementById ('search-string'))"> </a>
+		</div>
+    </div>
+    
+    <!-- THE CURRENTLY SELECTED CUSTOMER -->
+    <div id="selected_customer">
+        {% if customer %}
+            <p>{{ customer }}</p>
+        {% endif %}
+    </div>
+    
+    <!-- THE RESULTS OF ALL SEARCHES ARE DISPLAYED HERE THROUGH AJAX -->
+    <div id="search_results_panel">
+        <div id="amount_payed">
+
+            {% if amount_payed %}
+                <div id="amount_payed_text">
+                    <h3>{% trans 'payed'|capfirst %}</h3>
+                </div>            
+                <div id="amount_payed_value">
+                    <h3>{{ amount_payed|floatformat:2 }}</h3>
+                </div>
+            {% endif %}
+
+        </div>
+        <div id="amount_payed">
+
+            {% if amount_due %}
+                <div id="amount_payed_text">
+                    <h3>{% trans 'due'|capfirst %}</h3>
+                </div>            
+                <div id="amount_payed_value">
+                    <h3>{{ amount_due|floatformat:2 }}</h3>
+                </div>
+            {% endif %}
+
+        </div>
+
+	    <!-- SUBTOTAL AND TAXES -->
+	    <div id="subtotal_and_taxes">
+		    <div id="subtotal_and_taxes_value">
+                <p>{% trans 'subtotal'|capfirst %}</p>
+                {{ subtotal|floatformat:2 }}
+		    </div>
+	        <div id="subtotal_and_taxes_value">
+                <p>{% trans 'tax'|capfirst %}</p>
+                {{ taxes|floatformat:2 }}
+	        </div>
+        </div>
+    </div>
+
+    <!-- TOTAL -->
+    <div id="total">
+    	{{ total|floatformat:2 }}
+    </div>
+</div>
+
+{% endblock %}

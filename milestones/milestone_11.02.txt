@@ -1,0 +1,21 @@
+- Popravi kontroler za prikazovanje artiklov zaradi spremembe v modelu Tax.-
+- Funkcija "_validate_save ( )" je dober kandidat za prenos v kontroler "Secured_area".-
+- Preveriti pravilno delovanje 'import & export' funkcije zaradi sprememb v modelih items/*.-
+- Implementacija 'import & export' za ostale module samo kot posamezne datoteke (razen za modul "Nastavitve Sistema").-
+- Implementacija GUI-ja za 'import & export' z novim style-om.-
+- Preformatiranje kode v funkcijah:
+	- Models: Item._constuct_headers (ime!)
+	- Library: PDF
+
+- V library PDF:
+	- Narediti datoteko 'invoice_lang' za vse besede, ki gredo na računu.
+	- Dokumentiranje funkcij.
+	- Povezava s trenutno verzijo Sale_controller (preko funkcije 'finish_sale').-
+
+- Zbrisanje @deprecated metod.
+- Kje je dokumentacija za metodo 'create_bill' v PDF library? Kako naj vem, kakšni morajo biti vhodni parametri? Za primer si poglej metodo 'get_by_sale ($sale_id)' v modelu Sale_detail. 
+- PDF library: podpora za array of objects! (npr. Company)
+- Preimenuj uporabo modela 'transaction_control' z $this->db->trans*.-
+
+*********
+- Model Category._insert ( ): Huge error when creating empty bucket in lang table (IDs in both tables must match!).-
